@@ -1,34 +1,34 @@
-# Grade 3 Online Learning Hub ("Reading HUB") — Complete System & User Guide
+# Multi-Grade Online Learning Hub ("Reading HUB") — Complete System & User Guide
 
 **School:** San Vicente Elementary School  
 **Division:** SDO Romblon  
-**Class / Section:** Grade 3 - Section Masinadyahon  
+**Grade Levels:** Grade 1, Grade 2, and Grade 3  
 **School Year:** 2026–2027  
 **Curriculum Standard:** DepEd MATATAG Curriculum (Budget of Work)
 
 ---
 
-## 🌟 Application Access & Credentials
+## 🌟 Application Access & Permanent 24/7 Cloud Link
 
-The platform is running live as a full-stack web application at:
-👉 **`http://localhost:5000`**
+### 🌐 Permanent 24/7 Worldwide Link (No Laptop Needed):
+👉 **`https://reading-hub-p5y0.onrender.com/`**
+- Works on any mobile phone, iPhone, Android, tablet, iPad, or computer
+- 24/7 uptime — no need to keep your laptop on!
+- Zero password prompts, zero IP checks
+
+### 💻 Local LAN Access (When on same school Wi-Fi):
+👉 **`http://localhost:5000`** or **`http://192.168.1.6:5000`**
 
 ### 👩‍🏫 Teacher Credentials
 - **Username:** `teacher`
 - **Password:** `teacher123`
-- **Name:** Teacher Nikay (Teacher A)
-- **Role:** Administrator & Classroom Teacher (Full Access to Control Center)
+- **Name:** Teacher Tin
+- **Role:** Administrator & Classroom Teacher (Multi-Grade Command Center)
 
-### 👦👧 Student Demo Credentials (Grade 3 Learners)
-All demo student accounts are protected with student-friendly PIN passwords:
-
-| Student Name | Username | Password | Stars | Streak |
-|---|---|---|---|---|
-| **Juan Dela Cruz** | `juan.delacruz` | `student123` | 18 ⭐ | 4 Days 🔥 |
-| **Maria Santos** | `maria.santos` | `student123` | 24 ⭐ | 5 Days 🔥 |
-| **Gabriel Reyes** | `gabriel.reyes` | `student123` | 12 ⭐ | 2 Days 🔥 |
-| **Althea Mendoza** | `althea.mendoza` | `student123` | 30 ⭐ | 6 Days 🔥 |
-| **Mateo Garcia** | `mateo.garcia` | `student123` | 15 ⭐ | 3 Days 🔥 |
+### 👦👧 Active Registered Learners
+- **Aishleen Kaye F. Sola** (`aishleen`) — Grade 3
+- **Zydnie F. Guimera** (`zydnie`) — Grade 3
+- *New learners can be added or have passwords reset anytime in the Teacher Command Center.*
 
 ---
 
