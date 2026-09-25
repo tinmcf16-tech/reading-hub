@@ -1,0 +1,1674 @@
+{
+  "grade": "Grade 3",
+  "school_year": "2026-2027",
+  "school": "San Vicente Elementary School",
+  "district": "Concepcion District, SDO Romblon",
+  "subjects": [
+    {
+      "id": "english",
+      "name": "English",
+      "icon": "📖",
+      "color": "#2563EB",
+      "bg": "#EFF6FF",
+      "grade_level": "Grade 3"
+    },
+    {
+      "id": "filipino",
+      "name": "Filipino",
+      "icon": "🇵🇭",
+      "color": "#DC2626",
+      "bg": "#FEF2F2",
+      "grade_level": "Grade 3"
+    },
+    {
+      "id": "gmrc",
+      "name": "GMRC",
+      "icon": "🤝",
+      "color": "#059669",
+      "bg": "#ECFDF5",
+      "grade_level": "Grade 3"
+    },
+    {
+      "id": "makabansa",
+      "name": "Makabansa",
+      "icon": "🏛️",
+      "color": "#D97706",
+      "bg": "#FFFBEB",
+      "grade_level": "Grade 3"
+    },
+    {
+      "id": "math",
+      "name": "Mathematics",
+      "icon": "🔢",
+      "color": "#7C3AED",
+      "bg": "#F5F3FF",
+      "grade_level": "Grade 3"
+    },
+    {
+      "id": "science",
+      "name": "Science",
+      "icon": "🔬",
+      "color": "#0891B2",
+      "bg": "#ECFEFF",
+      "grade_level": "Grade 3"
+    }
+  ],
+  "terms": [
+    {
+      "term_number": 1,
+      "title": "First Term (Term 1)",
+      "theme": "Foundations of Learning, Self-Confidence, and Community History",
+      "weeks": [
+        {
+          "week_number": 1,
+          "title": "Term 1 - Week 1",
+          "subjects": [
+            {
+              "subject_id": "english",
+              "subject_name": "English",
+              "week": 1,
+              "competency": "Phonics and Word Study — Word Patterns and High-Frequency Words Identify Grade 3 level-appropriate sight words. Read CVCC, CCVC (clusters/diphthongs), VCV, and VCCV words accurately and automatically. Identify high-frequency words accurately.",
+              "strand": "Language, Literacy, and Story Exploration"
+            },
+            {
+              "subject_id": "filipino",
+              "subject_name": "Filipino",
+              "week": 1,
+              "competency": "Palabigkasan at Pag-aaral ng Salita — Sight Words at Talasalitaan Natutukoy ang sight words na kabilang sa Filipino. Natutukoy nang wasto ang mga salitang high frequency words. Nagagamit ang mga salitang high frequency tungkol sa sarili at bansa, at tiyak na paksa. Nagagamit ang mga salitang may tiyak na tuong pangnilalaman (GMRC at MAKABANSA).",
+              "strand": "Palabigkasan, Pagbasa, at Pag-unawa"
+            },
+            {
+              "subject_id": "gmrc",
+              "subject_name": "GMRC",
+              "week": 1,
+              "competency": "Tiwala sa Sarili (Self-Confidence) — Fokus: Batayang Kaalaman Naipakikita ang tiwala sa sarili sa pamamagitan ng kawilihan na paunlarin ang kaniyang hilig at kakayahan. Naiisa-isa ang sariling hilig at kakayahan.",
+              "strand": "Good Manners and Right Conduct"
+            },
+            {
+              "subject_id": "makabansa",
+              "subject_name": "Makabansa",
+              "week": 1,
+              "competency": "Natatalakay ang mahahalagang tao, lugar, at pangyayari na bahagi ng kasaysayan ng barangay na kinabibilangan.",
+              "strand": "Ang Ating Komunidad sa Paglipas ng Panahon"
+            },
+            {
+              "subject_id": "math",
+              "subject_name": "Mathematics",
+              "week": 1,
+              "competency": "Measurement and Geometry Illustrate and estimate the area of a square or rectangle using square tile units. Explore inductively the derivation of the formulas for the areas of a square and a rectangle using square tile units.",
+              "strand": "Numbers, Operations, and Geometry"
+            },
+            {
+              "subject_id": "science",
+              "subject_name": "Science",
+              "week": 1,
+              "competency": "Participate in guided science activities to explore and describe the physical properties of solid objects, such as hardness, shape, and flexibility.",
+              "strand": "Materials, Matter, and Guided Inquiries"
+            }
+          ]
+        },
+        {
+          "week_number": 2,
+          "title": "Term 1 - Week 2",
+          "subjects": [
+            {
+              "subject_id": "english",
+              "subject_name": "English",
+              "week": 2,
+              "competency": "Vocabulary and Word Knowledge — Vocabulary of Regional and Content Areas Use vocabulary referring to regional themes and content-specific topics, including content-specific words for Mathematics and Science. Identify words that label actions (verbs) and words that describe (adjectives).",
+              "strand": "Language, Literacy, and Story Exploration"
+            },
+            {
+              "subject_id": "filipino",
+              "subject_name": "Filipino",
+              "week": 2,
+              "competency": "Paglinang ng Talasalitaan — Kahulugan ng Salita Natutukoy ang kahulugan ng mga salitang tumutukoy sa ngalan ng tao, bagay, hayop, lugar, at pangyayari (dinaglat). Natutukoy ang kahulugan ng salitang pamalit (pamatlig), salitang naglalarawan, at salitang kilos.",
+              "strand": "Palabigkasan, Pagbasa, at Pag-unawa"
+            },
+            {
+              "subject_id": "gmrc",
+              "subject_name": "GMRC",
+              "week": 2,
+              "competency": "Tiwala sa Sarili (Self-Confidence) — Fokus: Pag-unawa at Paglalapat Napatutunayan na ang sariling hilig at kakayahan ay mahalaga upang makilala ang sarili bilang bata. Nailalapat ang sariling hilig at kakayahan tungo sa kakayahan sa pagpapatibay ng tiwala sa sarili.",
+              "strand": "Good Manners and Right Conduct"
+            },
+            {
+              "subject_id": "makabansa",
+              "subject_name": "Makabansa",
+              "week": 2,
+              "competency": "Natatalakay ang mahahalagang tao, lugar, at pangyayari na bahagi ng kasaysayan ng bayan o lungsod na kinabibilangan.",
+              "strand": "Ang Ating Komunidad sa Paglipas ng Panahon"
+            },
+            {
+              "subject_id": "math",
+              "subject_name": "Mathematics",
+              "week": 2,
+              "competency": "Measurement and Geometry Find the areas of squares and rectangles in sq. cm and sq. m. Solve problems involving areas of squares and rectangles. Recognize, using models, and draw a point, line, line segment, and ray.",
+              "strand": "Numbers, Operations, and Geometry"
+            },
+            {
+              "subject_id": "science",
+              "subject_name": "Science",
+              "week": 2,
+              "competency": "Participate in guided science activities to explore and describe liquid substances and their properties, such as fluidity and container shape.",
+              "strand": "Materials, Matter, and Guided Inquiries"
+            }
+          ]
+        },
+        {
+          "week_number": 3,
+          "title": "Term 1 - Week 3",
+          "subjects": [
+            {
+              "subject_id": "english",
+              "subject_name": "English",
+              "week": 3,
+              "competency": "Vocabulary and Word Knowledge — Pronouns and Word Relationships Identify and use personal, interrogative, possessive, and demonstrative pronouns. Identify the synonyms and antonyms of words. Read words correctly for meaning based on word patterns.",
+              "strand": "Language, Literacy, and Story Exploration"
+            },
+            {
+              "subject_id": "filipino",
+              "subject_name": "Filipino",
+              "week": 3,
+              "competency": "Paglinang ng Talasalitaan — Salitang Pangkayarian at Pagbasa Natutukoy ang kahulugan ng salitang pangkayarian (pangatnig at pang-angkop). Nababasa nang wasto at naisusulat nang maayos ang mga natutuhang salita. Natutukoy ang salitang-ugat ng mga natutuhang salitang high frequency.",
+              "strand": "Palabigkasan, Pagbasa, at Pag-unawa"
+            },
+            {
+              "subject_id": "gmrc",
+              "subject_name": "GMRC",
+              "week": 3,
+              "competency": "Mapagmalasakit (Compassion) Naipakikita ang pagiging mapagmalasakit sa pamamagitan ng tamang paglalaan ng mga pera o gamit na angkop sa iba't ibang situwasyon. Nakakikilala ng mga paraan ng pagpapatatag ng mga gawi sa pag-iimpok at pagtitipid kasama ang pamilya. Napatutunayan na ito ay magpapaunlad ng sariling kasanayan na mapamahalaan ang mas malaking halaga ng pera o mga gamit sa kinabukasan. Naisasakilos ang mga paraan ng pagpapatatag ng mga gawi sa pag-iimpok at pagtitipid.",
+              "strand": "Good Manners and Right Conduct"
+            },
+            {
+              "subject_id": "makabansa",
+              "subject_name": "Makabansa",
+              "week": 3,
+              "competency": "Natatalakay ang mahahalagang tao, lugar, at pangyayari na bahagi ng kasaysayan ng lalawigan na kinabibilangan.",
+              "strand": "Ang Ating Komunidad sa Paglipas ng Panahon"
+            },
+            {
+              "subject_id": "math",
+              "subject_name": "Mathematics",
+              "week": 3,
+              "competency": "Measurement and Geometry Recognize and draw parallel, intersecting, and perpendicular lines. Identify and draw line segments of equal length using a ruler.",
+              "strand": "Numbers, Operations, and Geometry"
+            },
+            {
+              "subject_id": "science",
+              "subject_name": "Science",
+              "week": 3,
+              "competency": "Participate in guided science activities to explore and describe gases around us, their presence, and their importance.",
+              "strand": "Materials, Matter, and Guided Inquiries"
+            }
+          ]
+        },
+        {
+          "week_number": 4,
+          "title": "Term 1 - Week 4",
+          "subjects": [
+            {
+              "subject_id": "english",
+              "subject_name": "English",
+              "week": 4,
+              "competency": "Vocabulary and Word Knowledge / Grammar Awareness — Word Accuracy and Introduction to Sentences Write words legibly and correctly based on word patterns. Identify roots of high-frequency words. Identify sentences and non-sentences. Use simple sentences to express ideas, with proper intonation, and sequence words to form telling (declarative) sentences.",
+              "strand": "Language, Literacy, and Story Exploration"
+            },
+            {
+              "subject_id": "filipino",
+              "subject_name": "Filipino",
+              "week": 4,
+              "competency": "Paglinang ng Talasalitaan / Gramatika — Bahaging Pangungusap Nakikilala ang kahulugan ng mga salita (magkasingkahulugan at magkasalungat). Natutukoy ang mga bahagi ng payak na pangungusap (simuno at panaguri), ang sugnay na nakapag-iisa sa tambalang pangungusap, at ang mga pananda sa teksto.",
+              "strand": "Palabigkasan, Pagbasa, at Pag-unawa"
+            },
+            {
+              "subject_id": "gmrc",
+              "subject_name": "GMRC",
+              "week": 4,
+              "competency": "Responsable (Responsible) — Fokus: Batayang Kaalaman Naipakikita ang pagiging responsable sa pamamagitan ng wastong pagtupad sa kaniyang mga gampanin batay sa mga tagubilin ng magulang at nakatatanda. Natutukoy ang mga gawain ng isang bata sa tahanan at paaralan.",
+              "strand": "Good Manners and Right Conduct"
+            },
+            {
+              "subject_id": "makabansa",
+              "subject_name": "Makabansa",
+              "week": 4,
+              "competency": "Natatalakay ang mahahalagang tao, lugar, at pangyayari na bahagi ng kasaysayan ng rehiyon na kinabibilangan.",
+              "strand": "Ang Ating Komunidad sa Paglipas ng Panahon"
+            },
+            {
+              "subject_id": "math",
+              "subject_name": "Mathematics",
+              "week": 4,
+              "competency": "Number and Algebra Represent numbers up to 10 000 using pictorial models and numerals.",
+              "strand": "Numbers, Operations, and Geometry"
+            },
+            {
+              "subject_id": "science",
+              "subject_name": "Science",
+              "week": 4,
+              "competency": "Science Processes Describe different science process skills used in performing simple science activities, such as observing, predicting, and measuring using units such as millimeter, centimeter, and meter.",
+              "strand": "Materials, Matter, and Guided Inquiries"
+            }
+          ]
+        },
+        {
+          "week_number": 5,
+          "title": "Term 1 - Week 5",
+          "subjects": [
+            {
+              "subject_id": "english",
+              "subject_name": "English",
+              "week": 5,
+              "competency": "Grammar Awareness — Sentence Sequencing and Parts Sequence words to form asking (interrogative), commanding/requesting (imperative), and exclamatory sentences. Identify the parts of telling and asking sentences.",
+              "strand": "Language, Literacy, and Story Exploration"
+            },
+            {
+              "subject_id": "filipino",
+              "subject_name": "Filipino",
+              "week": 5,
+              "competency": "Pag-unawa at Pagsusuri ng Teksto — Mabilis na Pagbasa at Elemento ng Kuwento Nababasa nang may tatas (may damdamin at tamang bilis) ang mga pangungusap. Naibibigay ang elemento ng tekstong naratibo. Natutukoy ang damdamin ng tauhan. Nakikilala ang katangian ng tauhan at tagpuan.",
+              "strand": "Palabigkasan, Pagbasa, at Pag-unawa"
+            },
+            {
+              "subject_id": "gmrc",
+              "subject_name": "GMRC",
+              "week": 5,
+              "competency": "Responsable (Responsible) — Fokus: Pag-unawa at Pagbabahagi Napatutunayan na ang mga sariling gampanin ng bata sa tahanan at paaralan ay nakatutulong upang mahubog ang pagiging responsable sa kanilang gawain at kilos. Nakapagbabahagi ng mga karanasan sa pagtugon sa mga gampanin ng isang bata sa tahanan at paaralan.",
+              "strand": "Good Manners and Right Conduct"
+            },
+            {
+              "subject_id": "makabansa",
+              "subject_name": "Makabansa",
+              "week": 5,
+              "competency": "Nakabubuo ng talaan ng kasaysayan (timeline) ng kinabibilangang pook batay sa mahahalagang tao, lugar, at pangyayari nito.",
+              "strand": "Ang Ating Komunidad sa Paglipas ng Panahon"
+            },
+            {
+              "subject_id": "math",
+              "subject_name": "Mathematics",
+              "week": 5,
+              "competency": "Number and Algebra Read and write numbers up to 10 000 in numerals and in words.",
+              "strand": "Numbers, Operations, and Geometry"
+            },
+            {
+              "subject_id": "science",
+              "subject_name": "Science",
+              "week": 5,
+              "competency": "Describe changes in materials based on temperature: melting and freezing.",
+              "strand": "Materials, Matter, and Guided Inquiries"
+            }
+          ]
+        },
+        {
+          "week_number": 6,
+          "title": "Term 1 - Week 6",
+          "subjects": [
+            {
+              "subject_id": "english",
+              "subject_name": "English",
+              "week": 6,
+              "competency": "Grammar Awareness — Sentence Parts and Capitalization Identify the parts of commanding/requesting and exclamatory sentences. Use correct capitalization and punctuation for telling, asking, commanding/requesting, and exclamatory sentences. Identify the two independent clauses in a compound sentence.",
+              "strand": "Language, Literacy, and Story Exploration"
+            },
+            {
+              "subject_id": "filipino",
+              "subject_name": "Filipino",
+              "week": 6,
+              "competency": "Pag-unawa at Pagsusuri ng Teksto — Pagsusuring Pangyayari sa Kuwento Naibibigay ang suliranin at solusyon sa kuwento. Naisasaayos ang pagkakasunod-sunod ng lima hanggang anim na pangyayari. Naibibigay ang sanhi at bunga ng mga pangyayari, at ang posibleng wakas ng kuwento.",
+              "strand": "Palabigkasan, Pagbasa, at Pag-unawa"
+            },
+            {
+              "subject_id": "gmrc",
+              "subject_name": "GMRC",
+              "week": 6,
+              "competency": "Pananalig sa Diyos (Faith in God) Naipakikita ang pananalig sa Diyos sa pamamagitan ng pagsunod sa Kaniyang mga aral. Nakakikilala ng mga sariling pagkilos ng may paggalang sa Diyos. Naipaliliwanag na ito ay tanda ng pagkilala at pagmamahal sa Kaniya at nagdudulot ng pagkakaroon ng mabuting asal. Nailalapat ang mga pagkilos na nagpapakita ng paggalang sa Diyos.",
+              "strand": "Good Manners and Right Conduct"
+            },
+            {
+              "subject_id": "makabansa",
+              "subject_name": "Makabansa",
+              "week": 6,
+              "competency": "Naipaliliwanag ang mga pagbabagong naganap sa populasyon ng kinabibilangang komunidad.",
+              "strand": "Ang Ating Komunidad sa Paglipas ng Panahon"
+            },
+            {
+              "subject_id": "math",
+              "subject_name": "Mathematics",
+              "week": 6,
+              "competency": "Number and Algebra Describe the position of objects using ordinal numbers up to 100th.",
+              "strand": "Numbers, Operations, and Geometry"
+            },
+            {
+              "subject_id": "science",
+              "subject_name": "Science",
+              "week": 6,
+              "competency": "Describe changes in materials based on temperature: evaporation and condensation.",
+              "strand": "Materials, Matter, and Guided Inquiries"
+            }
+          ]
+        },
+        {
+          "week_number": 7,
+          "title": "Term 1 - Week 7",
+          "subjects": [
+            {
+              "subject_id": "english",
+              "subject_name": "English",
+              "week": 7,
+              "competency": "Grammar Awareness — Compound Sentences and Discourse Markers Identify the joining word (coordinating conjunction) and the doers/actions in the two clauses of a compound sentence. Use correct capitalization and punctuation in compound sentences. Identify discourse markers used in time-order/procedural, descriptive, and explanatory texts.",
+              "strand": "Language, Literacy, and Story Exploration"
+            },
+            {
+              "subject_id": "filipino",
+              "subject_name": "Filipino",
+              "week": 7,
+              "competency": "Pag-unawa at Pagsusuri ng Teksto — Pagbubuod, Konektado sa Kuwento Nakabubuod ng teksto. Naiuugnay ang sariling karanasan sa kuwento. Natutukoy ang nagsasalaysay sa teksto. Naibibigay ang mensahe ng teksto.",
+              "strand": "Palabigkasan, Pagbasa, at Pag-unawa"
+            },
+            {
+              "subject_id": "gmrc",
+              "subject_name": "GMRC",
+              "week": 7,
+              "competency": "Disiplina (Discipline) — Fokus: Batayang Kaalaman Naipakikita ang disiplina sa pamamagitan ng pakikiisa sa mga gawaing pangkapaligiran. Natutukoy ang mga pansariling gawain na nakabubuti sa kapaligiran.",
+              "strand": "Good Manners and Right Conduct"
+            },
+            {
+              "subject_id": "makabansa",
+              "subject_name": "Makabansa",
+              "week": 7,
+              "competency": "Naipaliliwanag ang mga pagbabagong naganap sa kapaligiran at imprastraktura ng kinabibilangang komunidad.",
+              "strand": "Ang Ating Komunidad sa Paglipas ng Panahon"
+            },
+            {
+              "subject_id": "math",
+              "subject_name": "Mathematics",
+              "week": 7,
+              "competency": "Number and Algebra Determine: (a) the place value of a digit in a 4-digit number; (b) the value of a digit; (c) the digit of a number, given its place value. (Part 1: Addition and Subtraction)",
+              "strand": "Numbers, Operations, and Geometry"
+            },
+            {
+              "subject_id": "science",
+              "subject_name": "Science",
+              "week": 7,
+              "competency": "Participate in guided activities observing physical changes when substances are mixed or dissolved.",
+              "strand": "Materials, Matter, and Guided Inquiries"
+            }
+          ]
+        },
+        {
+          "week_number": 8,
+          "title": "Term 1 - Week 8",
+          "subjects": [
+            {
+              "subject_id": "english",
+              "subject_name": "English",
+              "week": 8,
+              "competency": "Comprehending Texts — Story Comprehension Read grade-level sentences with appropriate speed, accuracy, and expression. Note important elements in a story (characters, setting, and events).",
+              "strand": "Language, Literacy, and Story Exploration"
+            },
+            {
+              "subject_id": "filipino",
+              "subject_name": "Filipino",
+              "week": 8,
+              "competency": "Pag-unawa at Pagsusuri ng Teksto — Detalye at Suliranin sa Tekstong Impormatibo Naibibigay ang limang mahahalagang detalye sa tekstong impormatibo. Natutukoy ang suliranin at solusyon, at ang naglalahad sa teksto. Naibibigay ang mahahalagang impormasyon (paksa, pangunahing idea, sumusuportang detalye).",
+              "strand": "Palabigkasan, Pagbasa, at Pag-unawa"
+            },
+            {
+              "subject_id": "gmrc",
+              "subject_name": "GMRC",
+              "week": 8,
+              "competency": "Disiplina (Discipline) — Fokus: Pag-unawa at Paglalapat Naipaliliwanag na ang mga pansariling gawain na nakabubuti sa kapaligiran ay magdudulot ng ligtas, maayos, at malinis na pamayanan. Naisasakilos ang mga natukoy na mabuting magagawa ng bata sa kapaligiran.",
+              "strand": "Good Manners and Right Conduct"
+            },
+            {
+              "subject_id": "makabansa",
+              "subject_name": "Makabansa",
+              "week": 8,
+              "competency": "Naipaliliwanag ang mga pagbabagong naganap sa pamumuhay at kabuhayan ng kinabibilangang komunidad.",
+              "strand": "Ang Ating Komunidad sa Paglipas ng Panahon"
+            },
+            {
+              "subject_id": "math",
+              "subject_name": "Mathematics",
+              "week": 8,
+              "competency": "Number and Algebra Determine: (a) the place value of a digit in a 4-digit number; (b) the value of a digit; (c) the digit of a number, given its place value. (Part 2: Problem Solving with Money)",
+              "strand": "Numbers, Operations, and Geometry"
+            },
+            {
+              "subject_id": "science",
+              "subject_name": "Science",
+              "week": 8,
+              "competency": "Identify useful and harmful changes in materials around the home and school.",
+              "strand": "Materials, Matter, and Guided Inquiries"
+            }
+          ]
+        },
+        {
+          "week_number": 9,
+          "title": "Term 1 - Week 9",
+          "subjects": [
+            {
+              "subject_id": "english",
+              "subject_name": "English",
+              "week": 9,
+              "competency": "Comprehending Texts — Predicting, Summarizing, and Informational Texts Sequence at least five events in a story. Identify the problem and solution presented in a story. Infer a character's feelings and traits. Relate story events to one's own experience. Identify cause and effect of events. Predict a possible ending for a story.",
+              "strand": "Language, Literacy, and Story Exploration"
+            },
+            {
+              "subject_id": "filipino",
+              "subject_name": "Filipino",
+              "week": 9,
+              "competency": "Pag-unawa at Pagsusuri ng Teksto — Layunin, Organisasyon, at Konklusyon Naibibigay ang nais ipabatid ng awtor. Natutukoy ang huwaran ng organisasyon ng tekstong impormatibo (pag-iisa-isa-paglalarawan; pagsusunod-sunod). Naibibigay ang kongklusyon at mensahe ng tekstong impormatibo.",
+              "strand": "Palabigkasan, Pagbasa, at Pag-unawa"
+            },
+            {
+              "subject_id": "gmrc",
+              "subject_name": "GMRC",
+              "week": 9,
+              "competency": "Paggalang (Respect) Nakapagsasanay sa pagiging magalang sa pamamagitan ng wastong pakikitungo sa kapwa sa iba't ibang sitwasyon. Naiisa-isa ang mga pansariling karapatan na natatamasa ng isang bata sa pamayanan. Naipaliliwanag na ito ay nagtitiyak sa kaligtasan at matiwasay na pamumuhay ng bawat bata. Naisasakilos ang mga gawain na nagbibigay-halaga sa mga karapatang tinatamasa ng bawat bata.",
+              "strand": "Good Manners and Right Conduct"
+            },
+            {
+              "subject_id": "makabansa",
+              "subject_name": "Makabansa",
+              "week": 9,
+              "competency": "Nakagagawa ng likhang-sining na nagpapakita ng kasaysayan ng kinabibilangang komunidad.",
+              "strand": "Ang Ating Komunidad sa Paglipas ng Panahon"
+            },
+            {
+              "subject_id": "math",
+              "subject_name": "Mathematics",
+              "week": 9,
+              "competency": "Number and Algebra Round numbers to the nearest ten, hundred, or thousand. Compare numbers up to 10 000 using the symbols =, >, and <.",
+              "strand": "Numbers, Operations, and Geometry"
+            },
+            {
+              "subject_id": "science",
+              "subject_name": "Science",
+              "week": 9,
+              "competency": "Explain safety measures when handling hot objects, sharp materials, and chemical substances.",
+              "strand": "Materials, Matter, and Guided Inquiries"
+            }
+          ]
+        },
+        {
+          "week_number": 10,
+          "title": "Term 1 - Week 10",
+          "subjects": [
+            {
+              "subject_id": "english",
+              "subject_name": "English",
+              "week": 10,
+              "competency": "Comprehending Texts — Text Types, Conclusions, and Composing Basics Give a summary of a story read or heard. Note at least five significant details in a grade-level informational text. Identify the problem and solution presented in an informational text. Identify time-order/procedural, descriptive, and explanatory text types.",
+              "strand": "Language, Literacy, and Story Exploration"
+            },
+            {
+              "subject_id": "filipino",
+              "subject_name": "Filipino",
+              "week": 10,
+              "competency": "Pagbuo ng Teksto — Pagbati at Simulang Pagsulat Nagagamit ang magagalang na pananalita sa pagbati at ekspresyon sa iba't ibang sitwasyon. Nagagamit ang mga salitang high frequency at may tiyak na tuong pangnilalaman sa pagbuo ng maikling talata. Nakabubuo ng maikling talatang naglalarawan ng karanasan tungkol sa sarili, bansa, at tiyak na paksa.",
+              "strand": "Palabigkasan, Pagbasa, at Pag-unawa"
+            },
+            {
+              "subject_id": "gmrc",
+              "subject_name": "GMRC",
+              "week": 10,
+              "competency": "Pakikiisa (Cooperation) — Fokus: Batayang Kaalaman Naipakikita ang pakikiisa sa pamamagitan ng pagtupad sa mga gawain sa loob ng tahanan na ayon sa kaniyang kakayahan. Natutukoy ang mga sariling paraan ng pakikilahok sa mga gawain sa loob ng tahanan.",
+              "strand": "Good Manners and Right Conduct"
+            },
+            {
+              "subject_id": "makabansa",
+              "subject_name": "Makabansa",
+              "week": 10,
+              "competency": "Nakagagawa ng likhang-sining na nagpapakita ng pagbabagong naganap sa kinabibilangang komunidad.",
+              "strand": "Ang Ating Komunidad sa Paglipas ng Panahon"
+            },
+            {
+              "subject_id": "math",
+              "subject_name": "Mathematics",
+              "week": 10,
+              "competency": "Number and Algebra Order numbers up to 10 000 from smallest to largest, and vice versa.",
+              "strand": "Numbers, Operations, and Geometry"
+            },
+            {
+              "subject_id": "science",
+              "subject_name": "Science",
+              "week": 10,
+              "competency": "Demonstrate proper handling, storing, and disposal of household materials.",
+              "strand": "Materials, Matter, and Guided Inquiries"
+            }
+          ]
+        },
+        {
+          "week_number": 11,
+          "title": "Term 1 - Week 11",
+          "subjects": [
+            {
+              "subject_id": "english",
+              "subject_name": "English",
+              "week": 11,
+              "competency": "Creating and Composing Texts — Composing and Reacting to Texts Draw conclusions based on a text read or heard. Use common expressions and polite greetings appropriate to a given situation. Retell myths, legends, fables, and narrative poems using own words. Express ideas about one's own experiences and content-specific topics. Use basic sight words, high-frequency words, and content-specific words in composing.",
+              "strand": "Language, Literacy, and Story Exploration"
+            },
+            {
+              "subject_id": "filipino",
+              "subject_name": "Filipino",
+              "week": 11,
+              "competency": "Pagbuo ng Teksto — Reaksiyon, Buod, at Organisasyon ng Idea Nakabubuo ng maikling talata gamit ang payak at tambalang pangungusap sa pagpapahayag ng reaksiyon sa mga pangyayari sa teksto, sa paksa, pangunahing idea, at sumusuportang detalye. Nakabubuod ng tekstong naratibo. Nakapagpapahayag ng idea batay sa huwaran ng organisasyon ng tekstong impormatibo.",
+              "strand": "Palabigkasan, Pagbasa, at Pag-unawa"
+            },
+            {
+              "subject_id": "gmrc",
+              "subject_name": "GMRC",
+              "week": 11,
+              "competency": "Pakikiisa (Cooperation) — Fokus: Pag-unawa at Paglalapat Naipaliliwanag na ang sariling paraan ng pakikilahok sa mga gawain ng pamilya ay nakatutulong sa pagkakabuklod-buklod at pagpapatatag ng ugnayan ng bawat kasapi ng pamilya. Nailalapat ang mga sariling paraan ng pakikiisa sa mga gawain sa loob ng tahanan.",
+              "strand": "Good Manners and Right Conduct"
+            },
+            {
+              "subject_id": "makabansa",
+              "subject_name": "Makabansa",
+              "week": 11,
+              "competency": "Napahahalagahan ang kasaysayan at pagbabagong nagaganap sa kinabibilangang komunidad.",
+              "strand": "Ang Ating Komunidad sa Paglipas ng Panahon"
+            },
+            {
+              "subject_id": "math",
+              "subject_name": "Mathematics",
+              "week": 11,
+              "competency": "No Week 11 entry in the source Budget of Work — Mathematics, First Term competencies end at Week 10.",
+              "strand": "Numbers, Operations, and Geometry"
+            },
+            {
+              "subject_id": "science",
+              "subject_name": "Science",
+              "week": 11,
+              "competency": "Guided Science Activities Using Process Skills Use the skills of observing, predicting, and measuring in performing simple guided science activities.",
+              "strand": "Materials, Matter, and Guided Inquiries"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "term_number": 2,
+      "title": "Second Term (Term 2)",
+      "theme": "Culture, Arts, Living Things, Operations, and Regional Vocabulary",
+      "weeks": [
+        {
+          "week_number": 1,
+          "title": "Term 2 - Week 1",
+          "subjects": [
+            {
+              "subject_id": "english",
+              "subject_name": "English",
+              "week": 1,
+              "competency": "Word Patterns and Regional Vocabulary • Identify Grade 3 level-appropriate sight words. (Phonics and Word Study) • Read VCV words accurately and automatically. (Phonics and Word Study) • Read VCCV words accurately and automatically. (Phonics and Word Study) • Identify high-frequency words accurately. (Vocabulary and Word Knowledge) • Use vocabulary referring to regional themes. (Vocabulary and Word Knowledge)",
+              "strand": "English - Second Term"
+            },
+            {
+              "subject_id": "filipino",
+              "subject_name": "Filipino",
+              "week": 1,
+              "competency": "Sight Words at Talasalitaan • Natutukoy ang sight words na kabilang sa Filipino. (Palabigkasan at Pag-aaral ng Salita) • Natutukoy nang wasto ang mga salitang madalas gamitin o high frequency words. (Paglinang ng Talasalitaan) • Nagagamit ang mga salitang high frequency tungkol sa sarili at bansa, at tiyak na paksang may tuon sa nilalaman. (Paglinang ng Talasalitaan) • Nagagamit ang mga salitang may tiyak na tuong pangnilalaman (GMRC at MAKABANSA). (Paglinang ng Talasalitaan)",
+              "strand": "Filipino - Second Term"
+            },
+            {
+              "subject_id": "gmrc",
+              "subject_name": "GMRC",
+              "week": 1,
+              "competency": "Mapagpasensiya (Patience): Naipakikita ang pagiging mapagpasensiya sa pamamagitan ng angkop na pananalita at pagtugon sa mga sitwasyong kasama ang kapuwa. • Nailalarawan ang mga ugnayan ng sarili sa kapwa. • Naipaliliwanag na ang ugnayan ng sarili sa kapwa ay nakatutulong sa paglinang ng mga kasanayan sa pakikipagkapwa. • Nailalapat ang mga kilos na nagpapakita ng wastong pakikitungo sa kapwa.",
+              "strand": "GMRC - Second Term"
+            },
+            {
+              "subject_id": "makabansa",
+              "subject_name": "Makabansa",
+              "week": 1,
+              "competency": "Naipaliliwanag ang ugnayan ng kapaligiran at kultura.",
+              "strand": "Makabansa - Second Term"
+            },
+            {
+              "subject_id": "math",
+              "subject_name": "Mathematics",
+              "week": 1,
+              "competency": "Measurement and Geometry: • Measure mass in grams (g), kilograms (kg) and/or milligrams (mg), using appropriate measuring tools. • Estimate mass of an object using grams, kilograms, and/or milligrams. • Compare masses of objects including the use of a balance scale.",
+              "strand": "Mathematics - Second Term"
+            },
+            {
+              "subject_id": "science",
+              "subject_name": "Science",
+              "week": 1,
+              "competency": "Guided Science Activities Using Process Skills and Living and Non-Living Things (Week 1 to 2): • Observe and describe the difference between living and non-living things and give examples of each that can be found in the local environment. • Describe the characteristics of living things: they grow, respond, and reproduce.",
+              "strand": "Science - Second Term"
+            }
+          ]
+        },
+        {
+          "week_number": 2,
+          "title": "Term 2 - Week 2",
+          "subjects": [
+            {
+              "subject_id": "english",
+              "subject_name": "English",
+              "week": 2,
+              "competency": "Content Words, Verbs, Adjectives, and Pronouns • Use vocabulary referring to content-specific topics. (Vocabulary and Word Knowledge) • Use content-specific words for Mathematics (basic symbols and terminologies). (Vocabulary and Word Knowledge) • Use content-specific words for Science (basic terminologies). (Vocabulary and Word Knowledge) • Identify words that label actions (verbs). (Vocabulary and Word Knowledge) • Identify words that describe persons, places, things, animals, events, ideas, and emotions (adjectives). (Vocabulary and Word Knowledge) • Identify and use personal pronouns. (Vocabulary and Word Knowledge) • Identify and use demonstrative pronouns. (Vocabulary and Word Knowledge)",
+              "strand": "English - Second Term"
+            },
+            {
+              "subject_id": "filipino",
+              "subject_name": "Filipino",
+              "week": 2,
+              "competency": "Kahulugan ng Salita • Natutukoy ang kahulugan ng mga salitang tumutukoy sa ngalan ng tao, bagay, hayop, lugar, at pangyayari (dinaglat). (Paglinang ng Talasalitaan) • Natutukoy ang kahulugan ng salitang naglalarawan sa paraan, panahon, at pinangyarihan ng kilos. (Paglinang ng Talasalitaan) • Natutukoy ang kahulugan ng salitang pangkayarian (pangatnig, pang-angkop, at pang-ukol). (Paglinang ng Talasalitaan) • Nababasa nang wasto ang mga natutuhang salita. (Paglinang ng Talasalitaan)",
+              "strand": "Filipino - Second Term"
+            },
+            {
+              "subject_id": "gmrc",
+              "subject_name": "GMRC",
+              "week": 2,
+              "competency": "Maingat na Paghuhusga (Prudence): Naipakikita ang maingat na paghuhusga sa mga impormasyon tungkol sa barangay na kinabibilangan. • Nakakikilala ng mga impormasyon tungkol sa barangay na kinabibilangan. • Napatutunayan na ang mga impormasyon sa barangay na kinabibilangan ay mahalagang gampanin sa pagpapanatili ng kaayusan, kaligtasan at katahimikan ng mamamayan. • Nakapagbabahagi ng mga impormasyon tungkol sa barangay na kinabibilangan.",
+              "strand": "GMRC - Second Term"
+            },
+            {
+              "subject_id": "makabansa",
+              "subject_name": "Makabansa",
+              "week": 2,
+              "competency": "Naipaliliwanag kung paano naiimpluwensyahan ng kultura ang pang-araw-araw na pamumuhay sa komunidad.",
+              "strand": "Makabansa - Second Term"
+            },
+            {
+              "subject_id": "math",
+              "subject_name": "Mathematics",
+              "week": 2,
+              "competency": "Measurement and Geometry: • Measure capacity in liters (L) and/or milliliters (mL), using appropriate measuring tools. • Estimate capacity using liters and/or milliliters. • Compare capacities of two containers.",
+              "strand": "Mathematics - Second Term"
+            },
+            {
+              "subject_id": "science",
+              "subject_name": "Science",
+              "week": 2,
+              "competency": "Guided Science Activities Using Process Skills and Living and Non-Living Things: (Continuation — see Week 1.) Same competencies apply; teachers may sequence across Weeks 1 to 2 based on learners' needs.",
+              "strand": "Science - Second Term"
+            }
+          ]
+        },
+        {
+          "week_number": 3,
+          "title": "Term 2 - Week 3",
+          "subjects": [
+            {
+              "subject_id": "english",
+              "subject_name": "English",
+              "week": 3,
+              "competency": "Word Meaning and Accuracy • Identify the synonyms and antonyms of words. (Vocabulary and Word Knowledge) • Read words correctly for meaning based on word patterns. (Vocabulary and Word Knowledge) • Write words legibly and correctly based on word patterns. (Vocabulary and Word Knowledge) • Identify roots of high-frequency words (nouns, verbs, and adjectives). (Vocabulary and Word Knowledge) • Identify sentences and non-sentences. (Grammar Awareness)",
+              "strand": "English - Second Term"
+            },
+            {
+              "subject_id": "filipino",
+              "subject_name": "Filipino",
+              "week": 3,
+              "competency": "Pagsulat at Ugat ng Salita • Naisusulat nang maayos at wasto ang mga natutuhang salita. (Paglinang ng Talasalitaan) • Natutukoy ang salitang-ugat ng mga natutuhang salitang high frequency o madalas gamitin. (Paglinang ng Talasalitaan) • Nakikilala ang kahulugan ng mga salita (magkasingkahulugan at magkasalungat). (Paglinang ng Talasalitaan)",
+              "strand": "Filipino - Second Term"
+            },
+            {
+              "subject_id": "gmrc",
+              "subject_name": "GMRC",
+              "week": 3,
+              "competency": "Pagiging Totoo (Sincerity): Fokus: Batayang Kaalaman Naipakikita ang pagiging totoo sa pamamagitan ng wastong pakikipag-ugnayan sa bawat kasapi ng pamilya. • Nailalarawan ang pakikipag-ugnayan sa bawat kasapi ng pamilya.",
+              "strand": "GMRC - Second Term"
+            },
+            {
+              "subject_id": "makabansa",
+              "subject_name": "Makabansa",
+              "week": 3,
+              "competency": "Natatalakay ang kahulugan ng pagkakakilanlan ng kinabibilangang komunidad.",
+              "strand": "Makabansa - Second Term"
+            },
+            {
+              "subject_id": "math",
+              "subject_name": "Mathematics",
+              "week": 3,
+              "competency": "Number and Algebra: • Read and write money in words and using: (a) Philippine currency symbols (₱ and PhP) up to ₱10 000; (b) the centavo sign. • Add numbers with sums up to 10 000, with and without regrouping.",
+              "strand": "Mathematics - Second Term"
+            },
+            {
+              "subject_id": "science",
+              "subject_name": "Science",
+              "week": 3,
+              "competency": "Characteristics of Living Things (Week 3 to 4): • Observe and describe the outer body parts of animals, such as head, legs or wings, and identify their role to move and to gather food. • Observe the outer parts of plants, such as leaves, roots, and stems and identify their role to get water and nutrients from the soil.",
+              "strand": "Science - Second Term"
+            }
+          ]
+        },
+        {
+          "week_number": 4,
+          "title": "Term 2 - Week 4",
+          "subjects": [
+            {
+              "subject_id": "english",
+              "subject_name": "English",
+              "week": 4,
+              "competency": "Building and Sequencing Sentences • Use simple sentences to express ideas about regional themes and content-specific topics. (Grammar Awareness) • Use simple sentences with proper intonation (pitch, juncture, and rhythm). (Grammar Awareness) • Sequence words to form telling (declarative) sentences. (Grammar Awareness) • Sequence words to form asking (interrogative) sentences. (Grammar Awareness) • Sequence words to form commanding and requesting (imperative) sentences. (Grammar Awareness) • Sequence words to form exclamatory sentences. (Grammar Awareness)",
+              "strand": "English - Second Term"
+            },
+            {
+              "subject_id": "filipino",
+              "subject_name": "Filipino",
+              "week": 4,
+              "competency": "Sugnay at Pagbasa nang May Tatas • Natutukoy ang sugnay na nakapag-iisa sa tambalang pangungusap. (Gramatika) • Natutukoy ang mga pananda sa teksto (hudyat ng pag-iisa-isa-paglalarawan; hudyat ng pagsusunod-sunod). (Gramatika) • Nababasa nang may tatas (may damdamin at tamang bilis) ang mga pangungusap. (Pag-unawa at Pagsusuri ng Teksto)",
+              "strand": "Filipino - Second Term"
+            },
+            {
+              "subject_id": "gmrc",
+              "subject_name": "GMRC",
+              "week": 4,
+              "competency": "Pagiging Totoo (Sincerity): Fokus: Pangangatuwiran at Paglalapat Naipakikita ang pagiging totoo sa pamamagitan ng wastong pakikipag-ugnayan sa bawat kasapi ng pamilya. • Napangangatuwiranan na ang wastong pakikipag-ugnayan sa bawat kasapi ng pamilya ay daan upang malinang ang pagmamahalan at pagkakaunawaan. • Nailalapat ang mga sariling paraan ng wastong pakikipag-ugnayan sa bawat kasapi ng pamilya.",
+              "strand": "GMRC - Second Term"
+            },
+            {
+              "subject_id": "makabansa",
+              "subject_name": "Makabansa",
+              "week": 4,
+              "competency": "Natatalakay ang kahalagahan ng himno bilang sagisag ng kinabibilangang komunidad.",
+              "strand": "Makabansa - Second Term"
+            },
+            {
+              "subject_id": "math",
+              "subject_name": "Mathematics",
+              "week": 4,
+              "competency": "Number and Algebra: • Estimate the sum of addends with up to 4 digits. (Week 4 to 5): • Solve problems involving addition of numbers with sums up to 10 000, including problems involving money.",
+              "strand": "Mathematics - Second Term"
+            },
+            {
+              "subject_id": "science",
+              "subject_name": "Science",
+              "week": 4,
+              "competency": "Characteristics of Living Things: (Continuation — see Week 3.) Same competencies apply; teachers may sequence across Weeks 3 to 4 based on learners' needs.",
+              "strand": "Science - Second Term"
+            }
+          ]
+        },
+        {
+          "week_number": 5,
+          "title": "Term 2 - Week 5",
+          "subjects": [
+            {
+              "subject_id": "english",
+              "subject_name": "English",
+              "week": 5,
+              "competency": "Sentence Parts and Capitalization • Identify the parts of telling (declarative) sentences. (Grammar Awareness) • Identify the parts of asking (interrogative) sentences. (Grammar Awareness) • Identify the parts of commanding and requesting (imperative) sentences. (Grammar Awareness) • Identify the parts of exclamatory sentences. (Grammar Awareness) • Use correct capitalization and punctuation for telling (declarative) sentences. (Grammar Awareness) • Use correct capitalization and punctuation for asking (interrogative) sentences. (Grammar Awareness)",
+              "strand": "English - Second Term"
+            },
+            {
+              "subject_id": "filipino",
+              "subject_name": "Filipino",
+              "week": 5,
+              "competency": "Elemento at Damdamin sa Kuwento • Naibibigay ang elemento ng teksto. (Pag-unawa at Pagsusuri ng Teksto) • Natutukoy ang damdamin ng tauhan sa mga pangyayari. (Pag-unawa at Pagsusuri ng Teksto) • Nakikilala ang katangian ng tauhan at tagpuan. (Pag-unawa at Pagsusuri ng Teksto) • Naibibigay ang suliranin at solusyon sa kuwento. (Pag-unawa at Pagsusuri ng Teksto)",
+              "strand": "Filipino - Second Term"
+            },
+            {
+              "subject_id": "gmrc",
+              "subject_name": "GMRC",
+              "week": 5,
+              "competency": "Pagkukusa (Initiative): Nakapagsasanay ng pagkukusa sa pamamagitan ng wastong pagtugon sa mga itinakdang gawain at iskedyul. • Natutukoy ang mga gawain na nagpapakita ng pagtupad sa mga gampanan at mga inaasahang kilos sa tahanan at paaralan. • Nasusuri na ang pagtupad sa mga gampanin at mga inaasahang kilos sa tahanan at paaralan ay lilinang ng mga gawi na makatutulong sa pagpapaunlad ng kaniyang mga kasanayan at ugnayan sa kapwa. • Nailalapat ang mga inaasahang kilos nang may pagkukusa sa tahanan at paaralan.",
+              "strand": "GMRC - Second Term"
+            },
+            {
+              "subject_id": "makabansa",
+              "subject_name": "Makabansa",
+              "week": 5,
+              "competency": "Natatalakay ang kahalagahan ng coat of arms at bayaning lokal bilang sagisag ng kinabibilangang komunidad.",
+              "strand": "Makabansa - Second Term"
+            },
+            {
+              "subject_id": "math",
+              "subject_name": "Mathematics",
+              "week": 5,
+              "competency": "Number and Algebra: (Continuation — see Week 4.) Solve problems involving addition of numbers with sums up to 10 000, including problems involving money. (Week 5 to 6): • Subtract numbers, where both numbers are less than 10 000, with and without regrouping.",
+              "strand": "Mathematics - Second Term"
+            },
+            {
+              "subject_id": "science",
+              "subject_name": "Science",
+              "week": 5,
+              "competency": "Basic Needs of Living Things (Week 5 to 7): • Identify the basic needs of all living things, such as air, food, water, and shelter. • Observe examples and explain how living things depend on one another and on the environment to meet their basic needs. • Recognize that there is a need to protect and conserve the environment for living things to survive.",
+              "strand": "Science - Second Term"
+            }
+          ]
+        },
+        {
+          "week_number": 6,
+          "title": "Term 2 - Week 6",
+          "subjects": [
+            {
+              "subject_id": "english",
+              "subject_name": "English",
+              "week": 6,
+              "competency": "Capitalization and Compound Sentences • Use correct capitalization and punctuation for commanding and requesting (imperative) sentences. (Grammar Awareness) • Use correct capitalization and punctuation for exclamatory sentences. (Grammar Awareness) • Identify the two independent clauses in a compound sentence. (Grammar Awareness) • Identify the joining word (coordinating conjunction) in a compound sentence. (Grammar Awareness) • Identify the doers and the actions in the two clauses of a compound sentence. (Grammar Awareness) • Use correct capitalization and punctuation in compound sentences. (Grammar Awareness)",
+              "strand": "English - Second Term"
+            },
+            {
+              "subject_id": "filipino",
+              "subject_name": "Filipino",
+              "week": 6,
+              "competency": "Pagsusuring Pangyayari sa Kuwento • Naisasaayos ang pagkakasunod-sunod ng anim na pangyayari. (Pag-unawa at Pagsusuri ng Teksto) • Naibibigay ang sanhi at bunga ng mga pangyayari. (Pag-unawa at Pagsusuri ng Teksto) • Naibibigay ang posibleng wakas ng kuwento. (Pag-unawa at Pagsusuri ng Teksto) • Nakabubuod ng teksto. (Pag-unawa at Pagsusuri ng Teksto)",
+              "strand": "Filipino - Second Term"
+            },
+            {
+              "subject_id": "gmrc",
+              "subject_name": "GMRC",
+              "week": 6,
+              "competency": "Pakikiisa (Cooperation): Naipakikita ang pakikiisa sa pamamagitan ng kusang pagtulong at paglalaan ng oras upang matupad ang mga gawaing panrelihiyon o paniniwala ng pamilya. • Nailalarawan ang mga sariling paraan ng pakikibahagi sa mga gawaing panrelihiyon o paniniwala ng pamilyang kinabibilangan. • Naipaliliwanag na ang pakikibahagi sa mga gawaing panrelihiyon o paniniwala ng pamilya ay lilinang ng mga kaugalian o gawi ng pakikipag-ugnayan sa Diyos. • Naisasakilos ang pagiging aktibo sa mga gawaing panrelihiyon o paniniwala ng pamilyang kinabibilangan.",
+              "strand": "GMRC - Second Term"
+            },
+            {
+              "subject_id": "makabansa",
+              "subject_name": "Makabansa",
+              "week": 6,
+              "competency": "Naiuugnay ang sining ng komunidad sa sariling pagkakakilanlan.",
+              "strand": "Makabansa - Second Term"
+            },
+            {
+              "subject_id": "math",
+              "subject_name": "Mathematics",
+              "week": 6,
+              "competency": "Number and Algebra: (Continuation — see Week 5.) Subtract numbers, where both numbers are less than 10 000, with and without regrouping. (Week 6 to 7): • Estimate the difference of two numbers of up to 4 digits. • Perform addition and subtraction of 3 to 4 numbers of up to 2 digits, observing correct order of operations.",
+              "strand": "Mathematics - Second Term"
+            },
+            {
+              "subject_id": "science",
+              "subject_name": "Science",
+              "week": 6,
+              "competency": "Basic Needs of Living Things: (Continuation — see Week 5.) Same competencies apply; teachers may sequence across Weeks 5 to 7 based on learners' needs.",
+              "strand": "Science - Second Term"
+            }
+          ]
+        },
+        {
+          "week_number": 7,
+          "title": "Term 2 - Week 7",
+          "subjects": [
+            {
+              "subject_id": "english",
+              "subject_name": "English",
+              "week": 7,
+              "competency": "Discourse Markers and Story Elements • Identify discourse markers used in time-order and procedural texts. (Grammar Awareness) • Identify discourse markers used in descriptive texts. (Grammar Awareness) • Identify discourse markers used in explanatory texts. (Grammar Awareness) • Read grade-level sentences with appropriate speed, accuracy, and expression. (Comprehending Texts) • Note important elements in a story (characters, setting, and events). (Comprehending Texts) • Sequence at least five events in a story. (Comprehending Texts)",
+              "strand": "English - Second Term"
+            },
+            {
+              "subject_id": "filipino",
+              "subject_name": "Filipino",
+              "week": 7,
+              "competency": "Koneksiyon at Detalyeng Tekstong Impormatibo • Naiuugnay ang sariling karanasan sa kuwento. (Pag-unawa at Pagsusuri ng Teksto) • Natutukoy ang nagsasalaysay sa teksto. (Pag-unawa at Pagsusuri ng Teksto) • Naibibigay ang mensahe ng teksto. (Pag-unawa at Pagsusuri ng Teksto) • Naibibigay ang lima hanggang anim na mahahalagang detalye sa tekstong impormatibo. (Pag-unawa at Pagsusuri ng Teksto)",
+              "strand": "Filipino - Second Term"
+            },
+            {
+              "subject_id": "gmrc",
+              "subject_name": "GMRC",
+              "week": 7,
+              "competency": "Mapagmalasakit (Compassion): Naipakikita ang pagiging mapagmalasakit sa pamamagitan ng pagpapalaganap ng mga mabuting kinagawian ng pamilya sa pangangalaga sa kalikasan sa iba't-ibang paraan. • Naiisa-isa ang mga gawi ng pamilya sa pangangalaga sa kalikasan. • Naipaliliwanag na ang mga gawi ng pamilya ay nakakaapekto sa sariling kaisipan at kilos sa pangangalaga ng kalikasan. • Nailalapat ang mga sariling kilos na nagpapakita ng mga gawi ng pamilya sa pangangalaga sa kalikasan.",
+              "strand": "GMRC - Second Term"
+            },
+            {
+              "subject_id": "makabansa",
+              "subject_name": "Makabansa",
+              "week": 7,
+              "competency": "Naiuugnay ang kultura ng komunidad sa sariling pagkakakilanlan.",
+              "strand": "Makabansa - Second Term"
+            },
+            {
+              "subject_id": "math",
+              "subject_name": "Mathematics",
+              "week": 7,
+              "competency": "Number and Algebra: (Continuation — see Week 6.) Estimate the difference of two numbers of up to 4 digits; perform addition and subtraction of 3 to 4 numbers of up to 2 digits, observing correct order of operations.",
+              "strand": "Mathematics - Second Term"
+            },
+            {
+              "subject_id": "science",
+              "subject_name": "Science",
+              "week": 7,
+              "competency": "Basic Needs of Living Things: (Continuation — see Week 5.) Same competencies apply; teachers may sequence across Weeks 5 to 7 based on learners' needs.",
+              "strand": "Science - Second Term"
+            }
+          ]
+        },
+        {
+          "week_number": 8,
+          "title": "Term 2 - Week 8",
+          "subjects": [
+            {
+              "subject_id": "english",
+              "subject_name": "English",
+              "week": 8,
+              "competency": "Analyzing Stories • Identify the problem and solution presented in a story. (Comprehending Texts) • Infer a character's feelings and traits based on story details. (Comprehending Texts) • Relate story events to one's own experience. (Comprehending Texts) • Identify the cause and effect of events in a story. (Comprehending Texts) • Predict a possible ending for a story being read or heard. (Comprehending Texts) • Give a summary of a story read or heard. (Comprehending Texts)",
+              "strand": "English - Second Term"
+            },
+            {
+              "subject_id": "filipino",
+              "subject_name": "Filipino",
+              "week": 8,
+              "competency": "Suliranin at Impormasyon sa Tekstong Impormatibo • Natutukoy ang suliranin at solusyon sa tekstong impormatibo. (Pag-unawa at Pagsusuri ng Teksto) • Natutukoy ang naglalahad sa teksto. (Pag-unawa at Pagsusuri ng Teksto) • Naibibigay ang mahahalagang impormasyon (paksa, pangunahing idea, sumusuportang detalye). (Pag-unawa at Pagsusuri ng Teksto) • Naibibigay ang nais ipabatid ng awtor. (Pag-unawa at Pagsusuri ng Teksto)",
+              "strand": "Filipino - Second Term"
+            },
+            {
+              "subject_id": "gmrc",
+              "subject_name": "GMRC",
+              "week": 8,
+              "competency": "Pagiging Masunurin (Obedience): Fokus: Batayang Kaalaman Naipakikita ang pagiging masunurin sa pamamagitan ng pagbabahagi ng mga sariling karanasan sa pagtalima sa mga mabuting kaugalian ng pamilyang Pilipino sa rehiyong kinabibilangan. • Nakakikilala ng mga mabuting kaugalian ng pamilyang Pilipino sa rehiyong kinabibilangan.",
+              "strand": "GMRC - Second Term"
+            },
+            {
+              "subject_id": "makabansa",
+              "subject_name": "Makabansa",
+              "week": 8,
+              "competency": "Nakagagawa ng likhang-sining na nagpapakita ng pagkakakilanlang kultural.",
+              "strand": "Makabansa - Second Term"
+            },
+            {
+              "subject_id": "math",
+              "subject_name": "Mathematics",
+              "week": 8,
+              "competency": "Number and Algebra: • Solve problems involving addition and subtraction with 3 to 4 numbers of up to 2 digits, including problems involving money. Data and Probability: • Collect data from experiments with a small number of possible outcomes (e.g., rolling a die or tossing a coin).",
+              "strand": "Mathematics - Second Term"
+            },
+            {
+              "subject_id": "science",
+              "subject_name": "Science",
+              "week": 8,
+              "competency": "Exploring and Questioning (Week 8 to 10): • Explore and demonstrate different ways to make objects move by natural causes, such as wind and water, or by people, such as pushing, pulling, rolling, and carrying. • Explore and describe things that affect the movement of objects, including size, shape, heaviness, material, and surface texture.",
+              "strand": "Science - Second Term"
+            }
+          ]
+        },
+        {
+          "week_number": 9,
+          "title": "Term 2 - Week 9",
+          "subjects": [
+            {
+              "subject_id": "english",
+              "subject_name": "English",
+              "week": 9,
+              "competency": "Informational Texts and Conclusions • Note at least five significant details in a grade-level informational text. (Comprehending Texts) • Identify the problem and solution presented in an informational text. (Comprehending Texts) • Identify time-order and procedural text types. (Comprehending Texts) • Identify descriptive text types. (Comprehending Texts) • Identify explanatory text types. (Comprehending Texts) • Draw conclusions based on a text read or heard. (Comprehending Texts)",
+              "strand": "English - Second Term"
+            },
+            {
+              "subject_id": "filipino",
+              "subject_name": "Filipino",
+              "week": 9,
+              "competency": "Organisasyon, Konklusyon, at Simulang Pagsulat • Natutukoy ang huwaran ng organisasyon ng tekstong impormatibo (pag-iisa-isa-paglalarawan; pagsusunod-sunod). (Pag-unawa at Pagsusuri ng Teksto) • Naibibigay ang kongklusyon ng tekstong impormatibo. (Pag-unawa at Pagsusuri ng Teksto) • Naibibigay ang mensahe ng tekstong impormatibo. (Pag-unawa at Pagsusuri ng Teksto) • Nagagamit ang magagalang na pananalita sa pagbati at ekspresyon sa iba't ibang sitwasyon (wikang ginagamit sa pakikipag-usap sa paaralan). (Pagbuo ng Teksto)",
+              "strand": "Filipino - Second Term"
+            },
+            {
+              "subject_id": "gmrc",
+              "subject_name": "GMRC",
+              "week": 9,
+              "competency": "Pagiging Masunurin (Obedience): Fokus: Pangangatuwiran at Paglalapat Naipakikita ang pagiging masunurin sa pamamagitan ng pagbabahagi ng mga sariling karanasan sa pagtalima sa mga mabuting kaugalian ng pamilyang Pilipino sa rehiyong kinabibilangan. • Napangangatuwiranan na ang mga mabuting kaugalian ng pamilyang Pilipino sa rehiyong kinabibilangan ay kailangang panatiliin. • Naisasakilos ang mga paraan ng pagsunod sa mga mabuting kaugalian ng pamilyang Pilipino sa rehiyong kinabibilangan (hal. malapit na ugnayan, paggalang sa matatanda, at pagtutulungan).",
+              "strand": "GMRC - Second Term"
+            },
+            {
+              "subject_id": "makabansa",
+              "subject_name": "Makabansa",
+              "week": 9,
+              "competency": "Napahahalagahan ang sining at kultura ng bayan o lungsod na kinabibilangan.",
+              "strand": "Makabansa - Second Term"
+            },
+            {
+              "subject_id": "math",
+              "subject_name": "Mathematics",
+              "week": 9,
+              "competency": "Data and Probability: • Present data in tables and single bar graphs (horizontal and vertical). • Interpret data in tables and single bar graphs (horizontal and vertical).",
+              "strand": "Mathematics - Second Term"
+            },
+            {
+              "subject_id": "science",
+              "subject_name": "Science",
+              "week": 9,
+              "competency": "Exploring and Questioning: (Continuation — see Week 8.) Same competencies apply; teachers may sequence across Weeks 8 to 10 based on learners' needs.",
+              "strand": "Science - Second Term"
+            }
+          ]
+        },
+        {
+          "week_number": 10,
+          "title": "Term 2 - Week 10",
+          "subjects": [
+            {
+              "subject_id": "english",
+              "subject_name": "English",
+              "week": 10,
+              "competency": "Expressing Ideas Through Speaking and Writing • Use common expressions and polite greetings appropriate to a given situation. (Creating and Composing Texts) • Retell myths, legends, fables, and narrative poems using own words. (Creating and Composing Texts) • Express ideas about one's own experiences involving regional themes. (Creating and Composing Texts) • Express ideas about content-specific topics. (Creating and Composing Texts) • Use basic sight words, high-frequency words, and content-specific words in composing. (Creating and Composing Texts) • Compose a text reacting to the character, setting, or events in a story. (Creating and Composing Texts)",
+              "strand": "English - Second Term"
+            },
+            {
+              "subject_id": "filipino",
+              "subject_name": "Filipino",
+              "week": 10,
+              "competency": "Pagbuo ng Maikling Talata • Nagagamit ang mga salitang high frequency at mga salitang may tiyak na tuong pangnilalaman (GMRC at MAKABANSA) sa pagbuo ng maikling talata. (Pagbuo ng Teksto) • Nakabubuo ng maikling talata gamit ang tambalang pangungusap na naglalarawan ng karanasan tungkol sa sarili at bansa. (Pagbuo ng Teksto) • Nakabubuo ng maikling talata gamit ang tambalang pangungusap na naglalarawan ng karanasan tungkol sa tiyak na paksang may tuon sa nilalaman. (Pagbuo ng Teksto) • Nakabubuo ng maikling talata sa pagpapahayag ng reaksiyon sa mga suliranin sa teksto. (Pagbuo ng Teksto)",
+              "strand": "Filipino - Second Term"
+            },
+            {
+              "subject_id": "gmrc",
+              "subject_name": "GMRC",
+              "week": 10,
+              "competency": "Mapagmalasakit (Compassion): Naipakikita ang pagiging mapagmalasakit sa pamamagitan ng kahandaan na mag-alok at magbigay ng angkop na pagtulong sa pangangailangan ng ibang tao. • Natutukoy ang mga sariling kakayahan na makakatulong sa kapwa. • Napangangatuwiranan na ang kahandaan na mag-alok at magbigay ng tulong ayon sa sariling kakayahan sa kapwa ay lilinang ng pagmamalasakit dito. • Naisasakilos ang mga sariling paraan ng pagtulong sa kapwa sa iba't ibang sitwasyon (hal. pagbabahagi ng gamit/pagkain, pag-alalay sa maysakit o nasaktan).",
+              "strand": "GMRC - Second Term"
+            },
+            {
+              "subject_id": "makabansa",
+              "subject_name": "Makabansa",
+              "week": 10,
+              "competency": "Napahahalagahan ang sining at kultura ng lalawigan na kinabibilangan.",
+              "strand": "Makabansa - Second Term"
+            },
+            {
+              "subject_id": "math",
+              "subject_name": "Mathematics",
+              "week": 10,
+              "competency": "Data and Probability: • Solve problems using data presented in a single bar graph (horizontal and vertical). • Describe and compare outcomes in real-life situations using the following terms: equally likely, less/least likely, more/most likely, certain, and impossible.",
+              "strand": "Mathematics - Second Term"
+            },
+            {
+              "subject_id": "science",
+              "subject_name": "Science",
+              "week": 10,
+              "competency": "Exploring and Questioning: (Continuation — see Week 8.) Same competencies apply; teachers may sequence across Weeks 8 to 10 based on learners' needs.",
+              "strand": "Science - Second Term"
+            }
+          ]
+        },
+        {
+          "week_number": 11,
+          "title": "Term 2 - Week 11",
+          "subjects": [
+            {
+              "subject_id": "english",
+              "subject_name": "English",
+              "week": 11,
+              "competency": "Composing and Reacting to Texts • Compose a text reacting to a given topic. (Creating and Composing Texts) • Make a summary of a narrative text. (Creating and Composing Texts) • Express ideas using time-order and procedural text types. (Creating and Composing Texts) • Express ideas using descriptive text types. (Creating and Composing Texts) • Express ideas using explanatory text types. (Creating and Composing Texts)",
+              "strand": "English - Second Term"
+            },
+            {
+              "subject_id": "filipino",
+              "subject_name": "Filipino",
+              "week": 11,
+              "competency": "Reaksiyon, Buod, at Organisasyon ng Idea • Nakabubuo ng maikling talata sa pagpapahayag ng reaksiyon sa paksa, pangunahing idea at sumusuportang detalye sa teksto. (Pagbuo ng Teksto) • Nakabubuod ng tekstong naratibo. (Pagbuo ng Teksto) • Nakapagpapahayag ng idea batay sa huwaran ng organisasyon ng tekstong impormatibo (pag-iisa-isa-paglalarawan; pagsusunod-sunod). (Pagbuo ng Teksto)",
+              "strand": "Filipino - Second Term"
+            },
+            {
+              "subject_id": "gmrc",
+              "subject_name": "GMRC",
+              "week": 11,
+              "competency": "Paggalang (Respect): Naipakikita ang pagiging magalang sa mga taong may kapansanan o Persons with Disability (PWD) o iba pang may natatanging kondisyon sa pamamagitan ng wastong pakikipag-ugnayan. • Naiisa-isa ang mga paraan ng pakikipag-ugnayan sa mga taong may kapansanan o PWD o iba pang may natatanging kondisyon. • Napatutunayan na ang sariling pagkilala sa mga taong may kapansanan o PWD o iba pang may natatanging kondisyon ay nagsusulong ng paggalang at pagtanggap tungo sa payapang pakikipagkapuwa. • Nakapagmumungkahi ng mga wastong paraan ng pakikipag-ugnayan batay sa kalagayan ng mga taong may kapansanan o PWD o iba pang may natatanging kondisyon.",
+              "strand": "GMRC - Second Term"
+            },
+            {
+              "subject_id": "makabansa",
+              "subject_name": "Makabansa",
+              "week": 11,
+              "competency": "Napahahalagahan ang sining at kultura ng rehiyon na kinabibilangan.",
+              "strand": "Makabansa - Second Term"
+            },
+            {
+              "subject_id": "math",
+              "subject_name": "Mathematics",
+              "week": 11,
+              "competency": "No Week 11 entry in the source BOW — Mathematics, Second Term competencies end at Week 10.",
+              "strand": "Mathematics - Second Term"
+            },
+            {
+              "subject_id": "science",
+              "subject_name": "Science",
+              "week": 11,
+              "competency": "Moving Objects: • Measure and describe changes in the position of people or objects in relation to their original position, such as moving closer, farther, left, or right.",
+              "strand": "Science - Second Term"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "term_number": 3,
+      "title": "Third Term (Term 3)",
+      "theme": "Active Citizenship, Energy, Division, Fractions, and Celestial Wonders",
+      "weeks": [
+        {
+          "week_number": 1,
+          "title": "Term 3 - Week 1",
+          "subjects": [
+            {
+              "subject_id": "english",
+              "subject_name": "English",
+              "week": 1,
+              "competency": "Identify Grade 3 level-appropriate sight words. • Identify high-frequency words accurately. • Use vocabulary referring to national themes. • Use vocabulary referring to content-specific topics. • Use content-specific words for Mathematics (basic symbols and terminologies).",
+              "strand": "English Literacy and Communication"
+            },
+            {
+              "subject_id": "filipino",
+              "subject_name": "Filipino",
+              "week": 1,
+              "competency": "Natutukoy ang sight words na kabilang sa Filipino. • Natutukoy nang wasto ang mga salitang madalas gamitin o high frequency words. • Nagagamit ang mga salitang high frequency tungkol sa sarili at bansa, at tiyak na paksang may tuon sa nilalaman. • Nagagamit ang mga salitang may tiyak na tuong pangnilalaman (GMRC at MAKABANSA).",
+              "strand": "Wikang Filipino at Pagbasa"
+            },
+            {
+              "subject_id": "gmrc",
+              "subject_name": "GMRC",
+              "week": 1,
+              "competency": "Nakapagsasanay sa pagiging madasalin sa pamamagitan ng paglalaan ng panahon o oras para sa pananalangin sa kapwa Fokus: Batayang Kaalaman ● Nailalarawan ang iba't ibang paraan ng pananalangin para sa kapwa",
+              "title": "Madasalin (Prayerful)",
+              "strand": "Edukasyon sa Pagpapakatao / GMRC"
+            },
+            {
+              "subject_id": "makabansa",
+              "subject_name": "Makabansa",
+              "week": 1,
+              "competency": "Naipaliliwanag ang konsepto at mga kaugnay na kaisipan ng pagka-Pilipino.",
+              "strand": "Tayo Bilang Aktibong Pilipino"
+            },
+            {
+              "subject_id": "math",
+              "subject_name": "Mathematics",
+              "week": 1,
+              "competency": "Multiply numbers using the 6, 7, 8, and 9 multiplication tables accurately and automatically.",
+              "strand": "Multiplication, Division, Fractions, and Geometry"
+            },
+            {
+              "subject_id": "science",
+              "subject_name": "Science",
+              "week": 1,
+              "competency": "Explore and describe how sound is produced and transferred in everyday situations (ringing bells, voices, vibrating objects).",
+              "strand": "Light, Sound, Earth Materials, Weather, and Sky"
+            }
+          ]
+        },
+        {
+          "week_number": 2,
+          "title": "Term 3 - Week 2",
+          "subjects": [
+            {
+              "subject_id": "english",
+              "subject_name": "English",
+              "week": 2,
+              "competency": "Use content-specific words for Science (basic terminologies). • Identify words that label actions (verbs). • Identify words that describe persons, places, things, animals, events, ideas, and emotions (adjectives). • Identify and use personal pronouns. • Identify the synonyms and antonyms of words.",
+              "strand": "English Literacy and Communication"
+            },
+            {
+              "subject_id": "filipino",
+              "subject_name": "Filipino",
+              "week": 2,
+              "competency": "Natutukoy ang kahulugan ng mga salitang tumutukoy sa ngalan ng tao, bagay, hayop, lugar, at pangyayari (dinaglat). • Natutukoy ang kahulugan ng salitang naglalarawan sa paraan, panahon, at pinangyarihan ng kilos. • Natutukoy ang kahulugan ng salitang pangkayarian (pangatnig, pang-angkop, at pang-ukol). • Nababasa nang wasto ang mga natutuhang salita.",
+              "strand": "Wikang Filipino at Pagbasa"
+            },
+            {
+              "subject_id": "gmrc",
+              "subject_name": "GMRC",
+              "week": 2,
+              "competency": "Nakapagsasanay sa pagiging madasalin sa pamamagitan ng paglalaan ng panahon o oras para sa pananalangin sa kapwa Fokus: Pag-unawa at Pagpapahayag ● Naipaliliwanag na ang paghahandog ng panalangin sa kapwa ay pagpapaunlad ng pananampalataya ● Naipahahayag ang mga panalangin para sa iba't ibang tao batay sa kanilang pangangailangan o sitwasyon",
+              "title": "Madasalin (Prayerful)",
+              "strand": "Edukasyon sa Pagpapakatao / GMRC"
+            },
+            {
+              "subject_id": "makabansa",
+              "subject_name": "Makabansa",
+              "week": 2,
+              "competency": "Nailalarawan ang pamumuhay ng kinabibilangang komunidad bilang bahagi ng pagka-Pilipino.",
+              "strand": "Tayo Bilang Aktibong Pilipino"
+            },
+            {
+              "subject_id": "math",
+              "subject_name": "Mathematics",
+              "week": 2,
+              "competency": "Illustrate and apply properties of multiplication for the 6, 7, 8, and 9 tables (Identity, Zero, Commutative, Associative, and Distributive properties).",
+              "strand": "Multiplication, Division, Fractions, and Geometry"
+            },
+            {
+              "subject_id": "science",
+              "subject_name": "Science",
+              "week": 2,
+              "competency": "Describe natural and artificial sources of light and their uses in everyday situations.",
+              "strand": "Light, Sound, Earth Materials, Weather, and Sky"
+            }
+          ]
+        },
+        {
+          "week_number": 3,
+          "title": "Term 3 - Week 3",
+          "subjects": [
+            {
+              "subject_id": "english",
+              "subject_name": "English",
+              "week": 3,
+              "competency": "Read words correctly for meaning based on word patterns. • Write words legibly and correctly based on word patterns. • Identify roots of high-frequency words (nouns, verbs, and adjectives). • Identify sentences and non-sentences. • Use simple sentences to express ideas about national themes and content-specific topics.",
+              "strand": "English Literacy and Communication"
+            },
+            {
+              "subject_id": "filipino",
+              "subject_name": "Filipino",
+              "week": 3,
+              "competency": "Naisusulat nang maayos at wasto ang mga natutuhang salita. • Natutukoy ang salitang-ugat ng mga natutuhang salitang high frequency o madalas gamitin. • Nakikilala ang kahulugan ng mga salita (denotasyon at konotasyon).",
+              "strand": "Wikang Filipino at Pagbasa"
+            },
+            {
+              "subject_id": "gmrc",
+              "subject_name": "GMRC",
+              "week": 3,
+              "competency": "Nakapagsasanay sa pagiging masinop sa pamamagitan ng paglikha ng mga gamit mula sa mga bagay na hindi na nagagamit ● Naiisa-isa ang mga paraan ng pamamahala sa mga bagay na hindi na nagagamit sa tulong ng kapwa ● Napatutunayan na ang pamamahala sa mga bagay na hindi na nagagamit sa tulong ng kapwa ay simpleng paraan sa pagsisinop ng mga biyaya ng kalikasan ● Nakalalahok sa mga gawain sa tahanan o paaralan na nagtataguyod ng 4Rs sa tulong ng kapwa (Refuse, Reduce, Reuse, Recycle)",
+              "title": "Masinop (Prudent)",
+              "strand": "Edukasyon sa Pagpapakatao / GMRC"
+            },
+            {
+              "subject_id": "makabansa",
+              "subject_name": "Makabansa",
+              "week": 3,
+              "competency": "Nailalarawan ang mga serbisyo ng kinabibilangang komunidad bilang bahagi ng pagka-Pilipino.",
+              "strand": "Tayo Bilang Aktibong Pilipino"
+            },
+            {
+              "subject_id": "math",
+              "subject_name": "Mathematics",
+              "week": 3,
+              "competency": "Multiply 2- to 3-digit numbers by 1-digit numbers with and without regrouping, and 2- to 4-digit numbers with products up to 10 000. Estimate products using multiples of 10.",
+              "strand": "Multiplication, Division, Fractions, and Geometry"
+            },
+            {
+              "subject_id": "science",
+              "subject_name": "Science",
+              "week": 3,
+              "competency": "Participate in guided science activities to explore how light behaves (shadows, reflection, passing through transparent/translucent/opaque materials).",
+              "strand": "Light, Sound, Earth Materials, Weather, and Sky"
+            }
+          ]
+        },
+        {
+          "week_number": 4,
+          "title": "Term 3 - Week 4",
+          "subjects": [
+            {
+              "subject_id": "english",
+              "subject_name": "English",
+              "week": 4,
+              "competency": "Use simple sentences with proper intonation (pitch, juncture, and rhythm). • Sequence words to form telling (declarative) sentences. • Sequence words to form asking (interrogative) sentences. • Sequence words to form commanding and requesting (imperative) sentences. • Sequence words to form exclamatory sentences. • Identify the parts of telling (declarative) sentences.",
+              "strand": "English Literacy and Communication"
+            },
+            {
+              "subject_id": "filipino",
+              "subject_name": "Filipino",
+              "week": 4,
+              "competency": "Natutukoy ang hugnayang pangungusap batay sa mga panandang nag-uugnay sa sugnay na nakapag-iisa. • Natutukoy ang mga pananda sa teksto (hudyat ng pag-iisa-isa-paglalarawan; hudyat ng pagsusunod-sunod; pagpapaliwanag). • Nababasa nang may tatas (may damdamin at tamang bilis) ang mga pangungusap.",
+              "strand": "Wikang Filipino at Pagbasa"
+            },
+            {
+              "subject_id": "gmrc",
+              "subject_name": "GMRC",
+              "week": 4,
+              "competency": "Naipakikita ang pagmamahal sa bayan sa pamamagitan ng mga angkop na kilos upang maipaunawa sa kapuwa ang kahalagahan ng sagisag ng bansa ● Natutukoy ang mga paraan ng panghihikayat sa kapuwa na igalang ang mga sagisag ng bansa ● Napangangatuwiranan na ang paghikayat sa kapuwa na igalang ang mga sagisag ng bansa ay pagkilala sa pambansang adhikain, tradisyon at pagkakaisa ng mga Pilipino ● Naipahahayag ang panghihikayat sa kapuwa na igalang ang mga sagisag na nagtataguyod ng pagmamahal sa bayan",
+              "title": "Pagmamahal sa Bayan (Love of Country)",
+              "strand": "Edukasyon sa Pagpapakatao / GMRC"
+            },
+            {
+              "subject_id": "makabansa",
+              "subject_name": "Makabansa",
+              "week": 4,
+              "competency": "Napahahalagahan ang pagkakakilanlan bilang isang Pilipino.",
+              "strand": "Tayo Bilang Aktibong Pilipino"
+            },
+            {
+              "subject_id": "math",
+              "subject_name": "Mathematics",
+              "week": 4,
+              "competency": "Solve 1- to 2-step multiplication word problems involving whole numbers and money. Determine missing terms in repeating and increasing/decreasing patterns.",
+              "strand": "Multiplication, Division, Fractions, and Geometry"
+            },
+            {
+              "subject_id": "science",
+              "subject_name": "Science",
+              "week": 4,
+              "competency": "Explain how excessive light and loud sounds can be harmful to people and suggest safety measures to protect eyes and ears.",
+              "strand": "Light, Sound, Earth Materials, Weather, and Sky"
+            }
+          ]
+        },
+        {
+          "week_number": 5,
+          "title": "Term 3 - Week 5",
+          "subjects": [
+            {
+              "subject_id": "english",
+              "subject_name": "English",
+              "week": 5,
+              "competency": "Identify the parts of asking (interrogative) sentences. • Identify the parts of commanding and requesting (imperative) sentences. • Identify the parts of exclamatory sentences. • Use correct capitalization and punctuation for telling (declarative) sentences. • Use correct capitalization and punctuation for asking (interrogative) sentences. • Use correct capitalization and punctuation for commanding and requesting (imperative) sentences.",
+              "strand": "English Literacy and Communication"
+            },
+            {
+              "subject_id": "filipino",
+              "subject_name": "Filipino",
+              "week": 5,
+              "competency": "Naibibigay ang elemento ng teksto. • Natutukoy ang damdamin ng tauhan sa mga pangyayari. • Nakikilala ang katangian ng tauhan. • Naibibigay ang suliranin at solusyon sa kuwento.",
+              "strand": "Wikang Filipino at Pagbasa"
+            },
+            {
+              "subject_id": "gmrc",
+              "subject_name": "GMRC",
+              "week": 5,
+              "competency": "Naipakikita ang pakikiisa sa pamamagitan ng paglahok sa mga gawain alinsunod sa mga alituntunin sa barangay na kinabibilangan Fokus: Batayang Kaalaman ● Natutukoy ang mga alituntunin sa barangay na kinabibilangan",
+              "title": "Pakikiisa (Cooperation)",
+              "strand": "Edukasyon sa Pagpapakatao / GMRC"
+            },
+            {
+              "subject_id": "makabansa",
+              "subject_name": "Makabansa",
+              "week": 5,
+              "competency": "Natutukoy ang papel ng pagiging aktibong Pilipino sa tahanan.",
+              "strand": "Tayo Bilang Aktibong Pilipino"
+            },
+            {
+              "subject_id": "math",
+              "subject_name": "Mathematics",
+              "week": 5,
+              "competency": "Illustrate division through equal jumps on the number line, sharing, grouping, and as the inverse operation of multiplication.",
+              "strand": "Multiplication, Division, Fractions, and Geometry"
+            },
+            {
+              "subject_id": "science",
+              "subject_name": "Science",
+              "week": 5,
+              "competency": "Participate in guided activities to explore ways to use movement, sound, and light to communicate or send signals between two people.",
+              "strand": "Light, Sound, Earth Materials, Weather, and Sky"
+            }
+          ]
+        },
+        {
+          "week_number": 6,
+          "title": "Term 3 - Week 6",
+          "subjects": [
+            {
+              "subject_id": "english",
+              "subject_name": "English",
+              "week": 6,
+              "competency": "Use correct capitalization and punctuation for exclamatory sentences. • Identify the two independent clauses in a compound sentence. • Identify the joining word (coordinating conjunction) in a compound sentence. • Identify the doers and the actions in the two clauses of a compound sentence. • Use correct capitalization and punctuation in compound sentences. • Identify discourse markers used in time-order and procedural texts.",
+              "strand": "English Literacy and Communication"
+            },
+            {
+              "subject_id": "filipino",
+              "subject_name": "Filipino",
+              "week": 6,
+              "competency": "Naisasaayos ang pagkakasunod-sunod ng anim hanggang pitong pangyayari. • Naibibigay ang sanhi at bunga ng mga pangyayari. • Naibibigay ang posibleng wakas ng kuwento. • Nakabubuod ng teksto.",
+              "strand": "Wikang Filipino at Pagbasa"
+            },
+            {
+              "subject_id": "gmrc",
+              "subject_name": "GMRC",
+              "week": 6,
+              "competency": "Naipakikita ang pakikiisa sa pamamagitan ng paglahok sa mga gawain alinsunod sa mga alituntunin sa barangay na kinabibilangan Fokus: Pag-unawa at Pagpili ● Naipaliliwanag na ang mga alituntunin sa barangay na kinabibilangan ay mahalagang sundin upang mapanatili ang kaligtasan, kaayusan at katahimikan ng mga mamamayan ● Nakapipili ng mga tiyak na alituntunin sa barangay na kinabibilangan na itataguyod sa sariling paraan",
+              "title": "Pakikiisa (Cooperation)",
+              "strand": "Edukasyon sa Pagpapakatao / GMRC"
+            },
+            {
+              "subject_id": "makabansa",
+              "subject_name": "Makabansa",
+              "week": 6,
+              "competency": "Natutukoy ang papel ng pagiging aktibong Pilipino sa paaralan at pamayanan.",
+              "strand": "Tayo Bilang Aktibong Pilipino"
+            },
+            {
+              "subject_id": "math",
+              "subject_name": "Mathematics",
+              "week": 6,
+              "competency": "Divide numbers using the 6, 7, 8, and 9 multiplication tables. Find the missing number in number sentences involving multiplication and division.",
+              "strand": "Multiplication, Division, Fractions, and Geometry"
+            },
+            {
+              "subject_id": "science",
+              "subject_name": "Science",
+              "week": 6,
+              "competency": "Locate and describe different types of non-living things found in and around school and community (rocks, soil, water, air, metals, sunlight).",
+              "strand": "Light, Sound, Earth Materials, Weather, and Sky"
+            }
+          ]
+        },
+        {
+          "week_number": 7,
+          "title": "Term 3 - Week 7",
+          "subjects": [
+            {
+              "subject_id": "english",
+              "subject_name": "English",
+              "week": 7,
+              "competency": "Identify discourse markers used in descriptive texts. • Identify discourse markers used in explanatory texts. • Read grade-level sentences with appropriate speed, accuracy, and expression. • Note important elements in a story (characters, setting, and events). • Sequence at least five events in a story.",
+              "strand": "English Literacy and Communication"
+            },
+            {
+              "subject_id": "filipino",
+              "subject_name": "Filipino",
+              "week": 7,
+              "competency": "Naiuugnay ang sariling karanasan sa kuwento. • Natutukoy ang nagsasalaysay sa teksto. • Naibibigay ang mensahe ng teksto. • Naibibigay ang anim na mahahalagang detalye sa tekstong impormatibo.",
+              "strand": "Wikang Filipino at Pagbasa"
+            },
+            {
+              "subject_id": "gmrc",
+              "subject_name": "GMRC",
+              "week": 7,
+              "competency": "Nakapagsasanay sa pagiging responsable sa pamamagitan ng panghihikayat sa kapuwa-bata na gampanan ang mga tungkulin bilang kasapi ng barangay na kinabibilangan ● Naiisa-isa ang tungkulin ng mga taong nakatira sa barangay ● Naipaliliwanag na ang mga tungkulin ng mga taong nakatira sa barangay ay kailangang gampanan ng lahat bilang pagtataguyod ng kanilang kabutihan ● Nailalapat ang mga paraan ng pagsunod sa mga tungkulin sa kinabibilangang barangay bilang kasapi nito",
+              "title": "Responsable (Responsible)",
+              "strand": "Edukasyon sa Pagpapakatao / GMRC"
+            },
+            {
+              "subject_id": "makabansa",
+              "subject_name": "Makabansa",
+              "week": 7,
+              "competency": "Napahahalagahan ang papel ng pagiging aktibong Pilipino sa tahanan.",
+              "strand": "Tayo Bilang Aktibong Pilipino"
+            },
+            {
+              "subject_id": "math",
+              "subject_name": "Mathematics",
+              "week": 7,
+              "competency": "Divide 2- to 3-digit numbers by 1-digit numbers with and without remainder, and divide 2- to 4-digit numbers by 10, 100, and 1 000.",
+              "strand": "Multiplication, Division, Fractions, and Geometry"
+            },
+            {
+              "subject_id": "science",
+              "subject_name": "Science",
+              "week": 7,
+              "competency": "Identify useful things made from non-living earth materials and recognize how materials are utilized to create tools, structures, and daily items.",
+              "strand": "Light, Sound, Earth Materials, Weather, and Sky"
+            }
+          ]
+        },
+        {
+          "week_number": 8,
+          "title": "Term 3 - Week 8",
+          "subjects": [
+            {
+              "subject_id": "english",
+              "subject_name": "English",
+              "week": 8,
+              "competency": "Identify the problem and solution presented in a story. • Infer a character's feelings and traits based on story details. • Relate story events to one's own experience. • Identify the cause and effect of events in a story. • Predict a possible ending for a story being read or heard. • Give a summary of a story read or heard.",
+              "strand": "English Literacy and Communication"
+            },
+            {
+              "subject_id": "filipino",
+              "subject_name": "Filipino",
+              "week": 8,
+              "competency": "Natutukoy ang suliranin at solusyon sa tekstong impormatibo. • Natutukoy ang naglalahad sa teksto. • Naibibigay ang mahahalagang impormasyon (paksa, pangunahing idea, sumusuportang detalye). • Naibibigay ang nais ipabatid ng awtor.",
+              "strand": "Wikang Filipino at Pagbasa"
+            },
+            {
+              "subject_id": "gmrc",
+              "subject_name": "GMRC",
+              "week": 8,
+              "competency": "Naipakikita ang pananampalataya sa pamamagitan ng pagtugon sa pangangailangan ng gawain ng relihiyon o paniniwala sa kinabibilangang pamayanan Fokus: Batayang Kaalaman ● Nakakikilala ng mga gawain ng relihiyon o paniniwala sa kinabibilangang pamayanan",
+              "title": "Pananampalataya (Faith)",
+              "strand": "Edukasyon sa Pagpapakatao / GMRC"
+            },
+            {
+              "subject_id": "makabansa",
+              "subject_name": "Makabansa",
+              "week": 8,
+              "competency": "Napahahalagahan ang papel ng pagiging aktibong Pilipino sa paaralan at pamayanan.",
+              "strand": "Tayo Bilang Aktibong Pilipino"
+            },
+            {
+              "subject_id": "math",
+              "subject_name": "Mathematics",
+              "week": 8,
+              "competency": "Estimate the quotient of 2- to 3-digit numbers divided by 1- to 2-digit numbers using multiples of 10 or 100. Solve 1- to 2-step division problems, including money.",
+              "strand": "Multiplication, Division, Fractions, and Geometry"
+            },
+            {
+              "subject_id": "science",
+              "subject_name": "Science",
+              "week": 8,
+              "competency": "Observe and record changes in weather conditions during a day or over several days, identifying sunny, cloudy, rainy, and windy patterns.",
+              "strand": "Light, Sound, Earth Materials, Weather, and Sky"
+            }
+          ]
+        },
+        {
+          "week_number": 9,
+          "title": "Term 3 - Week 9",
+          "subjects": [
+            {
+              "subject_id": "english",
+              "subject_name": "English",
+              "week": 9,
+              "competency": "Note at least five significant details in a grade-level informational text. • Identify the problem and solution presented in an informational text. • Identify time-order and procedural text types. • Identify descriptive text types. • Identify explanatory text types. • Draw conclusions based on a text read or heard.",
+              "strand": "English Literacy and Communication"
+            },
+            {
+              "subject_id": "filipino",
+              "subject_name": "Filipino",
+              "week": 9,
+              "competency": "Natutukoy ang huwaran ng organisasyon ng tekstong impormatibo (pag-iisa-isa-paglalarawan; pagsusunod-sunod; pagpapaliwanag). • Naibibigay ang kongklusyon ng tekstong impormatibo. • Naibibigay ang mensahe ng tekstong impormatibo. • Nagagamit ang magagalang na pananalita sa pagbati at ekspresyon sa iba't ibang sitwasyon (wikang ginagamit sa pakikipag-usap sa paaralan).",
+              "strand": "Wikang Filipino at Pagbasa"
+            },
+            {
+              "subject_id": "gmrc",
+              "subject_name": "GMRC",
+              "week": 9,
+              "competency": "Naipakikita ang pananampalataya sa pamamagitan ng pagtugon sa pangangailangan ng gawain ng relihiyon o paniniwala sa kinabibilangang pamayanan Fokus: Pagsusuri at Pagpili ● Nasusuri na ang pakikibahagi sa mga gawain ng relihiyon o paniniwala sa kinabibilangang pamayanan ay nakapagpapatibay ng ugnayan sa Diyos ● Nakapipili ng mga paraan ng pakikibahagi sa mga gawain ng relihiyon o paniniwala sa kinabibilangang pamayanan",
+              "title": "Pananampalataya (Faith)",
+              "strand": "Edukasyon sa Pagpapakatao / GMRC"
+            },
+            {
+              "subject_id": "makabansa",
+              "subject_name": "Makabansa",
+              "week": 9,
+              "competency": "Naipaliliwanag ang kahulugan at nilalaman ng Panatang Makabayan.",
+              "strand": "Tayo Bilang Aktibong Pilipino"
+            },
+            {
+              "subject_id": "math",
+              "subject_name": "Mathematics",
+              "week": 9,
+              "competency": "Represent fractions equal to one and greater than one using models. Add and subtract similar fractions using models.",
+              "strand": "Multiplication, Division, Fractions, and Geometry"
+            },
+            {
+              "subject_id": "science",
+              "subject_name": "Science",
+              "week": 9,
+              "competency": "Describe how weather changes affect daily activities, livelihood, health, and identify types of weather that can be dangerous (storms, intense heat).",
+              "strand": "Light, Sound, Earth Materials, Weather, and Sky"
+            }
+          ]
+        },
+        {
+          "week_number": 10,
+          "title": "Term 3 - Week 10",
+          "subjects": [
+            {
+              "subject_id": "english",
+              "subject_name": "English",
+              "week": 10,
+              "competency": "Use common expressions and polite greetings appropriate to a given situation. • Retell myths, legends, fables, and narrative poems using own words. • Express ideas about one's own experiences involving national themes. • Express ideas about content-specific topics. • Use basic sight words, high-frequency words, and content-specific words in composing. • Compose a text reacting to the character, setting, or events in a story.",
+              "strand": "English Literacy and Communication"
+            },
+            {
+              "subject_id": "filipino",
+              "subject_name": "Filipino",
+              "week": 10,
+              "competency": "Nagagamit ang mga salitang high frequency at mga salitang may tiyak na tuong pangnilalaman (GMRC at MAKABANSA) sa pagbuo ng maikling talata. • Nakabubuo ng maikling talata gamit ang tambalan at hugnayang pangungusap na naglalarawan ng karanasan tungkol sa sarili at bansa. • Nakabubuo ng maikling talata gamit ang tambalan at hugnayang pangungusap na naglalarawan ng karanasan tungkol sa tiyak na paksang may tuon sa nilalaman. • Nakabubuo ng maikling talata sa pagpapahayag ng reaksiyon sa mga tema at suliranin sa teksto.",
+              "strand": "Wikang Filipino at Pagbasa"
+            },
+            {
+              "subject_id": "gmrc",
+              "subject_name": "GMRC",
+              "week": 10,
+              "competency": "Nakapagsasanay sa pagiging mapagpamalasakit sa pamamagitan ng sariling paraan upang mapalinis ang hangin ● Nakakikilala ng mga paraan ng pakikiisa sa pamayanan upang mapanatili ang kalinisan ng hangin ● Napangangatuwiranan na ang pakikiisa sa pamayanan sa pagpapanatili ng malinis na hangin ay tungkulin ng bawat mamamayan ● Naisasakilos ang mga paraan ng pakikiisa sa pamayanan upang mapanatili ang kalinisan ng hangin (hal. pagtatanim ng halaman at puno, wastong pagtatapon ng basura)",
+              "title": "Mapagmalasakit (Compassion)",
+              "strand": "Edukasyon sa Pagpapakatao / GMRC"
+            },
+            {
+              "subject_id": "makabansa",
+              "subject_name": "Makabansa",
+              "week": 10,
+              "competency": "Naipamamalas ang pagiging isang aktibo at responsableng batang Pilipino sa pang-araw-araw na gawain.",
+              "strand": "Tayo Bilang Aktibong Pilipino"
+            },
+            {
+              "subject_id": "math",
+              "subject_name": "Mathematics",
+              "week": 10,
+              "competency": "Describe and draw the effect of a two-direction multi-step slide (translation) in basic shapes and figures. Identify symmetrical shapes and draw lines of symmetry.",
+              "strand": "Multiplication, Division, Fractions, and Geometry"
+            },
+            {
+              "subject_id": "science",
+              "subject_name": "Science",
+              "week": 10,
+              "competency": "Observe and describe natural objects seen in the daytime and nighttime sky (Sun, Moon, stars, planets) and their observable movements.",
+              "strand": "Light, Sound, Earth Materials, Weather, and Sky"
+            }
+          ]
+        },
+        {
+          "week_number": 11,
+          "title": "Term 3 - Week 11",
+          "subjects": [
+            {
+              "subject_id": "english",
+              "subject_name": "English",
+              "week": 11,
+              "competency": "Compose a text reacting to a given topic. • Make a summary of a narrative text. • Express ideas using time-order and procedural text types. • Express ideas using descriptive text types. • Express ideas using explanatory text types.",
+              "strand": "English Literacy and Communication"
+            },
+            {
+              "subject_id": "filipino",
+              "subject_name": "Filipino",
+              "week": 11,
+              "competency": "Nakabubuo ng maikling talata sa pagpapahayag ng reaksiyon sa paksa, pangunahing idea, sumusuportang detalye at suliranin sa teksto. • Nakabubuod ng tekstong naratibo. • Nakapagpapahayag ng idea batay sa huwaran ng organisasyon ng tekstong impormatibo (pag-iisa-isa-paglalarawan; pagsusunod-sunod).",
+              "strand": "Wikang Filipino at Pagbasa"
+            },
+            {
+              "subject_id": "gmrc",
+              "subject_name": "GMRC",
+              "week": 11,
+              "competency": "Naipakikita ang pagiging mapagpasalamat sa pamamagitan ng pagkilala sa mga kontribusyon ng mga makabagong bayani (Modern Day Heroes) sa bayan ● Nakapag-uugnay ng kahalagahan ng kontribusyon ng mga makabagong bayani (Modern Day Heroes) sa kasalukuyang panahon ● Naipaliliwanag na ang mga kontribusyon ng mga makabagong bayani (modern day heroes) ay dapat kilalanin bilang pagpupugay sa mga mabuting naidulot nila sa pamayanan na dapat tularan ng mamamayan ● Nakabubuo ng gawain na nagtatampok sa kabayanihan ng mga makabagong bayani (modern day heroes) (hal. pagsasadula, skit, role playing)",
+              "title": "Mapagpasalamat (Gratitude)",
+              "strand": "Edukasyon sa Pagpapakatao / GMRC"
+            },
+            {
+              "subject_id": "makabansa",
+              "subject_name": "Makabansa",
+              "week": 11,
+              "competency": "Naipamamalas ang pagsasakatuparan ng Panatang Makabayan sa pamamagitan ng isang malikhaing gawain.",
+              "strand": "Tayo Bilang Aktibong Pilipino"
+            },
+            {
+              "subject_id": "math",
+              "subject_name": "Mathematics",
+              "week": 11,
+              "competency": "Culminating Review & Performance Task: Comprehensive problem solving involving the four fundamental operations, fractions, and geometric patterns.",
+              "strand": "Multiplication, Division, Fractions, and Geometry"
+            },
+            {
+              "subject_id": "science",
+              "subject_name": "Science",
+              "week": 11,
+              "competency": "Culminating Science Inquiry: Explain how celestial objects affect daily activities, and demonstrate personal safety measures against the harmful effects of the Sun.",
+              "strand": "Light, Sound, Earth Materials, Weather, and Sky"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

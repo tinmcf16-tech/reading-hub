@@ -1,0 +1,402 @@
+﻿{
+    "t1":  [
+               [
+                   "WEEK",
+                   "LEARNING COMPETENCY"
+               ],
+               [
+                   "1",
+                   "Tiwala sa Sarili (Self-Confidence) — Fokus: Batayang Kaalaman Naipakikita ang tiwala sa sarili sa pamamagitan ng kawilihan na paunlarin ang kaniyang hilig at kakayahan. Naiisa-isa ang sariling hilig at kakayahan."
+               ],
+               [
+                   "2",
+                   "Tiwala sa Sarili (Self-Confidence) — Fokus: Pag-unawa at Paglalapat Napatutunayan na ang sariling hilig at kakayahan ay mahalaga upang makilala ang sarili bilang bata. Nailalapat ang sariling hilig at kakayahan tungo sa kakayahan sa pagpapatibay ng tiwala sa sarili."
+               ],
+               [
+                   "3",
+                   "Mapagmalasakit (Compassion) Naipakikita ang pagiging mapagmalasakit sa pamamagitan ng tamang paglalaan ng mga pera o gamit na angkop sa iba\u0027t ibang situwasyon. Nakakikilala ng mga paraan ng pagpapatatag ng mga gawi sa pag-iimpok at pagtitipid kasama ang pamilya. Napatutunayan na ito ay magpapaunlad ng sariling kasanayan na mapamahalaan ang mas malaking halaga ng pera o mga gamit sa kinabukasan. Naisasakilos ang mga paraan ng pagpapatatag ng mga gawi sa pag-iimpok at pagtitipid."
+               ],
+               [
+                   "4",
+                   "Responsable (Responsible) — Fokus: Batayang Kaalaman Naipakikita ang pagiging responsable sa pamamagitan ng wastong pagtupad sa kaniyang mga gampanin batay sa mga tagubilin ng magulang at nakatatanda. Natutukoy ang mga gawain ng isang bata sa tahanan at paaralan."
+               ],
+               [
+                   "5",
+                   "Responsable (Responsible) — Fokus: Pag-unawa at Pagbabahagi Napatutunayan na ang mga sariling gampanin ng bata sa tahanan at paaralan ay nakatutulong upang mahubog ang pagiging responsable sa kanilang gawain at kilos. Nakapagbabahagi ng mga karanasan sa pagtugon sa mga gampanin ng isang bata sa tahanan at paaralan."
+               ],
+               [
+                   "6",
+                   "Pananalig sa Diyos (Faith in God) Naipakikita ang pananalig sa Diyos sa pamamagitan ng pagsunod sa Kaniyang mga aral. Nakakikilala ng mga sariling pagkilos ng may paggalang sa Diyos. Naipaliliwanag na ito ay tanda ng pagkilala at pagmamahal sa Kaniya at nagdudulot ng pagkakaroon ng mabuting asal. Nailalapat ang mga pagkilos na nagpapakita ng paggalang sa Diyos."
+               ],
+               [
+                   "7",
+                   "Disiplina (Discipline) — Fokus: Batayang Kaalaman Naipakikita ang disiplina sa pamamagitan ng pakikiisa sa mga gawaing pangkapaligiran. Natutukoy ang mga pansariling gawain na nakabubuti sa kapaligiran."
+               ],
+               [
+                   "8",
+                   "Disiplina (Discipline) — Fokus: Pag-unawa at Paglalapat Naipaliliwanag na ang mga pansariling gawain na nakabubuti sa kapaligiran ay magdudulot ng ligtas, maayos, at malinis na pamayanan. Naisasakilos ang mga natukoy na mabuting magagawa ng bata sa kapaligiran."
+               ],
+               [
+                   "9",
+                   "Paggalang (Respect) Nakapagsasanay sa pagiging magalang sa pamamagitan ng wastong pakikitungo sa kapwa sa iba\u0027t ibang sitwasyon. Naiisa-isa ang mga pansariling karapatan na natatamasa ng isang bata sa pamayanan. Naipaliliwanag na ito ay nagtitiyak sa kaligtasan at matiwasay na pamumuhay ng bawat bata. Naisasakilos ang mga gawain na nagbibigay-halaga sa mga karapatang tinatamasa ng bawat bata."
+               ],
+               [
+                   "10",
+                   "Pakikiisa (Cooperation) — Fokus: Batayang Kaalaman Naipakikita ang pakikiisa sa pamamagitan ng pagtupad sa mga gawain sa loob ng tahanan na ayon sa kaniyang kakayahan. Natutukoy ang mga sariling paraan ng pakikilahok sa mga gawain sa loob ng tahanan."
+               ],
+               [
+                   "11",
+                   "Pakikiisa (Cooperation) — Fokus: Pag-unawa at Paglalapat Naipaliliwanag na ang sariling paraan ng pakikilahok sa mga gawain ng pamilya ay nakatutulong sa pagkakabuklod-buklod at pagpapatatag ng ugnayan ng bawat kasapi ng pamilya. Nailalapat ang mga sariling paraan ng pakikiisa sa mga gawain sa loob ng tahanan."
+               ],
+               [
+                   "WEEK",
+                   "LEARNING COMPETENCY"
+               ],
+               [
+                   "1",
+                   "Natatalakay ang mahahalagang tao, lugar, at pangyayari na bahagi ng kasaysayan ng barangay na kinabibilangan."
+               ],
+               [
+                   "2",
+                   "Natatalakay ang mahahalagang tao, lugar, at pangyayari na bahagi ng kasaysayan ng bayan o lungsod na kinabibilangan."
+               ],
+               [
+                   "3",
+                   "Natatalakay ang mahahalagang tao, lugar, at pangyayari na bahagi ng kasaysayan ng lalawigan na kinabibilangan."
+               ],
+               [
+                   "4",
+                   "Natatalakay ang mahahalagang tao, lugar, at pangyayari na bahagi ng kasaysayan ng rehiyon na kinabibilangan."
+               ],
+               [
+                   "5",
+                   "Nakabubuo ng talaan ng kasaysayan (timeline) ng kinabibilangang pook batay sa mahahalagang tao, lugar, at pangyayari nito."
+               ],
+               [
+                   "6",
+                   "Naipaliliwanag ang mga pagbabagong naganap sa populasyon ng kinabibilangang komunidad."
+               ],
+               [
+                   "7",
+                   "Naipaliliwanag ang mga pagbabagong naganap sa kapaligiran at imprastraktura ng kinabibilangang komunidad."
+               ],
+               [
+                   "8",
+                   "Naipaliliwanag ang mga pagbabagong naganap sa pamumuhay at kabuhayan ng kinabibilangang komunidad."
+               ],
+               [
+                   "9",
+                   "Nakagagawa ng likhang-sining na nagpapakita ng kasaysayan ng kinabibilangang komunidad."
+               ],
+               [
+                   "10",
+                   "Nakagagawa ng likhang-sining na nagpapakita ng pagbabagong naganap sa kinabibilangang komunidad."
+               ],
+               [
+                   "11",
+                   "Napahahalagahan ang kasaysayan at pagbabagong nagaganap sa kinabibilangang komunidad."
+               ],
+               [
+                   "WEEK",
+                   "LEARNING COMPETENCY"
+               ],
+               [
+                   "1",
+                   "Measurement and Geometry Illustrate and estimate the area of a square or rectangle using square tile units. Explore inductively the derivation of the formulas for the areas of a square and a rectangle using square tile units."
+               ],
+               [
+                   "2",
+                   "Measurement and Geometry Find the areas of squares and rectangles in sq. cm and sq. m. Solve problems involving areas of squares and rectangles. Recognize, using models, and draw a point, line, line segment, and ray."
+               ],
+               [
+                   "3",
+                   "Measurement and Geometry Recognize and draw parallel, intersecting, and perpendicular lines. Identify and draw line segments of equal length using a ruler."
+               ],
+               [
+                   "4",
+                   "Number and Algebra Represent numbers up to 10 000 using pictorial models and numerals."
+               ],
+               [
+                   "5",
+                   "Number and Algebra Read and write numbers up to 10 000 in numerals and in words."
+               ],
+               [
+                   "6",
+                   "Number and Algebra Describe the position of objects using ordinal numbers up to 100th."
+               ],
+               [
+                   "7 to 8",
+                   "Number and Algebra Determine: (a) the place value of a digit in a 4-digit number; (b) the value of a digit; (c) the digit of a number, given its place value."
+               ],
+               [
+                   "9",
+                   "Number and Algebra Round numbers to the nearest ten, hundred, or thousand. Compare numbers up to 10 000 using the symbols =, \u003e, and \u003c."
+               ],
+               [
+                   "10",
+                   "Number and Algebra Order numbers up to 10 000 from smallest to largest, and vice versa."
+               ],
+               [
+                   "11",
+                   "No Week 11 entry in the source Budget of Work — Mathematics, First Term competencies end at Week 10."
+               ],
+               [
+                   "WEEK",
+                   "LEARNING COMPETENCY"
+               ],
+               [
+                   "1 to 3",
+                   "Science in our Daily Life Identify objects, activities, or natural events observed in their local environment that can be explained by science. Participate in guided science activities by asking questions and tinkering with materials. Describe the uses of various science equipment and materials used in simple activities, such as a ruler, hand lens, scissors, balloons, modeling clay, and cardboard."
+               ],
+               [
+                   "4",
+                   "Science Processes Describe different science process skills used in performing simple science activities, such as observing, predicting, and measuring using units such as millimeter, centimeter, and meter."
+               ],
+               [
+                   "5 to 10",
+                   "Materials and Their Uses Describe the physical properties of solid materials, such as hard, shiny, or stretchable. Explain that changes in materials can be harmful to living and non-living things in the environment. Demonstrate proper handling and disposal of materials according to their properties. Describe how changes in solid materials make them useful, such as when they are shaped, pressed, hammered, joined, or cut. Identify the properties and uses of metals used by the local community such as iron, gold, silver, and copper."
+               ],
+               [
+                   "11",
+                   "Guided Science Activities Using Process Skills Use the skills of observing, predicting, and measuring in performing simple guided science activities."
+               ],
+               [
+                   "WEEK",
+                   "LEARNING COMPETENCY"
+               ],
+               [
+                   "1",
+                   "Phonics and Word Study — Word Patterns and High-Frequency Words Identify Grade 3 level-appropriate sight words. Read CVCC, CCVC (clusters/diphthongs), VCV, and VCCV words accurately and automatically. Identify high-frequency words accurately."
+               ],
+               [
+                   "2",
+                   "Vocabulary and Word Knowledge — Vocabulary of Regional and Content Areas Use vocabulary referring to regional themes and content-specific topics, including content-specific words for Mathematics and Science. Identify words that label actions (verbs) and words that describe (adjectives)."
+               ],
+               [
+                   "3",
+                   "Vocabulary and Word Knowledge — Pronouns and Word Relationships Identify and use personal, interrogative, possessive, and demonstrative pronouns. Identify the synonyms and antonyms of words. Read words correctly for meaning based on word patterns."
+               ],
+               [
+                   "4",
+                   "Vocabulary and Word Knowledge / Grammar Awareness — Word Accuracy and Introduction to Sentences Write words legibly and correctly based on word patterns. Identify roots of high-frequency words. Identify sentences and non-sentences. Use simple sentences to express ideas, with proper intonation, and sequence words to form telling (declarative) sentences."
+               ],
+               [
+                   "5",
+                   "Grammar Awareness — Sentence Sequencing and Parts Sequence words to form asking (interrogative), commanding/requesting (imperative), and exclamatory sentences. Identify the parts of telling and asking sentences."
+               ],
+               [
+                   "6",
+                   "Grammar Awareness — Sentence Parts and Capitalization Identify the parts of commanding/requesting and exclamatory sentences. Use correct capitalization and punctuation for telling, asking, commanding/requesting, and exclamatory sentences. Identify the two independent clauses in a compound sentence."
+               ],
+               [
+                   "7",
+                   "Grammar Awareness — Compound Sentences and Discourse Markers Identify the joining word (coordinating conjunction) and the doers/actions in the two clauses of a compound sentence. Use correct capitalization and punctuation in compound sentences. Identify discourse markers used in time-order/procedural, descriptive, and explanatory texts."
+               ],
+               [
+                   "8",
+                   "Comprehending Texts — Story Comprehension Read grade-level sentences with appropriate speed, accuracy, and expression. Note important elements in a story (characters, setting, and events)."
+               ],
+               [
+                   "9",
+                   "Comprehending Texts — Predicting, Summarizing, and Informational Texts Sequence at least five events in a story. Identify the problem and solution presented in a story. Infer a character\u0027s feelings and traits. Relate story events to one\u0027s own experience. Identify cause and effect of events. Predict a possible ending for a story."
+               ],
+               [
+                   "10",
+                   "Comprehending Texts — Text Types, Conclusions, and Composing Basics Give a summary of a story read or heard. Note at least five significant details in a grade-level informational text. Identify the problem and solution presented in an informational text. Identify time-order/procedural, descriptive, and explanatory text types."
+               ],
+               [
+                   "11",
+                   "Creating and Composing Texts — Composing and Reacting to Texts Draw conclusions based on a text read or heard. Use common expressions and polite greetings appropriate to a given situation. Retell myths, legends, fables, and narrative poems using own words. Express ideas about one\u0027s own experiences and content-specific topics. Use basic sight words, high-frequency words, and content-specific words in composing."
+               ],
+               [
+                   "WEEK",
+                   "LEARNING COMPETENCY"
+               ],
+               [
+                   "1",
+                   "Palabigkasan at Pag-aaral ng Salita — Sight Words at Talasalitaan Natutukoy ang sight words na kabilang sa Filipino. Natutukoy nang wasto ang mga salitang high frequency words. Nagagamit ang mga salitang high frequency tungkol sa sarili at bansa, at tiyak na paksa. Nagagamit ang mga salitang may tiyak na tuong pangnilalaman (GMRC at MAKABANSA)."
+               ],
+               [
+                   "2",
+                   "Paglinang ng Talasalitaan — Kahulugan ng Salita Natutukoy ang kahulugan ng mga salitang tumutukoy sa ngalan ng tao, bagay, hayop, lugar, at pangyayari (dinaglat). Natutukoy ang kahulugan ng salitang pamalit (pamatlig), salitang naglalarawan, at salitang kilos."
+               ],
+               [
+                   "3",
+                   "Paglinang ng Talasalitaan — Salitang Pangkayarian at Pagbasa Natutukoy ang kahulugan ng salitang pangkayarian (pangatnig at pang-angkop). Nababasa nang wasto at naisusulat nang maayos ang mga natutuhang salita. Natutukoy ang salitang-ugat ng mga natutuhang salitang high frequency."
+               ],
+               [
+                   "4",
+                   "Paglinang ng Talasalitaan / Gramatika — Bahaging Pangungusap Nakikilala ang kahulugan ng mga salita (magkasingkahulugan at magkasalungat). Natutukoy ang mga bahagi ng payak na pangungusap (simuno at panaguri), ang sugnay na nakapag-iisa sa tambalang pangungusap, at ang mga pananda sa teksto."
+               ],
+               [
+                   "5",
+                   "Pag-unawa at Pagsusuri ng Teksto — Mabilis na Pagbasa at Elemento ng Kuwento Nababasa nang may tatas (may damdamin at tamang bilis) ang mga pangungusap. Naibibigay ang elemento ng tekstong naratibo. Natutukoy ang damdamin ng tauhan. Nakikilala ang katangian ng tauhan at tagpuan."
+               ],
+               [
+                   "6",
+                   "Pag-unawa at Pagsusuri ng Teksto — Pagsusuring Pangyayari sa Kuwento Naibibigay ang suliranin at solusyon sa kuwento. Naisasaayos ang pagkakasunod-sunod ng lima hanggang anim na pangyayari. Naibibigay ang sanhi at bunga ng mga pangyayari, at ang posibleng wakas ng kuwento."
+               ],
+               [
+                   "7",
+                   "Pag-unawa at Pagsusuri ng Teksto — Pagbubuod, Konektado sa Kuwento Nakabubuod ng teksto. Naiuugnay ang sariling karanasan sa kuwento. Natutukoy ang nagsasalaysay sa teksto. Naibibigay ang mensahe ng teksto."
+               ],
+               [
+                   "8",
+                   "Pag-unawa at Pagsusuri ng Teksto — Detalye at Suliranin sa Tekstong Impormatibo Naibibigay ang limang mahahalagang detalye sa tekstong impormatibo. Natutukoy ang suliranin at solusyon, at ang naglalahad sa teksto. Naibibigay ang mahahalagang impormasyon (paksa, pangunahing idea, sumusuportang detalye)."
+               ],
+               [
+                   "9",
+                   "Pag-unawa at Pagsusuri ng Teksto — Layunin, Organisasyon, at Konklusyon Naibibigay ang nais ipabatid ng awtor. Natutukoy ang huwaran ng organisasyon ng tekstong impormatibo (pag-iisa-isa-paglalarawan; pagsusunod-sunod). Naibibigay ang kongklusyon at mensahe ng tekstong impormatibo."
+               ],
+               [
+                   "10",
+                   "Pagbuo ng Teksto — Pagbati at Simulang Pagsulat Nagagamit ang magagalang na pananalita sa pagbati at ekspresyon sa iba\u0027t ibang sitwasyon. Nagagamit ang mga salitang high frequency at may tiyak na tuong pangnilalaman sa pagbuo ng maikling talata. Nakabubuo ng maikling talatang naglalarawan ng karanasan tungkol sa sarili, bansa, at tiyak na paksa."
+               ],
+               [
+                   "11",
+                   "Pagbuo ng Teksto — Reaksiyon, Buod, at Organisasyon ng Idea Nakabubuo ng maikling talata gamit ang payak at tambalang pangungusap sa pagpapahayag ng reaksiyon sa mga pangyayari sa teksto, sa paksa, pangunahing idea, at sumusuportang detalye. Nakabubuod ng tekstong naratibo. Nakapagpapahayag ng idea batay sa huwaran ng organisasyon ng tekstong impormatibo."
+               ]
+           ],
+    "t2":  [
+               [
+                   "SUBJECT",
+                   "WEEK 1",
+                   "WEEK 2",
+                   "WEEK 3",
+                   "WEEK 4"
+               ],
+               [
+                   "GMRC",
+                   "Mapagpasensiya (Patience): Naipakikita ang pagiging mapagpasensiya sa pamamagitan ng angkop na pananalita at pagtugon sa mga sitwasyong kasama ang kapuwa. • Nailalarawan ang mga ugnayan ng sarili sa kapwa. • Naipaliliwanag na ang ugnayan ng sarili sa kapwa ay nakatutulong sa paglinang ng mga kasanayan sa pakikipagkapwa. • Nailalapat ang mga kilos na nagpapakita ng wastong pakikitungo sa kapwa.",
+                   "Maingat na Paghuhusga (Prudence): Naipakikita ang maingat na paghuhusga sa mga impormasyon tungkol sa barangay na kinabibilangan. • Nakakikilala ng mga impormasyon tungkol sa barangay na kinabibilangan. • Napatutunayan na ang mga impormasyon sa barangay na kinabibilangan ay mahalagang gampanin sa pagpapanatili ng kaayusan, kaligtasan at katahimikan ng mamamayan. • Nakapagbabahagi ng mga impormasyon tungkol sa barangay na kinabibilangan.",
+                   "Pagiging Totoo (Sincerity): Fokus: Batayang Kaalaman Naipakikita ang pagiging totoo sa pamamagitan ng wastong pakikipag-ugnayan sa bawat kasapi ng pamilya. • Nailalarawan ang pakikipag-ugnayan sa bawat kasapi ng pamilya.",
+                   "Pagiging Totoo (Sincerity): Fokus: Pangangatuwiran at Paglalapat Naipakikita ang pagiging totoo sa pamamagitan ng wastong pakikipag-ugnayan sa bawat kasapi ng pamilya. • Napangangatuwiranan na ang wastong pakikipag-ugnayan sa bawat kasapi ng pamilya ay daan upang malinang ang pagmamahalan at pagkakaunawaan. • Nailalapat ang mga sariling paraan ng wastong pakikipag-ugnayan sa bawat kasapi ng pamilya."
+               ],
+               [
+                   "MAKABANSA",
+                   "Naipaliliwanag ang ugnayan ng kapaligiran at kultura.",
+                   "Naipaliliwanag kung paano naiimpluwensyahan ng kultura ang pang-araw-araw na pamumuhay sa komunidad.",
+                   "Natatalakay ang kahulugan ng pagkakakilanlan ng kinabibilangang komunidad.",
+                   "Natatalakay ang kahalagahan ng himno bilang sagisag ng kinabibilangang komunidad."
+               ],
+               [
+                   "MATHEMATICS",
+                   "Measurement and Geometry: • Measure mass in grams (g), kilograms (kg) and/or milligrams (mg), using appropriate measuring tools. • Estimate mass of an object using grams, kilograms, and/or milligrams. • Compare masses of objects including the use of a balance scale.",
+                   "Measurement and Geometry: • Measure capacity in liters (L) and/or milliliters (mL), using appropriate measuring tools. • Estimate capacity using liters and/or milliliters. • Compare capacities of two containers.",
+                   "Number and Algebra: • Read and write money in words and using: (a) Philippine currency symbols (₱ and PhP) up to ₱10 000; (b) the centavo sign. • Add numbers with sums up to 10 000, with and without regrouping.",
+                   "Number and Algebra: • Estimate the sum of addends with up to 4 digits. (Week 4 to 5): • Solve problems involving addition of numbers with sums up to 10 000, including problems involving money."
+               ],
+               [
+                   "SCIENCE",
+                   "Guided Science Activities Using Process Skills and Living and Non-Living Things (Week 1 to 2): • Observe and describe the difference between living and non-living things and give examples of each that can be found in the local environment. • Describe the characteristics of living things: they grow, respond, and reproduce.",
+                   "Guided Science Activities Using Process Skills and Living and Non-Living Things: (Continuation — see Week 1.) Same competencies apply; teachers may sequence across Weeks 1 to 2 based on learners\u0027 needs.",
+                   "Characteristics of Living Things (Week 3 to 4): • Observe and describe the outer body parts of animals, such as head, legs or wings, and identify their role to move and to gather food. • Observe the outer parts of plants, such as leaves, roots, and stems and identify their role to get water and nutrients from the soil.",
+                   "Characteristics of Living Things: (Continuation — see Week 3.) Same competencies apply; teachers may sequence across Weeks 3 to 4 based on learners\u0027 needs."
+               ],
+               [
+                   "ENGLISH",
+                   "Word Patterns and Regional Vocabulary • Identify Grade 3 level-appropriate sight words. (Phonics and Word Study) • Read VCV words accurately and automatically. (Phonics and Word Study) • Read VCCV words accurately and automatically. (Phonics and Word Study) • Identify high-frequency words accurately. (Vocabulary and Word Knowledge) • Use vocabulary referring to regional themes. (Vocabulary and Word Knowledge)",
+                   "Content Words, Verbs, Adjectives, and Pronouns • Use vocabulary referring to content-specific topics. (Vocabulary and Word Knowledge) • Use content-specific words for Mathematics (basic symbols and terminologies). (Vocabulary and Word Knowledge) • Use content-specific words for Science (basic terminologies). (Vocabulary and Word Knowledge) • Identify words that label actions (verbs). (Vocabulary and Word Knowledge) • Identify words that describe persons, places, things, animals, events, ideas, and emotions (adjectives). (Vocabulary and Word Knowledge) • Identify and use personal pronouns. (Vocabulary and Word Knowledge) • Identify and use demonstrative pronouns. (Vocabulary and Word Knowledge)",
+                   "Word Meaning and Accuracy • Identify the synonyms and antonyms of words. (Vocabulary and Word Knowledge) • Read words correctly for meaning based on word patterns. (Vocabulary and Word Knowledge) • Write words legibly and correctly based on word patterns. (Vocabulary and Word Knowledge) • Identify roots of high-frequency words (nouns, verbs, and adjectives). (Vocabulary and Word Knowledge) • Identify sentences and non-sentences. (Grammar Awareness)",
+                   "Building and Sequencing Sentences • Use simple sentences to express ideas about regional themes and content-specific topics. (Grammar Awareness) • Use simple sentences with proper intonation (pitch, juncture, and rhythm). (Grammar Awareness) • Sequence words to form telling (declarative) sentences. (Grammar Awareness) • Sequence words to form asking (interrogative) sentences. (Grammar Awareness) • Sequence words to form commanding and requesting (imperative) sentences. (Grammar Awareness) • Sequence words to form exclamatory sentences. (Grammar Awareness)"
+               ],
+               [
+                   "FILIPINO",
+                   "Sight Words at Talasalitaan • Natutukoy ang sight words na kabilang sa Filipino. (Palabigkasan at Pag-aaral ng Salita) • Natutukoy nang wasto ang mga salitang madalas gamitin o high frequency words. (Paglinang ng Talasalitaan) • Nagagamit ang mga salitang high frequency tungkol sa sarili at bansa, at tiyak na paksang may tuon sa nilalaman. (Paglinang ng Talasalitaan) • Nagagamit ang mga salitang may tiyak na tuong pangnilalaman (GMRC at MAKABANSA). (Paglinang ng Talasalitaan)",
+                   "Kahulugan ng Salita • Natutukoy ang kahulugan ng mga salitang tumutukoy sa ngalan ng tao, bagay, hayop, lugar, at pangyayari (dinaglat). (Paglinang ng Talasalitaan) • Natutukoy ang kahulugan ng salitang naglalarawan sa paraan, panahon, at pinangyarihan ng kilos. (Paglinang ng Talasalitaan) • Natutukoy ang kahulugan ng salitang pangkayarian (pangatnig, pang-angkop, at pang-ukol). (Paglinang ng Talasalitaan) • Nababasa nang wasto ang mga natutuhang salita. (Paglinang ng Talasalitaan)",
+                   "Pagsulat at Ugat ng Salita • Naisusulat nang maayos at wasto ang mga natutuhang salita. (Paglinang ng Talasalitaan) • Natutukoy ang salitang-ugat ng mga natutuhang salitang high frequency o madalas gamitin. (Paglinang ng Talasalitaan) • Nakikilala ang kahulugan ng mga salita (magkasingkahulugan at magkasalungat). (Paglinang ng Talasalitaan)",
+                   "Sugnay at Pagbasa nang May Tatas • Natutukoy ang sugnay na nakapag-iisa sa tambalang pangungusap. (Gramatika) • Natutukoy ang mga pananda sa teksto (hudyat ng pag-iisa-isa-paglalarawan; hudyat ng pagsusunod-sunod). (Gramatika) • Nababasa nang may tatas (may damdamin at tamang bilis) ang mga pangungusap. (Pag-unawa at Pagsusuri ng Teksto)"
+               ],
+               [
+                   "SUBJECT",
+                   "WEEK 5",
+                   "WEEK 6",
+                   "WEEK 7",
+                   "WEEK 8"
+               ],
+               [
+                   "GMRC",
+                   "Pagkukusa (Initiative): Nakapagsasanay ng pagkukusa sa pamamagitan ng wastong pagtugon sa mga itinakdang gawain at iskedyul. • Natutukoy ang mga gawain na nagpapakita ng pagtupad sa mga gampanan at mga inaasahang kilos sa tahanan at paaralan. • Nasusuri na ang pagtupad sa mga gampanin at mga inaasahang kilos sa tahanan at paaralan ay lilinang ng mga gawi na makatutulong sa pagpapaunlad ng kaniyang mga kasanayan at ugnayan sa kapwa. • Nailalapat ang mga inaasahang kilos nang may pagkukusa sa tahanan at paaralan.",
+                   "Pakikiisa (Cooperation): Naipakikita ang pakikiisa sa pamamagitan ng kusang pagtulong at paglalaan ng oras upang matupad ang mga gawaing panrelihiyon o paniniwala ng pamilya. • Nailalarawan ang mga sariling paraan ng pakikibahagi sa mga gawaing panrelihiyon o paniniwala ng pamilyang kinabibilangan. • Naipaliliwanag na ang pakikibahagi sa mga gawaing panrelihiyon o paniniwala ng pamilya ay lilinang ng mga kaugalian o gawi ng pakikipag-ugnayan sa Diyos. • Naisasakilos ang pagiging aktibo sa mga gawaing panrelihiyon o paniniwala ng pamilyang kinabibilangan.",
+                   "Mapagmalasakit (Compassion): Naipakikita ang pagiging mapagmalasakit sa pamamagitan ng pagpapalaganap ng mga mabuting kinagawian ng pamilya sa pangangalaga sa kalikasan sa iba\u0027t-ibang paraan. • Naiisa-isa ang mga gawi ng pamilya sa pangangalaga sa kalikasan. • Naipaliliwanag na ang mga gawi ng pamilya ay nakakaapekto sa sariling kaisipan at kilos sa pangangalaga ng kalikasan. • Nailalapat ang mga sariling kilos na nagpapakita ng mga gawi ng pamilya sa pangangalaga sa kalikasan.",
+                   "Pagiging Masunurin (Obedience): Fokus: Batayang Kaalaman Naipakikita ang pagiging masunurin sa pamamagitan ng pagbabahagi ng mga sariling karanasan sa pagtalima sa mga mabuting kaugalian ng pamilyang Pilipino sa rehiyong kinabibilangan. • Nakakikilala ng mga mabuting kaugalian ng pamilyang Pilipino sa rehiyong kinabibilangan."
+               ],
+               [
+                   "MAKABANSA",
+                   "Natatalakay ang kahalagahan ng coat of arms at bayaning lokal bilang sagisag ng kinabibilangang komunidad.",
+                   "Naiuugnay ang sining ng komunidad sa sariling pagkakakilanlan.",
+                   "Naiuugnay ang kultura ng komunidad sa sariling pagkakakilanlan.",
+                   "Nakagagawa ng likhang-sining na nagpapakita ng pagkakakilanlang kultural."
+               ],
+               [
+                   "MATHEMATICS",
+                   "Number and Algebra: (Continuation — see Week 4.) Solve problems involving addition of numbers with sums up to 10 000, including problems involving money. (Week 5 to 6): • Subtract numbers, where both numbers are less than 10 000, with and without regrouping.",
+                   "Number and Algebra: (Continuation — see Week 5.) Subtract numbers, where both numbers are less than 10 000, with and without regrouping. (Week 6 to 7): • Estimate the difference of two numbers of up to 4 digits. • Perform addition and subtraction of 3 to 4 numbers of up to 2 digits, observing correct order of operations.",
+                   "Number and Algebra: (Continuation — see Week 6.) Estimate the difference of two numbers of up to 4 digits; perform addition and subtraction of 3 to 4 numbers of up to 2 digits, observing correct order of operations.",
+                   "Number and Algebra: • Solve problems involving addition and subtraction with 3 to 4 numbers of up to 2 digits, including problems involving money. Data and Probability: • Collect data from experiments with a small number of possible outcomes (e.g., rolling a die or tossing a coin)."
+               ],
+               [
+                   "SCIENCE",
+                   "Basic Needs of Living Things (Week 5 to 7): • Identify the basic needs of all living things, such as air, food, water, and shelter. • Observe examples and explain how living things depend on one another and on the environment to meet their basic needs. • Recognize that there is a need to protect and conserve the environment for living things to survive.",
+                   "Basic Needs of Living Things: (Continuation — see Week 5.) Same competencies apply; teachers may sequence across Weeks 5 to 7 based on learners\u0027 needs.",
+                   "Basic Needs of Living Things: (Continuation — see Week 5.) Same competencies apply; teachers may sequence across Weeks 5 to 7 based on learners\u0027 needs.",
+                   "Exploring and Questioning (Week 8 to 10): • Explore and demonstrate different ways to make objects move by natural causes, such as wind and water, or by people, such as pushing, pulling, rolling, and carrying. • Explore and describe things that affect the movement of objects, including size, shape, heaviness, material, and surface texture."
+               ],
+               [
+                   "ENGLISH",
+                   "Sentence Parts and Capitalization • Identify the parts of telling (declarative) sentences. (Grammar Awareness) • Identify the parts of asking (interrogative) sentences. (Grammar Awareness) • Identify the parts of commanding and requesting (imperative) sentences. (Grammar Awareness) • Identify the parts of exclamatory sentences. (Grammar Awareness) • Use correct capitalization and punctuation for telling (declarative) sentences. (Grammar Awareness) • Use correct capitalization and punctuation for asking (interrogative) sentences. (Grammar Awareness)",
+                   "Capitalization and Compound Sentences • Use correct capitalization and punctuation for commanding and requesting (imperative) sentences. (Grammar Awareness) • Use correct capitalization and punctuation for exclamatory sentences. (Grammar Awareness) • Identify the two independent clauses in a compound sentence. (Grammar Awareness) • Identify the joining word (coordinating conjunction) in a compound sentence. (Grammar Awareness) • Identify the doers and the actions in the two clauses of a compound sentence. (Grammar Awareness) • Use correct capitalization and punctuation in compound sentences. (Grammar Awareness)",
+                   "Discourse Markers and Story Elements • Identify discourse markers used in time-order and procedural texts. (Grammar Awareness) • Identify discourse markers used in descriptive texts. (Grammar Awareness) • Identify discourse markers used in explanatory texts. (Grammar Awareness) • Read grade-level sentences with appropriate speed, accuracy, and expression. (Comprehending Texts) • Note important elements in a story (characters, setting, and events). (Comprehending Texts) • Sequence at least five events in a story. (Comprehending Texts)",
+                   "Analyzing Stories • Identify the problem and solution presented in a story. (Comprehending Texts) • Infer a character\u0027s feelings and traits based on story details. (Comprehending Texts) • Relate story events to one\u0027s own experience. (Comprehending Texts) • Identify the cause and effect of events in a story. (Comprehending Texts) • Predict a possible ending for a story being read or heard. (Comprehending Texts) • Give a summary of a story read or heard. (Comprehending Texts)"
+               ],
+               [
+                   "FILIPINO",
+                   "Elemento at Damdamin sa Kuwento • Naibibigay ang elemento ng teksto. (Pag-unawa at Pagsusuri ng Teksto) • Natutukoy ang damdamin ng tauhan sa mga pangyayari. (Pag-unawa at Pagsusuri ng Teksto) • Nakikilala ang katangian ng tauhan at tagpuan. (Pag-unawa at Pagsusuri ng Teksto) • Naibibigay ang suliranin at solusyon sa kuwento. (Pag-unawa at Pagsusuri ng Teksto)",
+                   "Pagsusuring Pangyayari sa Kuwento • Naisasaayos ang pagkakasunod-sunod ng anim na pangyayari. (Pag-unawa at Pagsusuri ng Teksto) • Naibibigay ang sanhi at bunga ng mga pangyayari. (Pag-unawa at Pagsusuri ng Teksto) • Naibibigay ang posibleng wakas ng kuwento. (Pag-unawa at Pagsusuri ng Teksto) • Nakabubuod ng teksto. (Pag-unawa at Pagsusuri ng Teksto)",
+                   "Koneksiyon at Detalyeng Tekstong Impormatibo • Naiuugnay ang sariling karanasan sa kuwento. (Pag-unawa at Pagsusuri ng Teksto) • Natutukoy ang nagsasalaysay sa teksto. (Pag-unawa at Pagsusuri ng Teksto) • Naibibigay ang mensahe ng teksto. (Pag-unawa at Pagsusuri ng Teksto) • Naibibigay ang lima hanggang anim na mahahalagang detalye sa tekstong impormatibo. (Pag-unawa at Pagsusuri ng Teksto)",
+                   "Suliranin at Impormasyon sa Tekstong Impormatibo • Natutukoy ang suliranin at solusyon sa tekstong impormatibo. (Pag-unawa at Pagsusuri ng Teksto) • Natutukoy ang naglalahad sa teksto. (Pag-unawa at Pagsusuri ng Teksto) • Naibibigay ang mahahalagang impormasyon (paksa, pangunahing idea, sumusuportang detalye). (Pag-unawa at Pagsusuri ng Teksto) • Naibibigay ang nais ipabatid ng awtor. (Pag-unawa at Pagsusuri ng Teksto)"
+               ],
+               [
+                   "SUBJECT",
+                   "WEEK 9",
+                   "WEEK 10",
+                   "WEEK 11"
+               ],
+               [
+                   "GMRC",
+                   "Pagiging Masunurin (Obedience): Fokus: Pangangatuwiran at Paglalapat Naipakikita ang pagiging masunurin sa pamamagitan ng pagbabahagi ng mga sariling karanasan sa pagtalima sa mga mabuting kaugalian ng pamilyang Pilipino sa rehiyong kinabibilangan. • Napangangatuwiranan na ang mga mabuting kaugalian ng pamilyang Pilipino sa rehiyong kinabibilangan ay kailangang panatiliin. • Naisasakilos ang mga paraan ng pagsunod sa mga mabuting kaugalian ng pamilyang Pilipino sa rehiyong kinabibilangan (hal. malapit na ugnayan, paggalang sa matatanda, at pagtutulungan).",
+                   "Mapagmalasakit (Compassion): Naipakikita ang pagiging mapagmalasakit sa pamamagitan ng kahandaan na mag-alok at magbigay ng angkop na pagtulong sa pangangailangan ng ibang tao. • Natutukoy ang mga sariling kakayahan na makakatulong sa kapwa. • Napangangatuwiranan na ang kahandaan na mag-alok at magbigay ng tulong ayon sa sariling kakayahan sa kapwa ay lilinang ng pagmamalasakit dito. • Naisasakilos ang mga sariling paraan ng pagtulong sa kapwa sa iba\u0027t ibang sitwasyon (hal. pagbabahagi ng gamit/pagkain, pag-alalay sa maysakit o nasaktan).",
+                   "Paggalang (Respect): Naipakikita ang pagiging magalang sa mga taong may kapansanan o Persons with Disability (PWD) o iba pang may natatanging kondisyon sa pamamagitan ng wastong pakikipag-ugnayan. • Naiisa-isa ang mga paraan ng pakikipag-ugnayan sa mga taong may kapansanan o PWD o iba pang may natatanging kondisyon. • Napatutunayan na ang sariling pagkilala sa mga taong may kapansanan o PWD o iba pang may natatanging kondisyon ay nagsusulong ng paggalang at pagtanggap tungo sa payapang pakikipagkapuwa. • Nakapagmumungkahi ng mga wastong paraan ng pakikipag-ugnayan batay sa kalagayan ng mga taong may kapansanan o PWD o iba pang may natatanging kondisyon."
+               ],
+               [
+                   "MAKABANSA",
+                   "Napahahalagahan ang sining at kultura ng bayan o lungsod na kinabibilangan.",
+                   "Napahahalagahan ang sining at kultura ng lalawigan na kinabibilangan.",
+                   "Napahahalagahan ang sining at kultura ng rehiyon na kinabibilangan."
+               ],
+               [
+                   "MATHEMATICS",
+                   "Data and Probability: • Present data in tables and single bar graphs (horizontal and vertical). • Interpret data in tables and single bar graphs (horizontal and vertical).",
+                   "Data and Probability: • Solve problems using data presented in a single bar graph (horizontal and vertical). • Describe and compare outcomes in real-life situations using the following terms: equally likely, less/least likely, more/most likely, certain, and impossible.",
+                   "No Week 11 entry in the source BOW — Mathematics, Second Term competencies end at Week 10."
+               ],
+               [
+                   "SCIENCE",
+                   "Exploring and Questioning: (Continuation — see Week 8.) Same competencies apply; teachers may sequence across Weeks 8 to 10 based on learners\u0027 needs.",
+                   "Exploring and Questioning: (Continuation — see Week 8.) Same competencies apply; teachers may sequence across Weeks 8 to 10 based on learners\u0027 needs.",
+                   "Moving Objects: • Measure and describe changes in the position of people or objects in relation to their original position, such as moving closer, farther, left, or right."
+               ],
+               [
+                   "ENGLISH",
+                   "Informational Texts and Conclusions • Note at least five significant details in a grade-level informational text. (Comprehending Texts) • Identify the problem and solution presented in an informational text. (Comprehending Texts) • Identify time-order and procedural text types. (Comprehending Texts) • Identify descriptive text types. (Comprehending Texts) • Identify explanatory text types. (Comprehending Texts) • Draw conclusions based on a text read or heard. (Comprehending Texts)",
+                   "Expressing Ideas Through Speaking and Writing • Use common expressions and polite greetings appropriate to a given situation. (Creating and Composing Texts) • Retell myths, legends, fables, and narrative poems using own words. (Creating and Composing Texts) • Express ideas about one\u0027s own experiences involving regional themes. (Creating and Composing Texts) • Express ideas about content-specific topics. (Creating and Composing Texts) • Use basic sight words, high-frequency words, and content-specific words in composing. (Creating and Composing Texts) • Compose a text reacting to the character, setting, or events in a story. (Creating and Composing Texts)",
+                   "Composing and Reacting to Texts • Compose a text reacting to a given topic. (Creating and Composing Texts) • Make a summary of a narrative text. (Creating and Composing Texts) • Express ideas using time-order and procedural text types. (Creating and Composing Texts) • Express ideas using descriptive text types. (Creating and Composing Texts) • Express ideas using explanatory text types. (Creating and Composing Texts)"
+               ],
+               [
+                   "FILIPINO",
+                   "Organisasyon, Konklusyon, at Simulang Pagsulat • Natutukoy ang huwaran ng organisasyon ng tekstong impormatibo (pag-iisa-isa-paglalarawan; pagsusunod-sunod). (Pag-unawa at Pagsusuri ng Teksto) • Naibibigay ang kongklusyon ng tekstong impormatibo. (Pag-unawa at Pagsusuri ng Teksto) • Naibibigay ang mensahe ng tekstong impormatibo. (Pag-unawa at Pagsusuri ng Teksto) • Nagagamit ang magagalang na pananalita sa pagbati at ekspresyon sa iba\u0027t ibang sitwasyon (wikang ginagamit sa pakikipag-usap sa paaralan). (Pagbuo ng Teksto)",
+                   "Pagbuo ng Maikling Talata • Nagagamit ang mga salitang high frequency at mga salitang may tiyak na tuong pangnilalaman (GMRC at MAKABANSA) sa pagbuo ng maikling talata. (Pagbuo ng Teksto) • Nakabubuo ng maikling talata gamit ang tambalang pangungusap na naglalarawan ng karanasan tungkol sa sarili at bansa. (Pagbuo ng Teksto) • Nakabubuo ng maikling talata gamit ang tambalang pangungusap na naglalarawan ng karanasan tungkol sa tiyak na paksang may tuon sa nilalaman. (Pagbuo ng Teksto) • Nakabubuo ng maikling talata sa pagpapahayag ng reaksiyon sa mga suliranin sa teksto. (Pagbuo ng Teksto)",
+                   "Reaksiyon, Buod, at Organisasyon ng Idea • Nakabubuo ng maikling talata sa pagpapahayag ng reaksiyon sa paksa, pangunahing idea at sumusuportang detalye sa teksto. (Pagbuo ng Teksto) • Nakabubuod ng tekstong naratibo. (Pagbuo ng Teksto) • Nakapagpapahayag ng idea batay sa huwaran ng organisasyon ng tekstong impormatibo (pag-iisa-isa-paglalarawan; pagsusunod-sunod). (Pagbuo ng Teksto)"
+               ]
+           ]
+}

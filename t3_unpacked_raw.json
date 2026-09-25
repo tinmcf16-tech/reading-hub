@@ -1,0 +1,2372 @@
+﻿{
+    "fil":  [
+                [
+                    "Pamantayang Pangnilalaman",
+                    "Naipamamalas ng mag-aaral ang kahusayan sa pagbigkas at pag-aaral ng mga tunog at salita tungo sa papaunlad na kasanayang panggramatika, pag-unawa at pagsusuri ng tekstong naratibo at impormatibo na magiging daan sa pagbuo ng mga tambalang pangungusap at teksto tungkol sa sarili at bansa na ginagamit sa pang-araw-araw na paksa at sitwasyon."
+                ],
+                [
+                    "Pamantayan sa Pagganap",
+                    "Nagagamit ng mag-aaral ang pagkakaroon ng kahusayan sa pagbigkas ng mga salita, pagbasa ng mga pangungusap nang may kawastuhan, katatasan at tamang ekspresyon tungkol sa sarili at bansa na ginagamit sa pang-araw-araw na paksa at sitwasyon. Nagiging daan din ito sa pagbuo ng tekstong naratibo at impormatibo sa pagpapahayag ng idea at karanasan gamit ang mga natutuhan sa gramatika."
+                ],
+                [
+                    "Linggo",
+                    "Larangan",
+                    "Naisaayos na Lingguhang Kasanayan",
+                    "Mga Makrong Kasanayan"
+                ],
+                [
+                    "1 Sight Words at Talasalitaan",
+                    "Palabigkasan at Pag-aaral ng Salita",
+                    "Natutukoy ang sight words na kabilang sa Filipino.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Paglinang ng Talasalitaan",
+                    "Natutukoy nang wasto ang mga salitang madalas gamitin o high frequency words.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Paglinang ng Talasalitaan",
+                    "Nagagamit ang mga salitang high frequency tungkol sa sarili at bansa, at tiyak na paksang may tuon sa nilalaman.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Paglinang ng Talasalitaan",
+                    "Nagagamit ang mga salitang may tiyak na tuong pangnilalaman (GMRC at MAKABANSA).",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "2 Kahulugan ng Salita",
+                    "Paglinang ng Talasalitaan",
+                    "Natutukoy ang kahulugan ng mga salitang tumutukoy sa ngalan ng tao, bagay, hayop, lugar, at pangyayari (dinaglat).",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Paglinang ng Talasalitaan",
+                    "Natutukoy ang kahulugan ng salitang pamalit sa ngalan ng tao, bagay, hayop, lugar, at pangyayari (pamatlig).",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Paglinang ng Talasalitaan",
+                    "Natutukoy ang kahulugan ng salitang naglalarawan sa ngalan ng tao, bagay, hayop, lugar, at pangyayari.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Paglinang ng Talasalitaan",
+                    "Natutukoy ang kahulugan ng salitang kilos.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "3 Salitang Pangkayarian at Pagbasa",
+                    "Paglinang ng Talasalitaan",
+                    "Natutukoy ang kahulugan ng salitang pangkayarian (pangatnig at pang-angkop).",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Paglinang ng Talasalitaan",
+                    "Nababasa nang wasto ang mga natutuhang salita.",
+                    "PS, PB"
+                ],
+                [
+                    "",
+                    "Paglinang ng Talasalitaan",
+                    "Naisusulat nang maayos at wasto ang mga natutuhang salita.",
+                    "PB, PSu"
+                ],
+                [
+                    "",
+                    "Paglinang ng Talasalitaan",
+                    "Natutukoy ang salitang-ugat ng mga natutuhang salitang high frequency o madalas gamitin.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "4 Kahulugan at Bahagi ng Pangungusap",
+                    "Paglinang ng Talasalitaan",
+                    "Nakikilala ang kahulugan ng mga salita (magkasingkahulugan at magkasalungat).",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Gramatika",
+                    "Natutukoy ang mga bahagi ng payak na pangungusap (simuno at panaguri).",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Gramatika",
+                    "Natutukoy ang sugnay na nakapag-iisa sa tambalang pangungusap.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Gramatika",
+                    "Natutukoy ang mga pananda sa teksto (hudyat ng pag-iisa-isa-paglalarawan; hudyat ng pagsusunod-sunod).",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "5 Mabilis na Pagbasa at Elemento ng Kuwento",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Nababasa nang may tatas (may damdamin at tamang bilis) ang mga pangungusap.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naibibigay ang elemento ng tekstong naratibo.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Natutukoy ang damdamin ng tauhan sa mga pangyayari.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Nakikilala ang katangian ng tauhan at tagpuan.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "6 Pagsusuri ng Pangyayari sa Kuwento",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naibibigay ang suliranin at solusyon sa kuwento.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naisasaayos ang pagkakasunod-sunod ng lima hanggang anim na pangyayari.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naibibigay ang sanhi at bunga ng mga pangyayari.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naibibigay ang posibleng wakas ng kuwento.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "7 Pagbubuod at Koneksiyon sa Kuwento",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Nakabubuod ng teksto.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naiuugnay ang sariling karanasan sa kuwento.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Natutukoy ang nagsasalaysay sa teksto.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naibibigay ang mensahe ng teksto.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "8 Detalye at Suliranin sa Tekstong Impormatibo",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naibibigay ang limang mahahalagang detalye sa tekstong impormatibo.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Natutukoy ang suliranin at solusyon sa tekstong impormatibo.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Natutukoy ang naglalahad sa teksto.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naibibigay ang mahahalagang impormasyon (paksa, pangunahing idea, sumusuportang detalye).",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "9 Layunin, Organisasyon, at Kongklusyon",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naibibigay ang nais ipabatid ng awtor.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Natutukoy ang huwaran ng organisasyon ng tekstong impormatibo (pag-iisa-isa-paglalarawan; pagsusunod-sunod).",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naibibigay ang kongklusyon ng tekstong impormatibo.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naibibigay ang mensahe ng tekstong impormatibo.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "10 Pagbati at Simula ng Pagsulat",
+                    "Pagbuo ng Teksto",
+                    "Nagagamit ang magagalang na pananalita sa pagbati at ekspresyon sa iba\u0027t ibang sitwasyon (wikang ginagamit sa pakikipag-usap sa paaralan).",
+                    "PS, PSu"
+                ],
+                [
+                    "",
+                    "Pagbuo ng Teksto",
+                    "Nagagamit ang mga salitang high frequency at mga salitang may tiyak na tuong pangnilalaman (GMRC at MAKABANSA) sa pagbuo ng maikling talata.",
+                    "PS, PSu"
+                ],
+                [
+                    "",
+                    "Pagbuo ng Teksto",
+                    "Nakabubuo ng maikling talatang naglalarawan ng karanasan tungkol sa sarili at bansa.",
+                    "PS, PSu"
+                ],
+                [
+                    "",
+                    "Pagbuo ng Teksto",
+                    "Nakabubuo ng maikling talatang naglalarawan ng karanasan tungkol sa tiyak na paksang may tuon sa nilalaman.",
+                    "PS, PSu"
+                ],
+                [
+                    "11 Pagbuo ng Reaksiyon at Buod",
+                    "Pagbuo ng Teksto",
+                    "Nakabubuo ng maikling talata gamit ang payak at tambalang pangungusap sa pagpapahayag ng reaksiyon sa mga pangyayari sa teksto.",
+                    "PS, PSu"
+                ],
+                [
+                    "",
+                    "Pagbuo ng Teksto",
+                    "Nakabubuo ng maikling talata sa pagpapahayag ng reaksiyon sa paksa, pangunahing idea at sumusuportang detalye sa teksto.",
+                    "PS, PSu"
+                ],
+                [
+                    "",
+                    "Pagbuo ng Teksto",
+                    "Nakabubuod ng tekstong naratibo.",
+                    "PS, PSu"
+                ],
+                [
+                    "",
+                    "Pagbuo ng Teksto",
+                    "Nakapagpapahayag ng idea batay sa huwaran ng organisasyon ng tekstong impormatibo (pag-iisa-isa-paglalarawan; pagsusunod-sunod).",
+                    "PS, PSu"
+                ],
+                [
+                    "Pamantayang Pangnilalaman",
+                    "Naipamamalas ng mag-aaral ang kahusayan sa pagbigkas at pag-aaral ng mga tunog at salita tungo sa papaunlad na kasanayang panggramatika, pag-unawa at pagsusuri ng tekstong naratibo at impormatibo na magiging daan sa pagbuo ng mga tambalang pangungusap at teksto tungkol sa sarili at bansa na ginagamit sa pang-araw-araw na paksa at sitwasyon."
+                ],
+                [
+                    "Pamantayan sa Pagganap",
+                    "Nagagamit ng mag-aaral ang pagkakaroon ng kahusayan sa pagbigkas ng mga salita, pagbasa ng mga pangungusap nang may kawastuhan, katatasan at tamang ekspresyon tungkol sa sarili at bansa na ginagamit sa pang-araw-araw na paksa at sitwasyon. Nagiging daan din ito sa pagbuo ng tekstong naratibo at impormatibo sa pagpapahayag ng idea at karanasan gamit ang mga natutuhan sa gramatika."
+                ],
+                [
+                    "Linggo",
+                    "Larangan",
+                    "Naisaayos na Lingguhang Kasanayan",
+                    "Mga Makrong Kasanayan"
+                ],
+                [
+                    "1 Sight Words at Talasalitaan",
+                    "Palabigkasan at Pag-aaral ng Salita",
+                    "Natutukoy ang sight words na kabilang sa Filipino.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Paglinang ng Talasalitaan",
+                    "Natutukoy nang wasto ang mga salitang madalas gamitin o high frequency words.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Paglinang ng Talasalitaan",
+                    "Nagagamit ang mga salitang high frequency tungkol sa sarili at bansa, at tiyak na paksang may tuon sa nilalaman.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Paglinang ng Talasalitaan",
+                    "Nagagamit ang mga salitang may tiyak na tuong pangnilalaman (GMRC at MAKABANSA).",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "2 Kahulugan ng Salita",
+                    "Paglinang ng Talasalitaan",
+                    "Natutukoy ang kahulugan ng mga salitang tumutukoy sa ngalan ng tao, bagay, hayop, lugar, at pangyayari (dinaglat).",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Paglinang ng Talasalitaan",
+                    "Natutukoy ang kahulugan ng salitang naglalarawan sa paraan, panahon, at pinangyarihan ng kilos.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Paglinang ng Talasalitaan",
+                    "Natutukoy ang kahulugan ng salitang pangkayarian (pangatnig, pang-angkop, at pang-ukol).",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Paglinang ng Talasalitaan",
+                    "Nababasa nang wasto ang mga natutuhang salita.",
+                    "PS, PB"
+                ],
+                [
+                    "3 Pagsulat at Ugat ng Salita",
+                    "Paglinang ng Talasalitaan",
+                    "Naisusulat nang maayos at wasto ang mga natutuhang salita.",
+                    "PB, PSu"
+                ],
+                [
+                    "",
+                    "Paglinang ng Talasalitaan",
+                    "Natutukoy ang salitang-ugat ng mga natutuhang salitang high frequency o madalas gamitin.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Paglinang ng Talasalitaan",
+                    "Nakikilala ang kahulugan ng mga salita (magkasingkahulugan at magkasalungat).",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "4 Sugnay at Pagbasa nang May Tatas",
+                    "Gramatika",
+                    "Natutukoy ang sugnay na nakapag-iisa sa tambalang pangungusap.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Gramatika",
+                    "Natutukoy ang mga pananda sa teksto (hudyat ng pag-iisa-isa-paglalarawan; hudyat ng pagsusunod-sunod).",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Nababasa nang may tatas (may damdamin at tamang bilis) ang mga pangungusap.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "5 Elemento at Damdamin sa Kuwento",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naibibigay ang elemento ng teksto.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Natutukoy ang damdamin ng tauhan sa mga pangyayari.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Nakikilala ang katangian ng tauhan at tagpuan.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naibibigay ang suliranin at solusyon sa kuwento.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "6 Pagsusuri ng Pangyayari",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naisasaayos ang pagkakasunod-sunod ng anim na pangyayari.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naibibigay ang sanhi at bunga ng mga pangyayari.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naibibigay ang posibleng wakas ng kuwento.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Nakabubuod ng teksto.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "7 Koneksiyon at Detalye ng Tekstong Impormatibo",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naiuugnay ang sariling karanasan sa kuwento.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Natutukoy ang nagsasalaysay sa teksto.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naibibigay ang mensahe ng teksto.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naibibigay ang lima hanggang anim na mahahalagang detalye sa tekstong impormatibo.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "8 Suliranin at Impormasyon sa Tekstong Impormatibo",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Natutukoy ang suliranin at solusyon sa tekstong impormatibo.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Natutukoy ang naglalahad sa teksto.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naibibigay ang mahahalagang impormasyon (paksa, pangunahing idea, sumusuportang detalye).",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naibibigay ang nais ipabatid ng awtor.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "9 Organisasyon, Kongklusyon, at Simula ng Pagsulat",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Natutukoy ang huwaran ng organisasyon ng tekstong impormatibo (pag-iisa-isa-paglalarawan; pagsusunod-sunod).",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naibibigay ang kongklusyon ng tekstong impormatibo.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naibibigay ang mensahe ng tekstong impormatibo.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pagbuo ng Teksto",
+                    "Nagagamit ang magagalang na pananalita sa pagbati at ekspresyon sa iba\u0027t ibang sitwasyon (wikang ginagamit sa pakikipag-usap sa paaralan).",
+                    "PS, PSu"
+                ],
+                [
+                    "10 Pagbuo ng Maikling Talata",
+                    "Pagbuo ng Teksto",
+                    "Nagagamit ang mga salitang high frequency at mga salitang may tiyak na tuong pangnilalaman (GMRC at MAKABANSA) sa pagbuo ng maikling talata.",
+                    "PS, PSu"
+                ],
+                [
+                    "",
+                    "Pagbuo ng Teksto",
+                    "Nakabubuo ng maikling talata gamit ang tambalang pangungusap na naglalarawan ng karanasan tungkol sa sarili at bansa.",
+                    "PS, PSu"
+                ],
+                [
+                    "",
+                    "Pagbuo ng Teksto",
+                    "Nakabubuo ng maikling talata gamit ang tambalang pangungusap na naglalarawan ng karanasan tungkol sa tiyak na paksang may tuon sa nilalaman.",
+                    "PS, PSu"
+                ],
+                [
+                    "",
+                    "Pagbuo ng Teksto",
+                    "Nakabubuo ng maikling talata sa pagpapahayag ng reaksiyon sa mga suliranin sa teksto.",
+                    "PS, PSu"
+                ],
+                [
+                    "11 Reaksiyon, Buod, at Organisasyon ng Idea",
+                    "Pagbuo ng Teksto",
+                    "Nakabubuo ng maikling talata sa pagpapahayag ng reaksiyon sa paksa, pangunahing idea at sumusuportang detalye sa teksto.",
+                    "PS, PSu"
+                ],
+                [
+                    "",
+                    "Pagbuo ng Teksto",
+                    "Nakabubuod ng tekstong naratibo.",
+                    "PS, PSu"
+                ],
+                [
+                    "",
+                    "Pagbuo ng Teksto",
+                    "Nakapagpapahayag ng idea batay sa huwaran ng organisasyon ng tekstong impormatibo (pag-iisa-isa-paglalarawan; pagsusunod-sunod).",
+                    "PS, PSu"
+                ],
+                [
+                    "Pamantayang Pangnilalaman",
+                    "Naipamamalas ng mag-aaral ang kahusayan sa pagbigkas at pag-aaral ng mga tunog at salita tungo sa papaunlad na kasanayang panggramatika, pag-unawa at pagsusuri ng tekstong naratibo at impormatibo na magiging daan sa pagbuo ng mga tambalan at hugnayang pangungusap at teksto tungkol sa sarili at bansa na ginagamit sa pang-araw-araw na paksa at sitwasyon."
+                ],
+                [
+                    "Pamantayan sa Pagganap",
+                    "Nagagamit ng mag-aaral ang pagkakaroon ng kahusayan sa pagbigkas ng mga salita, pagbasa ng mga pangungusap nang may kawastuhan, katatasan at tamang ekspresyon tungkol sa sarili at bansa na ginagamit sa pang-araw-araw na paksa at sitwasyon. Nagiging daan din ito sa pagbuo ng tekstong naratibo at impormatibo sa pagpapahayag ng idea at karanasan gamit ang mga natutuhan sa gramatika."
+                ],
+                [
+                    "Linggo",
+                    "Larangan",
+                    "Naisaayos na Lingguhang Kasanayan",
+                    "Mga Makrong Kasanayan"
+                ],
+                [
+                    "1 Sight Words at Talasalitaan",
+                    "Palabigkasan at Pag-aaral ng Salita",
+                    "Natutukoy ang sight words na kabilang sa Filipino.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Paglinang ng Talasalitaan",
+                    "Natutukoy nang wasto ang mga salitang madalas gamitin o high frequency words.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Paglinang ng Talasalitaan",
+                    "Nagagamit ang mga salitang high frequency tungkol sa sarili at bansa, at tiyak na paksang may tuon sa nilalaman.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Paglinang ng Talasalitaan",
+                    "Nagagamit ang mga salitang may tiyak na tuong pangnilalaman (GMRC at MAKABANSA).",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "2 Kahulugan ng Salita",
+                    "Paglinang ng Talasalitaan",
+                    "Natutukoy ang kahulugan ng mga salitang tumutukoy sa ngalan ng tao, bagay, hayop, lugar, at pangyayari (dinaglat).",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Paglinang ng Talasalitaan",
+                    "Natutukoy ang kahulugan ng salitang naglalarawan sa paraan, panahon, at pinangyarihan ng kilos.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Paglinang ng Talasalitaan",
+                    "Natutukoy ang kahulugan ng salitang pangkayarian (pangatnig, pang-angkop, at pang-ukol).",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Paglinang ng Talasalitaan",
+                    "Nababasa nang wasto ang mga natutuhang salita.",
+                    "PS, PB"
+                ],
+                [
+                    "3 Pagsulat, Ugat, at Kahulugan ng Salita",
+                    "Paglinang ng Talasalitaan",
+                    "Naisusulat nang maayos at wasto ang mga natutuhang salita.",
+                    "PB, PSu"
+                ],
+                [
+                    "",
+                    "Paglinang ng Talasalitaan",
+                    "Natutukoy ang salitang-ugat ng mga natutuhang salitang high frequency o madalas gamitin.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Paglinang ng Talasalitaan",
+                    "Nakikilala ang kahulugan ng mga salita (denotasyon at konotasyon).",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "4 Hugnayang Pangungusap at Pagbasa nang May Tatas",
+                    "Gramatika",
+                    "Natutukoy ang hugnayang pangungusap batay sa mga panandang nag-uugnay sa sugnay na nakapag-iisa.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Gramatika",
+                    "Natutukoy ang mga pananda sa teksto (hudyat ng pag-iisa-isa-paglalarawan; hudyat ng pagsusunod-sunod; pagpapaliwanag).",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Nababasa nang may tatas (may damdamin at tamang bilis) ang mga pangungusap.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "5 Elemento at Katangian ng Tauhan",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naibibigay ang elemento ng teksto.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Natutukoy ang damdamin ng tauhan sa mga pangyayari.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Nakikilala ang katangian ng tauhan.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naibibigay ang suliranin at solusyon sa kuwento.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "6 Pagsusuri ng Pangyayari sa Kuwento",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naisasaayos ang pagkakasunod-sunod ng anim hanggang pitong pangyayari.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naibibigay ang sanhi at bunga ng mga pangyayari.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naibibigay ang posibleng wakas ng kuwento.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Nakabubuod ng teksto.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "7 Koneksiyon at Detalye ng Tekstong Impormatibo",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naiuugnay ang sariling karanasan sa kuwento.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Natutukoy ang nagsasalaysay sa teksto.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naibibigay ang mensahe ng teksto.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naibibigay ang anim na mahahalagang detalye sa tekstong impormatibo.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "8 Suliranin at Impormasyon sa Tekstong Impormatibo",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Natutukoy ang suliranin at solusyon sa tekstong impormatibo.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Natutukoy ang naglalahad sa teksto.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naibibigay ang mahahalagang impormasyon (paksa, pangunahing idea, sumusuportang detalye).",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naibibigay ang nais ipabatid ng awtor.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "9 Organisasyon, Kongklusyon, at Simula ng Pagsulat",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Natutukoy ang huwaran ng organisasyon ng tekstong impormatibo (pag-iisa-isa-paglalarawan; pagsusunod-sunod; pagpapaliwanag).",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naibibigay ang kongklusyon ng tekstong impormatibo.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pag-unawa at Pagsusuri ng Teksto",
+                    "Naibibigay ang mensahe ng tekstong impormatibo.",
+                    "PK, PS, PB, PSu"
+                ],
+                [
+                    "",
+                    "Pagbuo ng Teksto",
+                    "Nagagamit ang magagalang na pananalita sa pagbati at ekspresyon sa iba\u0027t ibang sitwasyon (wikang ginagamit sa pakikipag-usap sa paaralan).",
+                    "PS, PSu"
+                ],
+                [
+                    "10 Pagbuo ng Maikling Talata",
+                    "Pagbuo ng Teksto",
+                    "Nagagamit ang mga salitang high frequency at mga salitang may tiyak na tuong pangnilalaman (GMRC at MAKABANSA) sa pagbuo ng maikling talata.",
+                    "PS, PSu"
+                ],
+                [
+                    "",
+                    "Pagbuo ng Teksto",
+                    "Nakabubuo ng maikling talata gamit ang tambalan at hugnayang pangungusap na naglalarawan ng karanasan tungkol sa sarili at bansa.",
+                    "PS, PSu"
+                ],
+                [
+                    "",
+                    "Pagbuo ng Teksto",
+                    "Nakabubuo ng maikling talata gamit ang tambalan at hugnayang pangungusap na naglalarawan ng karanasan tungkol sa tiyak na paksang may tuon sa nilalaman.",
+                    "PS, PSu"
+                ],
+                [
+                    "",
+                    "Pagbuo ng Teksto",
+                    "Nakabubuo ng maikling talata sa pagpapahayag ng reaksiyon sa mga tema at suliranin sa teksto.",
+                    "PS, PSu"
+                ],
+                [
+                    "11 Reaksiyon, Buod, at Organisasyon ng Idea",
+                    "Pagbuo ng Teksto",
+                    "Nakabubuo ng maikling talata sa pagpapahayag ng reaksiyon sa paksa, pangunahing idea, sumusuportang detalye at suliranin sa teksto.",
+                    "PS, PSu"
+                ],
+                [
+                    "",
+                    "Pagbuo ng Teksto",
+                    "Nakabubuod ng tekstong naratibo.",
+                    "PS, PSu"
+                ],
+                [
+                    "",
+                    "Pagbuo ng Teksto",
+                    "Nakapagpapahayag ng idea batay sa huwaran ng organisasyon ng tekstong impormatibo (pag-iisa-isa-paglalarawan; pagsusunod-sunod).",
+                    "PS, PSu"
+                ]
+            ],
+    "makabansa_count":  45,
+    "fil_count":  135,
+    "eng":  [
+                [
+                    "Content Standard",
+                    "The learners demonstrate expanding vocabulary and understanding of high frequency words and content-specific vocabulary; understand and create simple and compound sentences for comprehending, analyzing, creating, and composing texts about regional themes and content-specific topics."
+                ],
+                [
+                    "Performance Standard",
+                    "The learners use their expanding vocabulary of high-frequency and content-specific words, and simple and compound sentences to comprehend, create, and compose narrative and informational texts about regional themes and content-specific topics; and read grade level texts with appropriate speed, accuracy, and expression."
+                ],
+                [
+                    "Week",
+                    "Domain / Strand",
+                    "Unpacked Weekly Learning Competency",
+                    "Macro-skills"
+                ],
+                [
+                    "1 Word Patterns and High-Frequency Words",
+                    "Phonics and Word Study",
+                    "Identify Grade 3 level-appropriate sight words.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Phonics and Word Study",
+                    "Read CVCC words accurately and automatically according to word patterns.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Phonics and Word Study",
+                    "Read CCVC words (clusters and diphthongs) accurately and automatically.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Phonics and Word Study",
+                    "Read VCV words accurately and automatically.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Phonics and Word Study",
+                    "Read VCCV words accurately and automatically.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Vocabulary and Word Knowledge",
+                    "Identify high-frequency words accurately.",
+                    "L, S, R, W"
+                ],
+                [
+                    "2 Vocabulary of Region and Content Areas",
+                    "Vocabulary and Word Knowledge",
+                    "Use vocabulary referring to regional themes.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Vocabulary and Word Knowledge",
+                    "Use vocabulary referring to content-specific topics.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Vocabulary and Word Knowledge",
+                    "Use content-specific words for Mathematics (basic symbols and terminologies).",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Vocabulary and Word Knowledge",
+                    "Use content-specific words for Science (basic terminologies).",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Vocabulary and Word Knowledge",
+                    "Identify words that label actions (verbs).",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Vocabulary and Word Knowledge",
+                    "Identify words that describe persons, places, things, animals, events, ideas, and emotions (adjectives).",
+                    "L, S, R, W"
+                ],
+                [
+                    "3 Pronouns and Word Relationships",
+                    "Vocabulary and Word Knowledge",
+                    "Identify and use personal pronouns that replace persons, places, things, animals, events, ideas, and emotions.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Vocabulary and Word Knowledge",
+                    "Identify and use interrogative pronouns.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Vocabulary and Word Knowledge",
+                    "Identify and use possessive pronouns.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Vocabulary and Word Knowledge",
+                    "Identify and use demonstrative pronouns.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Vocabulary and Word Knowledge",
+                    "Identify the synonyms and antonyms of words.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Vocabulary and Word Knowledge",
+                    "Read words correctly for meaning based on word patterns.",
+                    "L, S, R, W"
+                ],
+                [
+                    "4 Word Accuracy and Introduction to Sentences",
+                    "Vocabulary and Word Knowledge",
+                    "Write words legibly and correctly based on word patterns.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Vocabulary and Word Knowledge",
+                    "Identify roots of high-frequency words (nouns, verbs, and adjectives).",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Identify sentences and non-sentences.",
+                    "L, S, R"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Use simple sentences to express ideas about regional themes and content-specific topics.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Use simple sentences with proper intonation (pitch, juncture, and rhythm).",
+                    "L, S, R"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Sequence words to form telling (declarative) sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "5 Sentence Sequencing and Parts",
+                    "Grammar Awareness",
+                    "Sequence words to form asking (interrogative) sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Sequence words to form commanding and requesting (imperative) sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Sequence words to form exclamatory sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Identify the parts of telling (declarative) sentences (who/what, what they are doing, when/where/how).",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Identify the parts of asking (interrogative) sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Identify the parts of commanding and requesting (imperative) sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "6 Sentence Parts and Capitalization",
+                    "Grammar Awareness",
+                    "Identify the parts of exclamatory sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Use correct capitalization and punctuation for telling (declarative) sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Use correct capitalization and punctuation for asking (interrogative) sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Use correct capitalization and punctuation for commanding and requesting (imperative) sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Use correct capitalization and punctuation for exclamatory sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Identify the two independent clauses in a compound sentence.",
+                    "L, S, R, W"
+                ],
+                [
+                    "7 Compound Sentences and Discourse Markers",
+                    "Grammar Awareness",
+                    "Identify the joining word (coordinating conjunction) in a compound sentence.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Identify the doers and the actions in the two clauses of a compound sentence.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Use correct capitalization and punctuation in compound sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Identify discourse markers used in time-order and procedural texts.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Identify discourse markers used in descriptive texts.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Identify discourse markers used in explanatory texts.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Read grade-level sentences with appropriate speed, accuracy, and expression.",
+                    "L, S, R"
+                ],
+                [
+                    "8 Story Comprehension",
+                    "Comprehending Texts",
+                    "Note important elements in a story (characters, setting, and events).",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Sequence at least five events in a story.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Identify the problem and solution presented in a story.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Infer a character\u0027s feelings and traits based on story details.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Relate story events to one\u0027s own experience.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Identify the cause and effect of events in a story.",
+                    "L, S, R, W"
+                ],
+                [
+                    "9 Predicting, Summarizing, and Informational Texts",
+                    "Comprehending Texts",
+                    "Predict a possible ending for a story being read or heard.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Give a summary of a story read or heard.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Note at least five significant details in a grade-level informational text.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Identify the problem and solution presented in an informational text.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Identify time-order and procedural text types.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Identify descriptive text types.",
+                    "L, S, R, W"
+                ],
+                [
+                    "10 Text Types, Conclusions, and Composing Basics",
+                    "Comprehending Texts",
+                    "Identify explanatory text types.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Draw conclusions based on a text read or heard.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Creating and Composing Texts",
+                    "Use common expressions and polite greetings appropriate to a given situation.",
+                    "S, W"
+                ],
+                [
+                    "",
+                    "Creating and Composing Texts",
+                    "Retell myths, legends, fables, and narrative poems using own words.",
+                    "S, W"
+                ],
+                [
+                    "",
+                    "Creating and Composing Texts",
+                    "Express ideas about one\u0027s own experiences involving regional themes.",
+                    "S, W"
+                ],
+                [
+                    "",
+                    "Creating and Composing Texts",
+                    "Express ideas about content-specific topics.",
+                    "S, W"
+                ],
+                [
+                    "11 Composing and Reacting to Texts",
+                    "Creating and Composing Texts",
+                    "Use basic sight words, high-frequency words, and content-specific words in composing.",
+                    "S, W"
+                ],
+                [
+                    "",
+                    "Creating and Composing Texts",
+                    "Compose a text reacting to the character, setting, or events in a story.",
+                    "S, W"
+                ],
+                [
+                    "",
+                    "Creating and Composing Texts",
+                    "Compose a text reacting to a given topic.",
+                    "S, W"
+                ],
+                [
+                    "",
+                    "Creating and Composing Texts",
+                    "Make a summary of a narrative text.",
+                    "S, W"
+                ],
+                [
+                    "",
+                    "Creating and Composing Texts",
+                    "Express ideas using time-order and procedural text types.",
+                    "S, W"
+                ],
+                [
+                    "",
+                    "Creating and Composing Texts",
+                    "Express ideas using descriptive text types.",
+                    "S, W"
+                ],
+                [
+                    "",
+                    "Creating and Composing Texts",
+                    "Express ideas using explanatory text types.",
+                    "S, W"
+                ],
+                [
+                    "Content Standard",
+                    "The learners demonstrate expanding vocabulary and understanding of high frequency words and content-specific vocabulary; understand and create simple and compound sentences for comprehending, analyzing, creating, and composing texts about regional themes and content-specific topics."
+                ],
+                [
+                    "Performance Standard",
+                    "The learners use their expanding vocabulary of high-frequency and content-specific words, and simple and compound sentences to comprehend, create, and compose narrative and informational texts about regional themes and content-specific topics; and read grade level texts with appropriate speed, accuracy, and expression."
+                ],
+                [
+                    "Week",
+                    "Domain / Strand",
+                    "Unpacked Weekly Learning Competency",
+                    "Macro-skills"
+                ],
+                [
+                    "1 Word Patterns and Regional Vocabulary",
+                    "Phonics and Word Study",
+                    "Identify Grade 3 level-appropriate sight words.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Phonics and Word Study",
+                    "Read VCV words accurately and automatically.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Phonics and Word Study",
+                    "Read VCCV words accurately and automatically.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Vocabulary and Word Knowledge",
+                    "Identify high-frequency words accurately.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Vocabulary and Word Knowledge",
+                    "Use vocabulary referring to regional themes.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Vocabulary and Word Knowledge",
+                    "Use vocabulary referring to content-specific topics.",
+                    "L, S, R, W"
+                ],
+                [
+                    "2 Content Words, Verbs, Adjectives, and Pronouns",
+                    "Vocabulary and Word Knowledge",
+                    "Use content-specific words for Mathematics (basic symbols and terminologies).",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Vocabulary and Word Knowledge",
+                    "Use content-specific words for Science (basic terminologies).",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Vocabulary and Word Knowledge",
+                    "Identify words that label actions (verbs).",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Vocabulary and Word Knowledge",
+                    "Identify words that describe persons, places, things, animals, events, ideas, and emotions (adjectives).",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Vocabulary and Word Knowledge",
+                    "Identify and use personal pronouns.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Vocabulary and Word Knowledge",
+                    "Identify and use demonstrative pronouns.",
+                    "L, S, R, W"
+                ],
+                [
+                    "3 Word Meaning and Accuracy",
+                    "Vocabulary and Word Knowledge",
+                    "Identify the synonyms and antonyms of words.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Vocabulary and Word Knowledge",
+                    "Read words correctly for meaning based on word patterns.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Vocabulary and Word Knowledge",
+                    "Write words legibly and correctly based on word patterns.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Vocabulary and Word Knowledge",
+                    "Identify roots of high-frequency words (nouns, verbs, and adjectives).",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Identify sentences and non-sentences.",
+                    "L, S, R"
+                ],
+                [
+                    "4 Building and Sequencing Sentences",
+                    "Grammar Awareness",
+                    "Use simple sentences to express ideas about regional themes and content-specific topics.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Use simple sentences with proper intonation (pitch, juncture, and rhythm).",
+                    "L, S, R"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Sequence words to form telling (declarative) sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Sequence words to form asking (interrogative) sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Sequence words to form commanding and requesting (imperative) sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Sequence words to form exclamatory sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "5 Sentence Parts and Capitalization",
+                    "Grammar Awareness",
+                    "Identify the parts of telling (declarative) sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Identify the parts of asking (interrogative) sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Identify the parts of commanding and requesting (imperative) sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Identify the parts of exclamatory sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Use correct capitalization and punctuation for telling (declarative) sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Use correct capitalization and punctuation for asking (interrogative) sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "6 Capitalization and Compound Sentences",
+                    "Grammar Awareness",
+                    "Use correct capitalization and punctuation for commanding and requesting (imperative) sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Use correct capitalization and punctuation for exclamatory sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Identify the two independent clauses in a compound sentence.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Identify the joining word (coordinating conjunction) in a compound sentence.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Identify the doers and the actions in the two clauses of a compound sentence.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Use correct capitalization and punctuation in compound sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "7 Discourse Markers and Story Elements",
+                    "Grammar Awareness",
+                    "Identify discourse markers used in time-order and procedural texts.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Identify discourse markers used in descriptive texts.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Identify discourse markers used in explanatory texts.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Read grade-level sentences with appropriate speed, accuracy, and expression.",
+                    "L, S, R"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Note important elements in a story (characters, setting, and events).",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Sequence at least five events in a story.",
+                    "L, S, R, W"
+                ],
+                [
+                    "8 Analyzing Stories",
+                    "Comprehending Texts",
+                    "Identify the problem and solution presented in a story.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Infer a character\u0027s feelings and traits based on story details.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Relate story events to one\u0027s own experience.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Identify the cause and effect of events in a story.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Predict a possible ending for a story being read or heard.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Give a summary of a story read or heard.",
+                    "L, S, R, W"
+                ],
+                [
+                    "9 Informational Texts and Conclusions",
+                    "Comprehending Texts",
+                    "Note at least five significant details in a grade-level informational text.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Identify the problem and solution presented in an informational text.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Identify time-order and procedural text types.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Identify descriptive text types.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Identify explanatory text types.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Draw conclusions based on a text read or heard.",
+                    "L, S, R, W"
+                ],
+                [
+                    "10 Expressing Ideas Through Speaking and Writing",
+                    "Creating and Composing Texts",
+                    "Use common expressions and polite greetings appropriate to a given situation.",
+                    "S, W"
+                ],
+                [
+                    "",
+                    "Creating and Composing Texts",
+                    "Retell myths, legends, fables, and narrative poems using own words.",
+                    "S, W"
+                ],
+                [
+                    "",
+                    "Creating and Composing Texts",
+                    "Express ideas about one\u0027s own experiences involving regional themes.",
+                    "S, W"
+                ],
+                [
+                    "",
+                    "Creating and Composing Texts",
+                    "Express ideas about content-specific topics.",
+                    "S, W"
+                ],
+                [
+                    "",
+                    "Creating and Composing Texts",
+                    "Use basic sight words, high-frequency words, and content-specific words in composing.",
+                    "S, W"
+                ],
+                [
+                    "",
+                    "Creating and Composing Texts",
+                    "Compose a text reacting to the character, setting, or events in a story.",
+                    "S, W"
+                ],
+                [
+                    "11 Composing and Reacting to Texts",
+                    "Creating and Composing Texts",
+                    "Compose a text reacting to a given topic.",
+                    "S, W"
+                ],
+                [
+                    "",
+                    "Creating and Composing Texts",
+                    "Make a summary of a narrative text.",
+                    "S, W"
+                ],
+                [
+                    "",
+                    "Creating and Composing Texts",
+                    "Express ideas using time-order and procedural text types.",
+                    "S, W"
+                ],
+                [
+                    "",
+                    "Creating and Composing Texts",
+                    "Express ideas using descriptive text types.",
+                    "S, W"
+                ],
+                [
+                    "",
+                    "Creating and Composing Texts",
+                    "Express ideas using explanatory text types.",
+                    "S, W"
+                ],
+                [
+                    "Content Standard",
+                    "The learners demonstrate expanding vocabulary and understanding of high frequency words and content-specific vocabulary; understand and create simple and compound sentences for comprehending, analyzing, creating, and composing texts about regional themes and content-specific topics."
+                ],
+                [
+                    "Performance Standard",
+                    "The learners use their expanding vocabulary of high-frequency and content-specific words, and simple and compound sentences to comprehend, create, and compose narrative and informational texts about national themes and content-specific topics; and read grade level texts with appropriate speed, accuracy, and expression."
+                ],
+                [
+                    "Week",
+                    "Domain / Strand",
+                    "Unpacked Weekly Learning Competency",
+                    "Macro-skills"
+                ],
+                [
+                    "1 Sight Words and National Vocabulary",
+                    "Phonics and Word Study",
+                    "Identify Grade 3 level-appropriate sight words.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Vocabulary and Word Knowledge",
+                    "Identify high-frequency words accurately.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Vocabulary and Word Knowledge",
+                    "Use vocabulary referring to national themes.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Vocabulary and Word Knowledge",
+                    "Use vocabulary referring to content-specific topics.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Vocabulary and Word Knowledge",
+                    "Use content-specific words for Mathematics (basic symbols and terminologies).",
+                    "L, S, R, W"
+                ],
+                [
+                    "2 Content Words, Verbs, Adjectives, and Pronouns",
+                    "Vocabulary and Word Knowledge",
+                    "Use content-specific words for Science (basic terminologies).",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Vocabulary and Word Knowledge",
+                    "Identify words that label actions (verbs).",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Vocabulary and Word Knowledge",
+                    "Identify words that describe persons, places, things, animals, events, ideas, and emotions (adjectives).",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Vocabulary and Word Knowledge",
+                    "Identify and use personal pronouns.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Vocabulary and Word Knowledge",
+                    "Identify the synonyms and antonyms of words.",
+                    "L, S, R, W"
+                ],
+                [
+                    "3 Word Accuracy and Introduction to Sentences",
+                    "Vocabulary and Word Knowledge",
+                    "Read words correctly for meaning based on word patterns.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Vocabulary and Word Knowledge",
+                    "Write words legibly and correctly based on word patterns.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Vocabulary and Word Knowledge",
+                    "Identify roots of high-frequency words (nouns, verbs, and adjectives).",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Identify sentences and non-sentences.",
+                    "L, S, R"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Use simple sentences to express ideas about national themes and content-specific topics.",
+                    "L, S, R, W"
+                ],
+                [
+                    "4 Sentence Sequencing and Parts",
+                    "Grammar Awareness",
+                    "Use simple sentences with proper intonation (pitch, juncture, and rhythm).",
+                    "L, S, R"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Sequence words to form telling (declarative) sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Sequence words to form asking (interrogative) sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Sequence words to form commanding and requesting (imperative) sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Sequence words to form exclamatory sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Identify the parts of telling (declarative) sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "5 Sentence Parts and Capitalization",
+                    "Grammar Awareness",
+                    "Identify the parts of asking (interrogative) sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Identify the parts of commanding and requesting (imperative) sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Identify the parts of exclamatory sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Use correct capitalization and punctuation for telling (declarative) sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Use correct capitalization and punctuation for asking (interrogative) sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Use correct capitalization and punctuation for commanding and requesting (imperative) sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "6 Capitalization and Compound Sentences",
+                    "Grammar Awareness",
+                    "Use correct capitalization and punctuation for exclamatory sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Identify the two independent clauses in a compound sentence.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Identify the joining word (coordinating conjunction) in a compound sentence.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Identify the doers and the actions in the two clauses of a compound sentence.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Use correct capitalization and punctuation in compound sentences.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Identify discourse markers used in time-order and procedural texts.",
+                    "L, S, R, W"
+                ],
+                [
+                    "7 Discourse Markers and Story Elements",
+                    "Grammar Awareness",
+                    "Identify discourse markers used in descriptive texts.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Grammar Awareness",
+                    "Identify discourse markers used in explanatory texts.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Read grade-level sentences with appropriate speed, accuracy, and expression.",
+                    "L, S, R"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Note important elements in a story (characters, setting, and events).",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Sequence at least five events in a story.",
+                    "L, S, R, W"
+                ],
+                [
+                    "8 Analyzing Stories",
+                    "Comprehending Texts",
+                    "Identify the problem and solution presented in a story.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Infer a character\u0027s feelings and traits based on story details.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Relate story events to one\u0027s own experience.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Identify the cause and effect of events in a story.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Predict a possible ending for a story being read or heard.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Give a summary of a story read or heard.",
+                    "L, S, R, W"
+                ],
+                [
+                    "9 Informational Texts and Conclusions",
+                    "Comprehending Texts",
+                    "Note at least five significant details in a grade-level informational text.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Identify the problem and solution presented in an informational text.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Identify time-order and procedural text types.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Identify descriptive text types.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Identify explanatory text types.",
+                    "L, S, R, W"
+                ],
+                [
+                    "",
+                    "Comprehending Texts",
+                    "Draw conclusions based on a text read or heard.",
+                    "L, S, R, W"
+                ],
+                [
+                    "10 Expressing Ideas Through Speaking and Writing",
+                    "Creating and Composing Texts",
+                    "Use common expressions and polite greetings appropriate to a given situation.",
+                    "S, W"
+                ],
+                [
+                    "",
+                    "Creating and Composing Texts",
+                    "Retell myths, legends, fables, and narrative poems using own words.",
+                    "S, W"
+                ],
+                [
+                    "",
+                    "Creating and Composing Texts",
+                    "Express ideas about one\u0027s own experiences involving national themes.",
+                    "S, W"
+                ],
+                [
+                    "",
+                    "Creating and Composing Texts",
+                    "Express ideas about content-specific topics.",
+                    "S, W"
+                ],
+                [
+                    "",
+                    "Creating and Composing Texts",
+                    "Use basic sight words, high-frequency words, and content-specific words in composing.",
+                    "S, W"
+                ],
+                [
+                    "",
+                    "Creating and Composing Texts",
+                    "Compose a text reacting to the character, setting, or events in a story.",
+                    "S, W"
+                ],
+                [
+                    "11 Composing and Reacting to Texts",
+                    "Creating and Composing Texts",
+                    "Compose a text reacting to a given topic.",
+                    "S, W"
+                ],
+                [
+                    "",
+                    "Creating and Composing Texts",
+                    "Make a summary of a narrative text.",
+                    "S, W"
+                ],
+                [
+                    "",
+                    "Creating and Composing Texts",
+                    "Express ideas using time-order and procedural text types.",
+                    "S, W"
+                ],
+                [
+                    "",
+                    "Creating and Composing Texts",
+                    "Express ideas using descriptive text types.",
+                    "S, W"
+                ],
+                [
+                    "",
+                    "Creating and Composing Texts",
+                    "Express ideas using explanatory text types.",
+                    "S, W"
+                ]
+            ],
+    "gmrc":  [
+                 [
+                     "Linggo",
+                     "Pangunahing Pagpapahalaga",
+                     "Unpacked Learning Competency"
+                 ],
+                 [
+                     "Linggo 1",
+                     "Tiwala sa Sarili (Self-Confidence)",
+                     "Naipakikita ang tiwala sa sarili sa pamamagitan ng kawilihan na paunlarin ang kaniyang hilig at kakayahan Fokus: Batayang Kaalaman ● Naiisa-isa ang sariling hilig at kakayahan"
+                 ],
+                 [
+                     "Linggo 2",
+                     "Tiwala sa Sarili (Self-Confidence)",
+                     "Naipakikita ang tiwala sa sarili sa pamamagitan ng kawilihan na paunlarin ang kaniyang hilig at kakayahan Fokus: Pag-unawa at Paglalapat ● Napatutunayan na ang sariling hilig at kakayahan ay mahalaga upang makilala ang sarili bilang bata ● Nailalapat ang sariling hilig at kakayahan tungo sa kakayahan sa pagpapatibay ng tiwala sa sarili"
+                 ],
+                 [
+                     "Linggo 3",
+                     "Mapagmalasakit (Compassion)",
+                     "Naipakikita ang pagiging mapagmalasakit sa pamamagitan ng tamang paglalaan ng mga pera o gamit na angkop sa iba\u0027t ibang situwasyon ● Nakakikilala ng mga paraan ng pagpapatatag ng mga gawi sa pag-iimpok at pagtitipid kasama ang pamilya ● Napatutunayan na ang pagpapatatag ng mga gawi sa pag-iimpok at pagtitipid kasama ang pamilya ay magpapaunlad ng sariling kasanayan na mapamahalaan ang higit na mas malaking halaga ng pera o mga gamit sa kinabukasan ● Naisasakilos ang mga paraan ng pagpapatatag ng mga gawi sa pag-iimpok at pagtitipid kasama ang pamilya"
+                 ],
+                 [
+                     "Linggo 4",
+                     "Responsable (Responsible)",
+                     "Naipakikita ang pagiging responsable sa pamamagitan ng wastong pagtupad sa kaniyang mga gampanin batay sa mga tagubilin ng magulang at nakatatanda Fokus: Batayang Kaalaman ● Natutukoy ang mga gawain ng isang bata sa tahanan at paaralan"
+                 ],
+                 [
+                     "Linggo 5",
+                     "Responsable (Responsible)",
+                     "Naipakikita ang pagiging responsable sa pamamagitan ng wastong pagtupad sa kaniyang mga gampanin batay sa mga tagubilin ng magulang at nakatatanda Fokus: Pag-unawa at Pagbabahagi ● Napatutunayan na ang mga sariling gampanin ng bata sa tahanan at paaralan ay nakatutulong upang mahubog ang pagiging responsable sa kanilang gawain at kilos ● Nakapagbabahagi ng mga karanasan sa pagtugon sa mga gampanin ng isang bata sa tahanan at paaralan"
+                 ],
+                 [
+                     "Linggo 6",
+                     "Pananalig sa Diyos (Faith in God)",
+                     "Naipakikita ang pananalig sa Diyos sa pamamagitan ng pagsunod sa Kaniyang mga aral ● Nakakikilala ng mga sariling pagkilos ng may paggalang sa Diyos ● Naipaliliwanag na ang mga sariling pagkilos na may paggalang sa Diyos ay tanda ng pagkilala at pagmamahal sa Kaniya at ito ay nagdudulot ng pagkakaroon ng mabuting asal ● Nailalapat ang mga pagkilos na nagpapakita ng paggalang sa Diyos"
+                 ],
+                 [
+                     "Linggo 7",
+                     "Disiplina (Discipline)",
+                     "Naipakikita ang disiplina sa pamamagitan ng pakikiisa sa mga gawaing pangkapaligiran Fokus: Batayang Kaalaman ● Natutukoy ang mga pansariling gawain na nakabubuti sa kapaligiran"
+                 ],
+                 [
+                     "Linggo 8",
+                     "Disiplina (Discipline)",
+                     "Naipakikita ang disiplina sa pamamagitan ng pakikiisa sa mga gawaing pangkapaligiran Fokus: Pag-unawa at Paglalapat ● Naipaliliwanag na ang mga pansariling gawain na nakabubuti sa kapaligiran ay magdudulot ng ligtas, maayos, at malinis na pamayanan ● Naisasakilos ang mga natukoy na mabuting magagawa ng bata sa kapaligiran"
+                 ],
+                 [
+                     "Linggo 9",
+                     "Paggalang (Respect)",
+                     "Nakapagsasanay sa pagiging magalang sa pamamagitan ng wastong pakikitungo sa kapwa sa iba\u0027t ibang sitwasyon ● Naiisa-isa ang mga pansariling karapatan na natatamasa ng isang bata sa pamayanan ● Naipaliliwanag na ang mga pansariling karapatan na kinikilala sa pamayanan ay nagtitiyak sa kaligtasan at matiwasay na pamumuhay ng bawat bata ● Naisasakilos ang mga gawain na nagbibigay-halaga sa mga karapatang tinatamasa ng bawat bata"
+                 ],
+                 [
+                     "Linggo 10",
+                     "Pakikiisa (Cooperation)",
+                     "Naipakikita ang pakikiisa sa pamamagitan ng pagtupad sa mga gawain sa loob ng tahanan na ayon sa kaniyang kakayahan Fokus: Batayang Kaalaman ● Natutukoy ang mga sariling paraan ng pakikilahok sa mga gawain sa loob ng tahanan"
+                 ],
+                 [
+                     "Linggo 11",
+                     "Pakikiisa (Cooperation)",
+                     "Naipakikita ang pakikiisa sa pamamagitan ng pagtupad sa mga gawain sa loob ng tahanan na ayon sa kaniyang kakayahan Fokus: Pag-unawa at Paglalapat ● Naipaliliwanag na ang sariling paraan ng pakikilahok sa mga gawain ng pamilya ay nakatutulong sa pagkakabuklod-buklod at pagpapatatag ng ugnayan ng bawat kasapi ng pamilya ● Nailalapat ang mga sariling paraan ng pakikiisa sa mga gawain sa loob ng tahanan (Hal. paraan ng wastong pakikipag-ugnayan nang may paggalang ang bawat kasapi ng mag-anak)"
+                 ],
+                 [
+                     "Linggo",
+                     "Pangunahing Pagpapahalaga",
+                     "Unpacked Learning Competency"
+                 ],
+                 [
+                     "Linggo 1",
+                     "Mapagpasensiya (Patience)",
+                     "Naipakikita ang pagiging mapagpasensiya sa pamamagitan ng angkop na pananalita at pagtugon sa mga sitwasyong kasama ang kapuwa ● Nailalarawan ang mga ugnayan ng sarili sa kapwa ● Naipaliliwanag na ang ugnayan ng sarili sa kapwa ay nakatutulong sa paglinang ng mga kasanayan sa pakikipagkapwa ● Nailalapat ang mga kilos na nagpapakita ng wastong pakikitungo sa kapwa"
+                 ],
+                 [
+                     "Linggo 2",
+                     "Maingat na Paghuhusga (Prudence)",
+                     "Naipakikita ang maingat na paghuhusga sa mga impormasyon tungkol sa barangay na kinabibilangan ● Nakakikilala ng mga impormasyon tungkol sa barangay na kinabibilangan ● Napatutunayan na ang mga impormasyon sa barangay na kinabibilangan ay mahalagang gampanin sa pagpapanatili ng kaayusan, kaligtasan at katahimikan ng mamamayan ● Nakapagbabahagi ng mga impormasyon tungkol sa barangay na kinabibilangan"
+                 ],
+                 [
+                     "Linggo 3",
+                     "Pagiging Totoo (Sincerity)",
+                     "Naipakikita ang pagiging totoo sa pamamagitan ng wastong pakikipag-ugnayan sa bawat kasapi ng pamilya Fokus: Batayang Kaalaman ● Nailalarawan ang pakikipag-ugnayan sa bawat kasapi ng pamilya"
+                 ],
+                 [
+                     "Linggo 4",
+                     "Pagiging Totoo (Sincerity)",
+                     "Naipakikita ang pagiging totoo sa pamamagitan ng wastong pakikipag-ugnayan sa bawat kasapi ng pamilya Fokus: Pangangatuwiran at Paglalapat ● Napangangatuwiranan na ang wastong pakikipag-ugnayan sa bawat kasapi ng pamilya ay daan upang malinang ang pagmamahalan at pagkakaunawaan ● Nailalapat ang mga sariling paraan ng wastong pakikipag-ugnayan sa bawat kasapi ng pamilya"
+                 ],
+                 [
+                     "Linggo 5",
+                     "Pagkukusa (Initiative)",
+                     "Nakapagsasanay ng pagkukusa sa pamamagitan ng wastong pagtugon sa mga itinakdang gawain at iskedyul ● Natutukoy ang mga gawain na nagpapakita ng pagtupad sa mga gampanan at mga inaasahang kilos sa tahanan at paaralan ● Nasusuri na ang pagtupad sa mga gampanin at mga inaasahang kilos sa tahanan at paaralan ay lilinang ng mga gawi na makatutulong sa pagpapaunlad ng kaniyang mga kasanayan at ugnayan sa kapwa ● Nailalapat ang mga inaasahang kilos nang may pagkukusa sa tahanan at paaralan"
+                 ],
+                 [
+                     "Linggo 6",
+                     "Pakikiisa (Cooperation)",
+                     "Naipakikita ang pakikiisa sa pamamagitan ng kusang pagtulong at paglalaan ng oras upang matupad ang mga gawaing panrelihiyon o paniniwala ng pamilya ● Nailalarawan ang mga sariling paraan ng pakikibahagi sa mga gawaing panrelihiyon o paniniwala ng pamilyang kinabibilangan ● Naipaliliwanag na ang pakikibahagi sa mga gawaing panrelihiyon o paniniwala ng pamilya ay lilinang ng mga kaugalian o gawi ng pakikipag-ugnayan sa Diyos ● Naisasakilos ang pagiging aktibo sa mga gawaing panrelihiyon o paniniwala ng pamilyang kinabibilangan"
+                 ],
+                 [
+                     "Linggo 7",
+                     "Mapagmalasakit (Compassion)",
+                     "Naipakikita ang pagiging mapagmalasakit sa pamamagitan ng pagpapalaganap ng mga mabuting kinagawian ng pamilya sa pangangalaga sa kalikasan sa iba\u0027t-ibang paraan ● Naiisa-isa ang mga gawi ng pamilya sa pangangalaga sa kalikasan ● Naipaliliwanag na ang mga gawi ng pamilya ay nakakaapekto sa sariling kaisipan at kilos sa pangangalaga ng kalikasan ● Nailalapat ang mga sariling kilos na nagpapakita ng mga gawi ng pamilya sa pangangalaga sa kalikasan"
+                 ],
+                 [
+                     "Linggo 8",
+                     "Pagiging Masunurin (Obedience)",
+                     "Naipakikita ang pagiging masunurin sa pamamagitan ng pagbabahagi ng mga sariling karanasan sa pagtalima sa mga mabuting kaugalian ng pamilyang Pilipino sa rehiyong kinabibilangan Fokus: Batayang Kaalaman ● Nakakikilala ng mga mabuting kaugalian ng pamilyang Pilipino sa rehiyong kinabibilangan"
+                 ],
+                 [
+                     "Linggo 9",
+                     "Pagiging Masunurin (Obedience)",
+                     "Naipakikita ang pagiging masunurin sa pamamagitan ng pagbabahagi ng mga sariling karanasan sa pagtalima sa mga mabuting kaugalian ng pamilyang Pilipino sa rehiyong kinabibilangan Fokus: Pangangatuwiran at Paglalapat ● Napangangatuwiranan na ang mga mabuting kaugalian ng pamilyang Pilipino sa rehiyong kinabibilangan ay kailangang panatiliin ● Naisasakilos ang mga paraan ng pagsunod sa mga mabuting kaugalian ng pamilyang Pilipino sa rehiyong kinabibilangan (hal. malapit na ugnayan, paggalang sa matatanda, at pagtutulungan)"
+                 ],
+                 [
+                     "Linggo 10",
+                     "Mapagmalasakit (Compassion)",
+                     "Naipakikita ang pagiging mapagmalasakit sa pamamagitan ng kahandaan na mag-alok at magbigay ng angkop na pagtulong sa pangangailangan ng ibang tao ● Natutukoy ang mga sariling kakayahan na makakatulong sa kapwa ● Napangangatuwiranan na ang kahandaan na mag-alok at magbigay ng tulong ayon sa sariling kakayahan sa kapwa ay lilinang ng pagmamalasakit dito ● Naisasakilos ang mga sariling paraan ng pagtulong sa kapwa sa iba\u0027t ibang sitwasyon (hal. pagbabahagi ng gamit/pagkain, pag-alalay sa maysakit o nasaktan)"
+                 ],
+                 [
+                     "Linggo 11",
+                     "Paggalang (Respect)",
+                     "Naipakikita ang pagiging magalang sa mga taong may kapansanan o Persons with Disability (PWD) o iba pang may natatanging kondisyon sa pamamagitan ng wastong pakikipag-ugnayan ● Naiisa-isa ang mga paraan ng pakikipag-ugnayan sa mga taong may kapansanan o PWD o iba pang may natatanging kondisyon ● Napatutunayan na ang sariling pagkilala sa mga taong may kapansanan o PWD o iba pang may natatanging kondisyon ay nagsusulong ng paggalang at pagtanggap tungo sa payapang pakikipagkapuwa ● Nakapagmumungkahi ng mga wastong paraan ng pakikipag-ugnayan batay sa kalagayan ng mga taong may kapansanan o PWD o iba pang may natatanging kondisyon"
+                 ],
+                 [
+                     "Linggo",
+                     "Pangunahing Pagpapahalaga",
+                     "Unpacked Learning Competency"
+                 ],
+                 [
+                     "Linggo 1",
+                     "Madasalin (Prayerful)",
+                     "Nakapagsasanay sa pagiging madasalin sa pamamagitan ng paglalaan ng panahon o oras para sa pananalangin sa kapwa Fokus: Batayang Kaalaman ● Nailalarawan ang iba\u0027t ibang paraan ng pananalangin para sa kapwa"
+                 ],
+                 [
+                     "Linggo 2",
+                     "Madasalin (Prayerful)",
+                     "Nakapagsasanay sa pagiging madasalin sa pamamagitan ng paglalaan ng panahon o oras para sa pananalangin sa kapwa Fokus: Pag-unawa at Pagpapahayag ● Naipaliliwanag na ang paghahandog ng panalangin sa kapwa ay pagpapaunlad ng pananampalataya ● Naipahahayag ang mga panalangin para sa iba\u0027t ibang tao batay sa kanilang pangangailangan o sitwasyon"
+                 ],
+                 [
+                     "Linggo 3",
+                     "Masinop (Prudent)",
+                     "Nakapagsasanay sa pagiging masinop sa pamamagitan ng paglikha ng mga gamit mula sa mga bagay na hindi na nagagamit ● Naiisa-isa ang mga paraan ng pamamahala sa mga bagay na hindi na nagagamit sa tulong ng kapwa ● Napatutunayan na ang pamamahala sa mga bagay na hindi na nagagamit sa tulong ng kapwa ay simpleng paraan sa pagsisinop ng mga biyaya ng kalikasan ● Nakalalahok sa mga gawain sa tahanan o paaralan na nagtataguyod ng 4Rs sa tulong ng kapwa (Refuse, Reduce, Reuse, Recycle)"
+                 ],
+                 [
+                     "Linggo 4",
+                     "Pagmamahal sa Bayan (Love of Country)",
+                     "Naipakikita ang pagmamahal sa bayan sa pamamagitan ng mga angkop na kilos upang maipaunawa sa kapuwa ang kahalagahan ng sagisag ng bansa ● Natutukoy ang mga paraan ng panghihikayat sa kapuwa na igalang ang mga sagisag ng bansa ● Napangangatuwiranan na ang paghikayat sa kapuwa na igalang ang mga sagisag ng bansa ay pagkilala sa pambansang adhikain, tradisyon at pagkakaisa ng mga Pilipino ● Naipahahayag ang panghihikayat sa kapuwa na igalang ang mga sagisag na nagtataguyod ng pagmamahal sa bayan"
+                 ],
+                 [
+                     "Linggo 5",
+                     "Pakikiisa (Cooperation)",
+                     "Naipakikita ang pakikiisa sa pamamagitan ng paglahok sa mga gawain alinsunod sa mga alituntunin sa barangay na kinabibilangan Fokus: Batayang Kaalaman ● Natutukoy ang mga alituntunin sa barangay na kinabibilangan"
+                 ],
+                 [
+                     "Linggo 6",
+                     "Pakikiisa (Cooperation)",
+                     "Naipakikita ang pakikiisa sa pamamagitan ng paglahok sa mga gawain alinsunod sa mga alituntunin sa barangay na kinabibilangan Fokus: Pag-unawa at Pagpili ● Naipaliliwanag na ang mga alituntunin sa barangay na kinabibilangan ay mahalagang sundin upang mapanatili ang kaligtasan, kaayusan at katahimikan ng mga mamamayan ● Nakapipili ng mga tiyak na alituntunin sa barangay na kinabibilangan na itataguyod sa sariling paraan"
+                 ],
+                 [
+                     "Linggo 7",
+                     "Responsable (Responsible)",
+                     "Nakapagsasanay sa pagiging responsable sa pamamagitan ng panghihikayat sa kapuwa-bata na gampanan ang mga tungkulin bilang kasapi ng barangay na kinabibilangan ● Naiisa-isa ang tungkulin ng mga taong nakatira sa barangay ● Naipaliliwanag na ang mga tungkulin ng mga taong nakatira sa barangay ay kailangang gampanan ng lahat bilang pagtataguyod ng kanilang kabutihan ● Nailalapat ang mga paraan ng pagsunod sa mga tungkulin sa kinabibilangang barangay bilang kasapi nito"
+                 ],
+                 [
+                     "Linggo 8",
+                     "Pananampalataya (Faith)",
+                     "Naipakikita ang pananampalataya sa pamamagitan ng pagtugon sa pangangailangan ng gawain ng relihiyon o paniniwala sa kinabibilangang pamayanan Fokus: Batayang Kaalaman ● Nakakikilala ng mga gawain ng relihiyon o paniniwala sa kinabibilangang pamayanan"
+                 ],
+                 [
+                     "Linggo 9",
+                     "Pananampalataya (Faith)",
+                     "Naipakikita ang pananampalataya sa pamamagitan ng pagtugon sa pangangailangan ng gawain ng relihiyon o paniniwala sa kinabibilangang pamayanan Fokus: Pagsusuri at Pagpili ● Nasusuri na ang pakikibahagi sa mga gawain ng relihiyon o paniniwala sa kinabibilangang pamayanan ay nakapagpapatibay ng ugnayan sa Diyos ● Nakapipili ng mga paraan ng pakikibahagi sa mga gawain ng relihiyon o paniniwala sa kinabibilangang pamayanan"
+                 ],
+                 [
+                     "Linggo 10",
+                     "Mapagmalasakit (Compassion)",
+                     "Nakapagsasanay sa pagiging mapagpamalasakit sa pamamagitan ng sariling paraan upang mapalinis ang hangin ● Nakakikilala ng mga paraan ng pakikiisa sa pamayanan upang mapanatili ang kalinisan ng hangin ● Napangangatuwiranan na ang pakikiisa sa pamayanan sa pagpapanatili ng malinis na hangin ay tungkulin ng bawat mamamayan ● Naisasakilos ang mga paraan ng pakikiisa sa pamayanan upang mapanatili ang kalinisan ng hangin (hal. pagtatanim ng halaman at puno, wastong pagtatapon ng basura)"
+                 ],
+                 [
+                     "Linggo 11",
+                     "Mapagpasalamat (Gratitude)",
+                     "Naipakikita ang pagiging mapagpasalamat sa pamamagitan ng pagkilala sa mga kontribusyon ng mga makabagong bayani (Modern Day Heroes) sa bayan ● Nakapag-uugnay ng kahalagahan ng kontribusyon ng mga makabagong bayani (Modern Day Heroes) sa kasalukuyang panahon ● Naipaliliwanag na ang mga kontribusyon ng mga makabagong bayani (modern day heroes) ay dapat kilalanin bilang pagpupugay sa mga mabuting naidulot nila sa pamayanan na dapat tularan ng mamamayan ● Nakabubuo ng gawain na nagtatampok sa kabayanihan ng mga makabagong bayani (modern day heroes) (hal. pagsasadula, skit, role playing)"
+                 ]
+             ],
+    "makabansa":  [
+                      [
+                          "Pamantayang Pangnilalaman",
+                          "Nauunawaan ang kasaysayan ng kinabibilangang pook bilang bahagi ng mas malawak na komunidad."
+                      ],
+                      [
+                          "Pamantayan sa Pagganap",
+                          "Nakagagawa ng likhang-sining na nagpapakita ng kasaysayan at pagbabagong nagaganap sa kinabibilangang komunidad."
+                      ],
+                      [
+                          "Linggo",
+                          "Kasanayang Pampagkatuto (Unpacked/Clustered)"
+                      ],
+                      [
+                          "",
+                          "Ang Ating Komunidad sa Paglipas ng Panahon"
+                      ],
+                      [
+                          "Linggo 1",
+                          "Natatalakay ang mahahalagang tao, lugar, at pangyayari na bahagi ng kasaysayan ng barangay na kinabibilangan."
+                      ],
+                      [
+                          "Linggo 2",
+                          "Natatalakay ang mahahalagang tao, lugar, at pangyayari na bahagi ng kasaysayan ng bayan o lungsod na kinabibilangan."
+                      ],
+                      [
+                          "Linggo 3",
+                          "Natatalakay ang mahahalagang tao, lugar, at pangyayari na bahagi ng kasaysayan ng lalawigan na kinabibilangan."
+                      ],
+                      [
+                          "Linggo 4",
+                          "Natatalakay ang mahahalagang tao, lugar, at pangyayari na bahagi ng kasaysayan ng rehiyon na kinabibilangan."
+                      ],
+                      [
+                          "Linggo 5",
+                          "Nakabubuo ng talaan ng kasaysayan (timeline) ng kinabibilangang pook batay sa mahahalagang tao, lugar, at pangyayari nito."
+                      ],
+                      [
+                          "Linggo 6",
+                          "Naipaliliwanag ang mga pagbabagong naganap sa populasyon ng kinabibilangang komunidad."
+                      ],
+                      [
+                          "Linggo 7",
+                          "Naipaliliwanag ang mga pagbabagong naganap sa kapaligiran at imprastraktura ng kinabibilangang komunidad."
+                      ],
+                      [
+                          "Linggo 8",
+                          "Naipaliliwanag ang mga pagbabagong naganap sa pamumuhay at kabuhayan ng kinabibilangang komunidad."
+                      ],
+                      [
+                          "Linggo 9",
+                          "Nakagagawa ng likhang-sining na nagpapakita ng kasaysayan ng kinabibilangang komunidad."
+                      ],
+                      [
+                          "Linggo 10",
+                          "Nakagagawa ng likhang-sining na nagpapakita ng pagbabagong naganap sa kinabibilangang komunidad."
+                      ],
+                      [
+                          "Linggo 11",
+                          "Napahahalagahan ang kasaysayan at pagbabagong nagaganap sa kinabibilangang komunidad."
+                      ],
+                      [
+                          "Pamantayang Pangnilalaman",
+                          "Nauunawaan ang mayamang sining at kultura ng mas malawak na komunidad."
+                      ],
+                      [
+                          "Pamantayan sa Pagganap",
+                          "Nakagagawa ng likhang-sining na nagpapakita ng pagkakakilanlang kultural."
+                      ],
+                      [
+                          "Linggo",
+                          "Kasanayang Pampagkatuto (Unpacked/Clustered)"
+                      ],
+                      [
+                          "",
+                          "Ang Sining at Kultura ng Ating Mas Malawak na Komunidad"
+                      ],
+                      [
+                          "Linggo 1",
+                          "Naipaliliwanag ang ugnayan ng kapaligiran at kultura."
+                      ],
+                      [
+                          "Linggo 2",
+                          "Naipaliliwanag kung paano naiimpluwensyahan ng kultura ang pang-araw-araw na pamumuhay sa komunidad."
+                      ],
+                      [
+                          "Linggo 3",
+                          "Natatalakay ang kahulugan ng pagkakakilanlan ng kinabibilangang komunidad."
+                      ],
+                      [
+                          "Linggo 4",
+                          "Natatalakay ang kahalagahan ng himno bilang sagisag ng kinabibilangang komunidad."
+                      ],
+                      [
+                          "Linggo 5",
+                          "Natatalakay ang kahalagahan ng coat of arms at bayaning lokal bilang sagisag ng kinabibilangang komunidad."
+                      ],
+                      [
+                          "Linggo 6",
+                          "Naiuugnay ang sining ng komunidad sa sariling pagkakakilanlan."
+                      ],
+                      [
+                          "Linggo 7",
+                          "Naiuugnay ang kultura ng komunidad sa sariling pagkakakilanlan."
+                      ],
+                      [
+                          "Linggo 8",
+                          "Nakagagawa ng likhang-sining na nagpapakita ng pagkakakilanlang kultural."
+                      ],
+                      [
+                          "Linggo 9",
+                          "Napahahalagahan ang sining at kultura ng bayan o lungsod na kinabibilangan."
+                      ],
+                      [
+                          "Linggo 10",
+                          "Napahahalagahan ang sining at kultura ng lalawigan na kinabibilangan."
+                      ],
+                      [
+                          "Linggo 11",
+                          "Napahahalagahan ang sining at kultura ng rehiyon na kinabibilangan."
+                      ],
+                      [
+                          "Pamantayang Pangnilalaman",
+                          "Nauunawaan ang konsepto ng pagka-Pilipino at ang papel ng isang aktibong Pilipino."
+                      ],
+                      [
+                          "Pamantayan sa Pagganap",
+                          "Nakalalahok sa isang malikhaing gawain na nagpapakita ng pagkakakilanlan at pagiging aktibong Pilipino."
+                      ],
+                      [
+                          "Linggo",
+                          "Kasanayang Pampagkatuto (Unpacked/Clustered)"
+                      ],
+                      [
+                          "",
+                          "Tayo Bilang Aktibong Pilipino"
+                      ],
+                      [
+                          "Linggo 1",
+                          "Naipaliliwanag ang konsepto at mga kaugnay na kaisipan ng pagka-Pilipino."
+                      ],
+                      [
+                          "Linggo 2",
+                          "Nailalarawan ang pamumuhay ng kinabibilangang komunidad bilang bahagi ng pagka-Pilipino."
+                      ],
+                      [
+                          "Linggo 3",
+                          "Nailalarawan ang mga serbisyo ng kinabibilangang komunidad bilang bahagi ng pagka-Pilipino."
+                      ],
+                      [
+                          "Linggo 4",
+                          "Napahahalagahan ang pagkakakilanlan bilang isang Pilipino."
+                      ],
+                      [
+                          "Linggo 5",
+                          "Natutukoy ang papel ng pagiging aktibong Pilipino sa tahanan."
+                      ],
+                      [
+                          "Linggo 6",
+                          "Natutukoy ang papel ng pagiging aktibong Pilipino sa paaralan at pamayanan."
+                      ],
+                      [
+                          "Linggo 7",
+                          "Napahahalagahan ang papel ng pagiging aktibong Pilipino sa tahanan."
+                      ],
+                      [
+                          "Linggo 8",
+                          "Napahahalagahan ang papel ng pagiging aktibong Pilipino sa paaralan at pamayanan."
+                      ],
+                      [
+                          "Linggo 9",
+                          "Naipaliliwanag ang kahulugan at nilalaman ng Panatang Makabayan."
+                      ],
+                      [
+                          "Linggo 10",
+                          "Naipamamalas ang pagiging isang aktibo at responsableng batang Pilipino sa pang-araw-araw na gawain."
+                      ],
+                      [
+                          "Linggo 11",
+                          "Naipamamalas ang pagsasakatuparan ng Panatang Makabayan sa pamamagitan ng isang malikhaing gawain."
+                      ]
+                  ],
+    "gmrc_count":  36,
+    "eng_count":  202
+}
