@@ -1,1 +1,43 @@
-{"test":"persistent_storage_ok","time":"2026-09-26T15:38:25.813Z"}
+{
+  "version": 1,
+  "last_synced": "2026-09-26T15:39:05.642Z",
+  "total_learners": 4,
+  "students": [
+    {
+      "id": 38,
+      "username": "zydnie",
+      "password_hash": "$2b$10$VSV0adGIzy7fckEEbsNORO2PIAfNBh5IW9CnIS4a/3ArtJppnWP76",
+      "full_name": "Zydnie F. Guimera",
+      "role": "student",
+      "grade_level": "Grade 3",
+      "avatar_id": "avatar_boy1"
+    },
+    {
+      "id": 39,
+      "username": "aishleen",
+      "password_hash": "$2b$10$VSV0adGIzy7fckEEbsNORO2PIAfNBh5IW9CnIS4a/3ArtJppnWP76",
+      "full_name": "Aishleen Kaye F. Sola",
+      "role": "student",
+      "grade_level": "Grade 3",
+      "avatar_id": "avatar_girl1"
+    },
+    {
+      "id": 46,
+      "username": "juan.g1",
+      "password_hash": "$2b$10$VSV0adGIzy7fckEEbsNORO2PIAfNBh5IW9CnIS4a/3ArtJppnWP76",
+      "full_name": "Juan Dela Cruz",
+      "role": "student",
+      "grade_level": "Grade 1",
+      "avatar_id": "avatar_boy1"
+    },
+    {
+      "id": 47,
+      "username": "maria.g2",
+      "password_hash": "$2b$10$VSV0adGIzy7fckEEbsNORO2PIAfNBh5IW9CnIS4a/3ArtJppnWP76",
+      "full_name": "Maria Santos",
+      "role": "student",
+      "grade_level": "Grade 2",
+      "avatar_id": "avatar_girl1"
+    }
+  ]
+}
