@@ -39,6 +39,24 @@ export default function TeacherDashboard({ user }) {
   const [termReportData, setTermReportData] = useState(null);
   const [schoolYearReport, setSchoolYearReport] = useState(null);
 
+  // Persistent Cloud Sync state
+  const [syncingCloud, setSyncingCloud] = useState(false);
+  const [cloudStatusMsg, setCloudStatusMsg] = useState('☁️ Cloud Storage Active');
+
+  const handleCloudSync = async () => {
+    setSyncingCloud(true);
+    try {
+      const res = await api.syncCloudRoster();
+      setCloudStatusMsg('✅ Cloud Synced!');
+      sounds.playCorrect();
+      alert(res.message || 'All students and passwords have been permanently backed up to the cloud!');
+    } catch (err) {
+      alert(`Cloud sync warning: ${err.message}`);
+    } finally {
+      setSyncingCloud(false);
+    }
+  };
+
   useEffect(() => {
     loadAllData(selectedGrade);
   }, []);
@@ -297,15 +315,40 @@ export default function TeacherDashboard({ user }) {
             </p>
           </div>
 
-          <button
-            id="btn-refresh-teacher-data"
-            onClick={() => loadAllData(selectedGrade)}
-            className="btn-3d btn-outline"
-            style={{ padding: '10px 18px', background: '#1E293B', color: '#FFFFFF', borderColor: '#334155' }}
-          >
-            <RefreshCw size={16} />
-            <span>Sync Live Data</span>
-          </button>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+            <span style={{
+              fontSize: '0.78rem',
+              background: '#0F172A',
+              color: '#34D399',
+              padding: '6px 12px',
+              borderRadius: '12px',
+              border: '1px solid #1E293B',
+              fontWeight: '700'
+            }}>
+              {cloudStatusMsg}
+            </span>
+
+            <button
+              id="btn-cloud-sync"
+              onClick={handleCloudSync}
+              disabled={syncingCloud}
+              className="btn-3d btn-primary"
+              style={{ padding: '8px 16px', background: '#059669', borderColor: '#047857', fontSize: '0.85rem' }}
+              title="Ensure all student rosters and passwords are permanently backed up to GitHub Cloud Storage"
+            >
+              <span>{syncingCloud ? '⏳ Saving...' : '☁️ Save to Cloud'}</span>
+            </button>
+
+            <button
+              id="btn-refresh-teacher-data"
+              onClick={() => loadAllData(selectedGrade)}
+              className="btn-3d btn-outline"
+              style={{ padding: '8px 16px', background: '#1E293B', color: '#FFFFFF', borderColor: '#334155', fontSize: '0.85rem' }}
+            >
+              <RefreshCw size={14} />
+              <span>Sync Live Data</span>
+            </button>
+          </div>
         </div>
       </div>
 

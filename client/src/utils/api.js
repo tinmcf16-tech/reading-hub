@@ -148,6 +148,10 @@ export const api = {
     return request(`/teacher/reports/term/${termId}`);
   },
 
+  async syncCloudRoster() {
+    return request('/teacher/cloud-sync', { method: 'POST' });
+  },
+
   async getSchoolYearReport(grade) {
     const q = grade ? `?grade=${encodeURIComponent(grade)}` : '';
     return request(`/teacher/reports/school-year${q}`);

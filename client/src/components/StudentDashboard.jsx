@@ -8,7 +8,8 @@ import {
 import ModulePlayer from './ModulePlayer';
 
 export default function StudentDashboard({ user, onRefreshUser }) {
-  const [selectedGrade, setSelectedGrade] = useState(user?.grade_level || 'Grade 1');
+  // Student is STRICTLY locked into their enrolled grade level (Grade 1, 2, or 3)
+  const selectedGrade = user?.grade_level || 'Grade 3';
   const [loading, setLoading] = useState(true);
   const [terms, setTerms] = useState([]);
   const [selectedTermId, setSelectedTermId] = useState(null);
@@ -19,7 +20,7 @@ export default function StudentDashboard({ user, onRefreshUser }) {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    loadDashboard(selectedGrade);
+    loadDashboard();
   }, [selectedGrade]);
 
   useEffect(() => {
@@ -34,11 +35,11 @@ export default function StudentDashboard({ user, onRefreshUser }) {
     }
   }, [selectedTermId, selectedWeekNum]);
 
-  const loadDashboard = async (targetGrade) => {
+  const loadDashboard = async () => {
     setLoading(true);
     setError('');
     try {
-      const termsRes = await api.getTerms(targetGrade);
+      const termsRes = await api.getTerms(selectedGrade);
       const gradeTerms = termsRes.terms || [];
       setTerms(gradeTerms);
       if (gradeTerms.length > 0) {
@@ -50,12 +51,6 @@ export default function StudentDashboard({ user, onRefreshUser }) {
     } finally {
       setLoading(false);
     }
-  };
-
-  const handleGradeChange = (grade) => {
-    if (grade === selectedGrade) return;
-    sounds.playTone(400, 'triangle', 0.1, 0.1);
-    setSelectedGrade(grade);
   };
 
   const loadWeeksForTerm = async (tId) => {
@@ -116,7 +111,7 @@ export default function StudentDashboard({ user, onRefreshUser }) {
   return (
     <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '24px 16px' }} id="student-dashboard-main">
       
-      {/* GRADE LEVEL SWITCHER BAR */}
+      {/* OFFICIAL LEARNER ENROLLMENT BANNER (STRICTLY LOCKED) */}
       <div style={{
         background: '#FFFFFF',
         borderRadius: '20px',
@@ -129,60 +124,57 @@ export default function StudentDashboard({ user, onRefreshUser }) {
         gap: '16px',
         boxShadow: '0 4px 12px rgba(0,0,0,0.06)',
         border: '2px solid #E2E8F0'
-      }} id="student-grade-switcher">
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-          <Layers size={22} color="#4F46E5" />
+      }} id="student-enrolled-banner">
+        <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+          <div style={{
+            width: '46px',
+            height: '46px',
+            borderRadius: '14px',
+            background: selectedGrade === 'Grade 1' ? '#FEF3C7' : selectedGrade === 'Grade 2' ? '#E0E7FF' : '#DCFCE7',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            fontSize: '24px'
+          }}>
+            🎒
+          </div>
           <div>
-            <span style={{ fontSize: '0.75rem', fontWeight: '800', color: '#64748B', textTransform: 'uppercase' }}>
-              Select Grade Level to Study
+            <span style={{ fontSize: '0.75rem', fontWeight: '800', color: '#64748B', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+              Official Learner Enrollment
             </span>
-            <h3 style={{ fontSize: '1.15rem', color: '#0F172A', margin: 0 }}>
-              Multi-Grade Learning Portal
+            <h3 style={{ fontSize: '1.25rem', color: '#0F172A', margin: 0, fontWeight: '800' }}>
+              {selectedGrade} Curriculum • San Vicente Elementary School
             </h3>
           </div>
         </div>
 
-        <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
-          {[
-            { id: 'Grade 1', label: '🎒 Grade 1', desc: '5 Subjects (Reading, Language, Math, Makabansa, GMRC)' },
-            { id: 'Grade 2', label: '🎒 Grade 2', desc: '5 Subjects (English, Filipino, Math, Makabansa, GMRC)' },
-            { id: 'Grade 3', label: '🎒 Grade 3', desc: '6 Subjects (includes Science)' }
-          ].map(g => {
-            const isCurrent = selectedGrade === g.id;
-            return (
-              <button
-                key={g.id}
-                id={`btn-student-grade-${g.id.replace(' ', '')}`}
-                onClick={() => handleGradeChange(g.id)}
-                title={g.desc}
-                style={{
-                  padding: '10px 20px',
-                  borderRadius: '16px',
-                  border: isCurrent ? '2px solid #4F46E5' : '2px solid #E2E8F0',
-                  background: isCurrent ? '#4F46E5' : '#F8FAFC',
-                  color: isCurrent ? '#FFFFFF' : '#334155',
-                  fontWeight: '800',
-                  fontSize: '0.95rem',
-                  cursor: 'pointer',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                  gap: '2px',
-                  boxShadow: isCurrent ? '0 6px 16px rgba(79, 70, 229, 0.3)' : 'none',
-                  transition: 'all 0.15s ease'
-                }}
-              >
-                <span>{g.label}</span>
-                <span style={{
-                  fontSize: '0.7rem',
-                  fontWeight: '600',
-                  opacity: isCurrent ? 0.9 : 0.7
-                }}>
-                  {g.id === 'Grade 3' ? '6 Subjects (with Science)' : '5 Subjects (No Science)'}
-                </span>
-              </button>
-            );
-          })}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap' }}>
+          <span style={{
+            padding: '8px 16px',
+            borderRadius: '12px',
+            background: '#F1F5F9',
+            color: '#334155',
+            fontWeight: '700',
+            fontSize: '0.88rem',
+            border: '1px solid #CBD5E1'
+          }}>
+            {selectedGrade === 'Grade 3' ? '📚 6 Core Subjects (with Science)' : '📚 5 Core Subjects (No Science)'}
+          </span>
+          <span style={{
+            padding: '8px 14px',
+            borderRadius: '12px',
+            background: '#ECFDF5',
+            color: '#065F46',
+            fontWeight: '800',
+            fontSize: '0.85rem',
+            border: '1px solid #A7F3D0',
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '6px'
+          }}>
+            <Lock size={14} />
+            <span>{selectedGrade} Only</span>
+          </span>
         </div>
       </div>
 
@@ -190,7 +182,7 @@ export default function StudentDashboard({ user, onRefreshUser }) {
       <div className="hero-banner" id="student-hero-banner">
         <div className="hero-content">
           <span className="hero-tag">
-            🌟 Currently Viewing: <strong>{selectedGrade}</strong> • {selectedGrade === 'Grade 3' ? 'Section Masinadyahon' : 'San Vicente Elementary School'}
+            🌟 {selectedGrade} Learner • {selectedGrade === 'Grade 3' ? 'Section Masinadyahon' : 'San Vicente Elementary School'}
           </span>
           <h1 className="hero-title">
             WELCOME, {user?.full_name?.toUpperCase() || 'LEARNER'}! 👋

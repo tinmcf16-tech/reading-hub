@@ -5,6 +5,7 @@ const fs = require('fs');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const { db } = require('./db');
+const { restoreFromCloud, triggerCloudSave, saveToCloud } = require('./cloudSync');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -93,13 +94,13 @@ app.get('/api/auth/me', authenticateToken, (req, res) => {
     res.json({ user: { ...user, stats, badges } });
 });
 
-// Helper to determine effective grade filter
+// Helper to determine effective grade filter (STRICTLY locks student to their enrolled grade)
 function getEffectiveGrade(req) {
-    if (req.query && req.query.grade) return req.query.grade;
     if (req.user && req.user.role === 'student') {
         const u = db.prepare('SELECT grade_level FROM users WHERE id = ?').get(req.user.id);
-        return u?.grade_level || 'Grade 3';
+        return u?.grade_level || req.user.grade_level || 'Grade 3';
     }
+    if (req.query && req.query.grade) return req.query.grade;
     return null;
 }
 
@@ -122,7 +123,7 @@ app.get('/api/public/students', (req, res) => {
 });
 
 // --- Curriculum & Access Control Routes ---
-// Get terms (filtered by grade if student or requested)
+// Get terms (filtered strictly by enrolled grade if student)
 app.get('/api/terms', authenticateToken, (req, res) => {
     const grade = getEffectiveGrade(req);
     let query = 'SELECT * FROM terms';
@@ -136,14 +137,21 @@ app.get('/api/terms', authenticateToken, (req, res) => {
     res.json({ terms });
 });
 
-// Get all 11 weeks for a specific term
+// Get all 11 weeks for a specific term (Grade verified for students)
 app.get('/api/terms/:termId/weeks', authenticateToken, (req, res) => {
     const termId = parseInt(req.params.termId);
+    if (req.user.role === 'student') {
+        const term = db.prepare('SELECT grade_level FROM terms WHERE id = ?').get(termId);
+        const studentGrade = req.user.grade_level || 'Grade 3';
+        if (term && term.grade_level !== studentGrade) {
+            return res.status(403).json({ error: `Access denied. You are enrolled in ${studentGrade}. You cannot access ${term.grade_level} weeks.` });
+        }
+    }
     const weeks = db.prepare('SELECT * FROM weeks WHERE term_id = ? ORDER BY week_number ASC').all(termId);
     res.json({ weeks });
 });
 
-// Get all subjects (filtered by grade if student or requested)
+// Get all subjects (filtered strictly by grade if student)
 app.get('/api/subjects', authenticateToken, (req, res) => {
     const grade = getEffectiveGrade(req);
     let query = 'SELECT * FROM subjects';
@@ -157,10 +165,21 @@ app.get('/api/subjects', authenticateToken, (req, res) => {
     res.json({ subjects });
 });
 
-// Get entire learning week (Enforces backend lock check)
+// Get entire learning week (Enforces backend lock check and strict grade isolation)
 app.get('/api/curriculum/term/:termId/week/:weekNum', authenticateToken, (req, res) => {
     const termId = parseInt(req.params.termId);
     const weekNum = parseInt(req.params.weekNum);
+
+    // Enforce strict grade isolation for students
+    if (req.user.role === 'student') {
+        const term = db.prepare('SELECT grade_level FROM terms WHERE id = ?').get(termId);
+        const studentGrade = req.user.grade_level || 'Grade 3';
+        if (term && term.grade_level !== studentGrade) {
+            return res.status(403).json({
+                error: `Access denied: You are enrolled in ${studentGrade}. You cannot access ${term.grade_level} learning activities.`
+            });
+        }
+    }
 
     const week = db.prepare('SELECT * FROM weeks WHERE term_id = ? AND week_number = ?').get(termId, weekNum);
     if (!week) return res.status(404).json({ error: 'Week not found' });
@@ -208,6 +227,17 @@ app.get('/api/curriculum/term/:termId/week/:weekNum/subject/:subjectId', authent
     const termId = parseInt(req.params.termId);
     const weekNum = parseInt(req.params.weekNum);
     const subjectId = req.params.subjectId;
+
+    // Enforce strict grade isolation for students
+    if (req.user.role === 'student') {
+        const term = db.prepare('SELECT grade_level FROM terms WHERE id = ?').get(termId);
+        const studentGrade = req.user.grade_level || 'Grade 3';
+        if (term && term.grade_level !== studentGrade) {
+            return res.status(403).json({
+                error: `Access denied: You are enrolled in ${studentGrade}. You cannot access ${term.grade_level} learning modules.`
+            });
+        }
+    }
 
     const week = db.prepare('SELECT * FROM weeks WHERE term_id = ? AND week_number = ?').get(termId, weekNum);
     if (!week) return res.status(404).json({ error: 'Week not found' });
@@ -297,18 +327,25 @@ app.post('/api/activities/:activityId/submit', authenticateToken, (req, res) => 
     const userId = req.user.id;
 
     const activity = db.prepare(`
-        SELECT a.*, c.term_id, c.week_id, c.subject_id, w.is_unlocked
+        SELECT a.*, c.term_id, c.week_id, c.subject_id, w.is_unlocked, t.grade_level
         FROM activities a
         JOIN competencies c ON a.competency_id = c.id
         JOIN weeks w ON c.week_id = w.id
+        JOIN terms t ON c.term_id = t.id
         WHERE a.id = ?
     `).get(activityId);
 
     if (!activity) return res.status(404).json({ error: 'Activity not found' });
 
-    // Check week access
-    if (req.user.role === 'student' && !activity.is_unlocked) {
-        return res.status(403).json({ error: 'Cannot submit to a locked week.' });
+    // Enforce grade isolation & week access for students
+    if (req.user.role === 'student') {
+        const studentGrade = req.user.grade_level || 'Grade 3';
+        if (activity.grade_level !== studentGrade) {
+            return res.status(403).json({ error: `Cannot submit activities from ${activity.grade_level} as a ${studentGrade} learner.` });
+        }
+        if (!activity.is_unlocked) {
+            return res.status(403).json({ error: 'Cannot submit to a locked week.' });
+        }
     }
 
     let correctAnswers = {};
@@ -634,6 +671,7 @@ app.post('/api/teacher/students', authenticateToken, requireTeacher, (req, res) 
             VALUES (?, 0, 1, 1)
         `).run(result.lastInsertRowid);
 
+        triggerCloudSave(db);
         res.json({ success: true, id: result.lastInsertRowid, message: 'Student registered successfully' });
     } catch (e) {
         res.status(400).json({ error: 'Username already exists or invalid data' });
@@ -654,6 +692,7 @@ app.delete('/api/teacher/students/:id', authenticateToken, requireTeacher, (req,
         db.prepare('DELETE FROM user_badges WHERE user_id = ?').run(studentId);
         db.prepare('DELETE FROM users WHERE id = ?').run(studentId);
 
+        triggerCloudSave(db);
         res.json({ success: true, message: `Student "${student.full_name}" deleted successfully.` });
     } catch (err) {
         res.status(500).json({ error: 'Failed to delete student: ' + err.message });
@@ -674,7 +713,22 @@ app.put('/api/teacher/students/:id/password', authenticateToken, requireTeacher,
     const newHash = bcrypt.hashSync(String(password).trim(), 10);
     db.prepare('UPDATE users SET password_hash = ? WHERE id = ?').run(newHash, studentId);
 
+    triggerCloudSave(db);
     res.json({ success: true, message: `Password for "${student.full_name}" has been updated.` });
+});
+
+// Manual Cloud Sync Trigger for Teacher
+app.post('/api/teacher/cloud-sync', authenticateToken, requireTeacher, async (req, res) => {
+    try {
+        const ok = await saveToCloud(db);
+        if (ok) {
+            res.json({ success: true, message: 'All student rosters and passwords are permanently backed up to GitHub Cloud Storage!' });
+        } else {
+            res.status(500).json({ error: 'Failed to write to cloud storage. Local database remains safe.' });
+        }
+    } catch (e) {
+        res.status(500).json({ error: e.message });
+    }
 });
 
 // Individual Student Drill-down (Complete 33-week profile)
@@ -926,8 +980,13 @@ if (fs.existsSync(clientDist)) {
 }
 
 // Start Express Server
-app.listen(PORT, '0.0.0.0', () => {
+app.listen(PORT, '0.0.0.0', async () => {
     console.log(`Reading HUB Backend Server is running on http://localhost:${PORT}`);
     console.log(`Network access (Same Wi-Fi): http://192.168.1.6:${PORT}`);
+    try {
+        await restoreFromCloud(db);
+    } catch (e) {
+        console.warn('[CloudSync] Startup restore error:', e.message);
+    }
 });
 
