@@ -3,14 +3,15 @@ import { api } from '../utils/api';
 import { sounds } from '../utils/audio';
 import { 
   Play, Lock, CheckCircle2, Star, Flame, Trophy, 
-  BookOpen, ChevronRight, Award, Compass, Sparkles 
+  BookOpen, ChevronRight, Award, Compass, Sparkles, Layers 
 } from 'lucide-react';
 import ModulePlayer from './ModulePlayer';
 
 export default function StudentDashboard({ user, onRefreshUser }) {
+  const [selectedGrade, setSelectedGrade] = useState(user?.grade_level || 'Grade 1');
   const [loading, setLoading] = useState(true);
   const [terms, setTerms] = useState([]);
-  const [selectedTermId, setSelectedTermId] = useState(1);
+  const [selectedTermId, setSelectedTermId] = useState(null);
   const [weeks, setWeeks] = useState([]);
   const [selectedWeekNum, setSelectedWeekNum] = useState(1);
   const [weekData, setWeekData] = useState(null);
@@ -18,8 +19,8 @@ export default function StudentDashboard({ user, onRefreshUser }) {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    loadDashboard();
-  }, []);
+    loadDashboard(selectedGrade);
+  }, [selectedGrade]);
 
   useEffect(() => {
     if (selectedTermId) {
@@ -33,19 +34,28 @@ export default function StudentDashboard({ user, onRefreshUser }) {
     }
   }, [selectedTermId, selectedWeekNum]);
 
-  const loadDashboard = async () => {
+  const loadDashboard = async (targetGrade) => {
     setLoading(true);
+    setError('');
     try {
-      const termsRes = await api.getTerms();
-      setTerms(termsRes.terms || []);
-      if (termsRes.terms?.length > 0) {
-        setSelectedTermId(termsRes.terms[0].id);
+      const termsRes = await api.getTerms(targetGrade);
+      const gradeTerms = termsRes.terms || [];
+      setTerms(gradeTerms);
+      if (gradeTerms.length > 0) {
+        setSelectedTermId(gradeTerms[0].id);
+        setSelectedWeekNum(1);
       }
     } catch (err) {
       setError(err.message || 'Failed to load terms');
     } finally {
       setLoading(false);
     }
+  };
+
+  const handleGradeChange = (grade) => {
+    if (grade === selectedGrade) return;
+    sounds.playTone(400, 'triangle', 0.1, 0.1);
+    setSelectedGrade(grade);
   };
 
   const loadWeeksForTerm = async (tId) => {
@@ -106,15 +116,89 @@ export default function StudentDashboard({ user, onRefreshUser }) {
   return (
     <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '24px 16px' }} id="student-dashboard-main">
       
+      {/* GRADE LEVEL SWITCHER BAR */}
+      <div style={{
+        background: '#FFFFFF',
+        borderRadius: '20px',
+        padding: '16px 24px',
+        marginBottom: '20px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        flexWrap: 'wrap',
+        gap: '16px',
+        boxShadow: '0 4px 12px rgba(0,0,0,0.06)',
+        border: '2px solid #E2E8F0'
+      }} id="student-grade-switcher">
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <Layers size={22} color="#4F46E5" />
+          <div>
+            <span style={{ fontSize: '0.75rem', fontWeight: '800', color: '#64748B', textTransform: 'uppercase' }}>
+              Select Grade Level to Study
+            </span>
+            <h3 style={{ fontSize: '1.15rem', color: '#0F172A', margin: 0 }}>
+              Multi-Grade Learning Portal
+            </h3>
+          </div>
+        </div>
+
+        <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+          {[
+            { id: 'Grade 1', label: '🎒 Grade 1', desc: '5 Subjects (Reading, Language, Math, Makabansa, GMRC)' },
+            { id: 'Grade 2', label: '🎒 Grade 2', desc: '5 Subjects (English, Filipino, Math, Makabansa, GMRC)' },
+            { id: 'Grade 3', label: '🎒 Grade 3', desc: '6 Subjects (includes Science)' }
+          ].map(g => {
+            const isCurrent = selectedGrade === g.id;
+            return (
+              <button
+                key={g.id}
+                id={`btn-student-grade-${g.id.replace(' ', '')}`}
+                onClick={() => handleGradeChange(g.id)}
+                title={g.desc}
+                style={{
+                  padding: '10px 20px',
+                  borderRadius: '16px',
+                  border: isCurrent ? '2px solid #4F46E5' : '2px solid #E2E8F0',
+                  background: isCurrent ? '#4F46E5' : '#F8FAFC',
+                  color: isCurrent ? '#FFFFFF' : '#334155',
+                  fontWeight: '800',
+                  fontSize: '0.95rem',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  gap: '2px',
+                  boxShadow: isCurrent ? '0 6px 16px rgba(79, 70, 229, 0.3)' : 'none',
+                  transition: 'all 0.15s ease'
+                }}
+              >
+                <span>{g.label}</span>
+                <span style={{
+                  fontSize: '0.7rem',
+                  fontWeight: '600',
+                  opacity: isCurrent ? 0.9 : 0.7
+                }}>
+                  {g.id === 'Grade 3' ? '6 Subjects (with Science)' : '5 Subjects (No Science)'}
+                </span>
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
       {/* 1. HERO GREETING BANNER */}
       <div className="hero-banner" id="student-hero-banner">
         <div className="hero-content">
-          <span className="hero-tag">🌟 {user.grade_level || 'Grade 3'} • {user.grade_level === 'Grade 3' ? 'Section Masinadyahon' : 'San Vicente ES'}</span>
+          <span className="hero-tag">
+            🌟 Currently Viewing: <strong>{selectedGrade}</strong> • {selectedGrade === 'Grade 3' ? 'Section Masinadyahon' : 'San Vicente Elementary School'}
+          </span>
           <h1 className="hero-title">
-            WELCOME, {user.full_name?.toUpperCase()}! 👋
+            WELCOME, {user?.full_name?.toUpperCase() || 'LEARNER'}! 👋
           </h1>
           <p className="hero-subtitle">
-            "Ready to learn today?" Let's explore your lessons, earn shiny stars, and master your competencies!
+            {selectedGrade === 'Grade 1' && "Discover Grade 1 MATATAG! Explore Reading and Literacy, Language, Mathematics, Makabansa, and GMRC!"}
+            {selectedGrade === 'Grade 2' && "Explore Grade 2 MATATAG! Enjoy English, Filipino, Mathematics, Makabansa, and GMRC!"}
+            {selectedGrade === 'Grade 3' && "Ready for Grade 3? Master English, Filipino, Mathematics, Science, Makabansa, and GMRC!"}
           </p>
 
           <div className="hero-stats-row">
@@ -122,13 +206,17 @@ export default function StudentDashboard({ user, onRefreshUser }) {
               <span>📅</span>
               <span><strong>Term {selectedTerm?.term_number || 1}</strong> • Week {selectedWeekNum}</span>
             </div>
+            <div className="stat-pill" id="hero-stat-grade-subs">
+              <span>📚</span>
+              <span><strong>{selectedGrade === 'Grade 3' ? '6 Subjects' : '5 Subjects'}</strong> in {selectedGrade}</span>
+            </div>
             <div className="stat-pill" id="hero-stat-stars">
               <span>⭐</span>
-              <span><strong>{user.stats?.total_stars || 0}</strong> Stars</span>
+              <span><strong>{user?.stats?.total_stars || 0}</strong> Stars</span>
             </div>
             <div className="stat-pill" id="hero-stat-streak">
               <span>🔥</span>
-              <span><strong>{user.stats?.current_streak || 1} Day</strong> Streak</span>
+              <span><strong>{user?.stats?.current_streak || 1} Day</strong> Streak</span>
             </div>
           </div>
         </div>
@@ -139,7 +227,7 @@ export default function StudentDashboard({ user, onRefreshUser }) {
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '16px' }}>
           <div>
             <span style={{ fontSize: '0.85rem', fontWeight: '800', color: '#4F46E5', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-              Full-Year Road Map (33 Weeks)
+              {selectedGrade} Full-Year Road Map (33 Weeks)
             </span>
             <h2 style={{ fontSize: '1.75rem', color: '#0F172A' }}>My Learning Journey</h2>
           </div>
@@ -203,7 +291,7 @@ export default function StudentDashboard({ user, onRefreshUser }) {
                     {w.title}
                   </h4>
                   <p style={{ fontSize: '0.8rem', color: '#64748B' }}>
-                    6 Subject Modules
+                    {selectedGrade === 'Grade 3' ? '6 Subject Modules' : '5 Subject Modules'}
                   </p>
                 </div>
 
@@ -232,7 +320,7 @@ export default function StudentDashboard({ user, onRefreshUser }) {
         </div>
       </div>
 
-      {/* 3. SIX SUBJECTS INSIDE SELECTED WEEK */}
+      {/* 3. SUBJECTS INSIDE SELECTED WEEK */}
       <div id="weekly-subjects-container">
         <div style={{
           background: '#FFFFFF',
@@ -244,15 +332,20 @@ export default function StudentDashboard({ user, onRefreshUser }) {
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '24px', flexWrap: 'wrap', gap: '12px' }}>
             <div>
               <span style={{ fontSize: '0.85rem', fontWeight: '800', color: '#10B981', textTransform: 'uppercase' }}>
-                Grade 3 Official Curriculum • Week {selectedWeekNum}
+                {selectedGrade} Official DepEd MATATAG Curriculum • Week {selectedWeekNum}
               </span>
-              <h2 style={{ fontSize: '1.7rem', color: '#0F172A' }}>
+              <h2 style={{ fontSize: '1.7rem', color: '#0F172A', marginTop: '4px' }}>
                 Weekly Subjects & Learning Areas
               </h2>
+              <span style={{ fontSize: '0.9rem', color: '#64748B', fontWeight: '600' }}>
+                {selectedGrade === 'Grade 1' && "⭐ 5 Learning Areas: Reading & Literacy, Language, Mathematics, Makabansa, GMRC (No Science)"}
+                {selectedGrade === 'Grade 2' && "⭐ 5 Learning Areas: English, Filipino, Mathematics, Makabansa, GMRC (No Science)"}
+                {selectedGrade === 'Grade 3' && "⭐ 6 Learning Areas: English, Filipino, Mathematics, Science, Makabansa, GMRC"}
+              </span>
             </div>
 
             <div style={{ background: '#F1F5F9', padding: '8px 16px', borderRadius: '14px', fontSize: '0.9rem', fontWeight: '700', color: '#475569' }}>
-              Term {selectedTermId} • Week {selectedWeekNum} of 11
+              Term {selectedTerm?.term_number || 1} • Week {selectedWeekNum} of 11 • {weekData?.competencies?.length || 0} Subjects
             </div>
           </div>
 
@@ -274,7 +367,7 @@ export default function StudentDashboard({ user, onRefreshUser }) {
           {weekData && weekData.competencies && (
             <div className="subjects-grid" id="subjects-grid-cards">
               {weekData.competencies.map(comp => {
-                const prog = comp.progress || { completed_activities: 0, total_activities: 5, percentage: 0, status: 'not_started' };
+                const prog = comp.progress || { completed_activities: 0, total_activities: 8, percentage: 0, status: 'not_started' };
                 const isMastered = prog.status === 'mastered';
 
                 return (
@@ -296,7 +389,7 @@ export default function StudentDashboard({ user, onRefreshUser }) {
                           <div>
                             <h3 className="subject-title">{comp.subject_name}</h3>
                             <span style={{ fontSize: '0.75rem', fontWeight: '700', color: '#64748B' }}>
-                              {comp.strand_domain || 'Grade 3 Area'}
+                              {comp.strand_domain || `${selectedGrade} Area`}
                             </span>
                           </div>
                         </div>
@@ -310,7 +403,7 @@ export default function StudentDashboard({ user, onRefreshUser }) {
 
                       <div className="competency-box" style={{ background: '#FFFFFF', borderLeftColor: comp.subject_color }}>
                         <span style={{ fontSize: '0.7rem', fontWeight: '800', color: comp.subject_color, display: 'block', marginBottom: '4px' }}>
-                          🎯 OFFICIAL BOW COMPETENCY:
+                          🎯 OFFICIAL DEPED BOW COMPETENCY:
                         </span>
                         <p style={{ fontSize: '0.9rem', color: '#1E293B', fontWeight: '600' }}>
                           {comp.competency_text}
@@ -320,7 +413,7 @@ export default function StudentDashboard({ user, onRefreshUser }) {
                       {/* Progress Track */}
                       <div style={{ marginTop: '12px' }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.8rem', fontWeight: '700', color: '#64748B' }}>
-                          <span>Activities: {prog.completed_activities} / 5</span>
+                          <span>Activities: {prog.completed_activities} / 8</span>
                           <span>{prog.percentage}%</span>
                         </div>
                         <div className="progress-track">
@@ -351,7 +444,7 @@ export default function StudentDashboard({ user, onRefreshUser }) {
                         }}
                       >
                         <Play size={16} />
-                        <span>Study Lesson & Activities</span>
+                        <span>Study Lesson & 8 Activities</span>
                       </button>
                     </div>
                   </div>

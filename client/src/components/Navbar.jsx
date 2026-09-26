@@ -16,8 +16,12 @@ export default function Navbar({ user, onLogout, onOpenProfile }) {
         <div className="nav-brand" id="nav-brand-logo">
           <div className="brand-icon">📚</div>
           <div className="brand-text">
-            <h1>Reading HUB <span style={{ fontSize: '0.8rem', background: '#EEF2FF', color: '#4F46E5', padding: '2px 8px', borderRadius: '12px', border: '1px solid #C7D2FE' }}>GRADE 3</span></h1>
-            <p>San Vicente ES • Section Masinadyahon</p>
+            <h1>
+              Reading HUB <span style={{ fontSize: '0.8rem', background: '#EEF2FF', color: '#4F46E5', padding: '2px 8px', borderRadius: '12px', border: '1px solid #C7D2FE' }}>
+                {user?.role === 'student' ? (user.grade_level || 'GRADE 1') : 'GRADES 1, 2 & 3'}
+              </span>
+            </h1>
+            <p>San Vicente ES • Multi-Grade Online Learning Portal</p>
           </div>
         </div>
 

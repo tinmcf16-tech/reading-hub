@@ -1,0 +1,730 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-sans);background:transparent;color:var(--color-text-primary)}
+h2{font-size:18px;font-weight:500;margin-bottom:4px}
+h3{font-size:15px;font-weight:500;margin-bottom:8px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+.top-bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:12px 0 16px}
+.tab-btn{padding:6px 14px;font-size:13px;border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-md);background:var(--color-background-primary);color:var(--color-text-secondary);cursor:pointer;transition:background 0.15s}
+.tab-btn.active{background:var(--color-background-info);color:var(--color-text-info);border-color:transparent;font-weight:500}
+.term-btn{padding:5px 12px;font-size:12px;border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-md);background:var(--color-background-primary);color:var(--color-text-secondary);cursor:pointer}
+.term-btn.active{background:var(--color-background-success);color:var(--color-text-success);border-color:transparent;font-weight:500}
+.subject-block{margin-bottom:20px}
+.subject-label{font-size:12px;font-weight:500;text-transform:uppercase;letter-spacing:0.05em;color:var(--color-text-secondary);margin-bottom:6px;padding:4px 8px;background:var(--color-background-secondary);border-radius:var(--border-radius-md);display:inline-block}
+table{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:4px}
+th{text-align:left;padding:7px 10px;background:var(--color-background-secondary);color:var(--color-text-secondary);font-weight:500;font-size:12px;border:0.5px solid var(--color-border-tertiary)}
+td{padding:7px 10px;border:0.5px solid var(--color-border-tertiary);vertical-align:top;line-height:1.5;color:var(--color-text-primary)}
+td.week-cell{font-weight:500;width:70px;white-space:nowrap;color:var(--color-text-secondary)}
+td.check-cell{width:40px;text-align:center}
+input[type=checkbox]{width:16px;height:16px;cursor:pointer;accent-color:#1D9E75}
+tr:hover td{background:var(--color-background-secondary)}
+.legend{font-size:12px;color:var(--color-text-tertiary);margin-top:8px}
+.header-row{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:8px;padding-bottom:12px;border-bottom:0.5px solid var(--color-border-tertiary);margin-bottom:16px}
+.grade-badge{font-size:11px;padding:3px 10px;border-radius:20px;font-weight:500;background:var(--color-background-warning);color:var(--color-text-warning)}
+.progress-wrap{display:flex;gap:6px;align-items:center;font-size:12px;color:var(--color-text-secondary);margin-bottom:12px}
+.bar{height:6px;border-radius:3px;background:var(--color-border-tertiary);flex:1;overflow:hidden}
+.bar-fill{height:100%;border-radius:3px;background:#1D9E75;transition:width 0.3s}
+</style>
+
+<h2 class="sr-only">Multigrade Competency Checklist — Grades 1, 2, and 3 — Three-Term SY 2026–2027</h2>
+
+<div style="padding:12px 0">
+  <div class="header-row">
+    <div>
+      <h2>Multigrade competency checklist</h2>
+      <p style="font-size:13px;color:var(--color-text-secondary);margin-top:2px">SY 2026–2027 · MATATAG Curriculum · Three-Term Calendar</p>
+    </div>
+    <span class="grade-badge">Grades 1 – 3</span>
+  </div>
+
+  <div class="top-bar">
+    <div style="display:flex;gap:6px;flex-wrap:wrap">
+      <button class="tab-btn active" onclick="setGrade(1)">Grade 1</button>
+      <button class="tab-btn" onclick="setGrade(2)">Grade 2</button>
+      <button class="tab-btn" onclick="setGrade(3)">Grade 3</button>
+    </div>
+    <div style="display:flex;gap:6px;margin-left:auto;flex-wrap:wrap">
+      <button class="term-btn active" onclick="setTerm(1)">Term 1</button>
+      <button class="term-btn" onclick="setTerm(2)">Term 2</button>
+      <button class="term-btn" onclick="setTerm(3)">Term 3</button>
+    </div>
+  </div>
+
+  <div class="progress-wrap">
+    <span id="prog-label">Progress:</span>
+    <div class="bar"><div class="bar-fill" id="bar" style="width:0%"></div></div>
+    <span id="prog-pct">0%</span>
+  </div>
+
+  <div id="checklist-area"></div>
+  <p class="legend">✓ Check boxes to mark completed competencies. Progress saves per grade and term during this session.</p>
+</div>
+
+<script>
+const DATA = {
+  1:{
+    subjects:["Language","Reading & Literacy","Mathematics","GMRC","Makabansa"],
+    1:{
+      "Language":[
+        {w:"Week 1",c:"Uses oral language for simple communication (greetings, introductions, requests)"},
+        {w:"Week 2",c:"Listens attentively to spoken texts and responds appropriately"},
+        {w:"Week 3",c:"Identifies and uses naming words (nouns) in simple sentences"},
+        {w:"Week 4",c:"Speaks clearly using correct sentence patterns in familiar contexts"},
+        {w:"Week 5",c:"Tells a short story using sequential words (first, next, last)"},
+        {w:"Week 6",c:"Identifies describing words (adjectives) that tell color, size, and shape"},
+        {w:"Week 7",c:"Uses action words (verbs) in simple present tense sentences"},
+        {w:"Week 8",c:"Participates in shared reading and retells key events"},
+        {w:"Week 9",c:"Constructs simple sentences about self and family"},
+        {w:"Week 10",c:"End-of-Term Assessment: Language skills consolidation"},
+      ],
+      "Reading & Literacy":[
+        {w:"Week 1",c:"Recognizes and names all uppercase and lowercase letters of the alphabet"},
+        {w:"Week 2",c:"Produces correct sounds of letters (phonemic awareness)"},
+        {w:"Week 3",c:"Blends consonant-vowel (CV) and consonant-vowel-consonant (CVC) words"},
+        {w:"Week 4",c:"Reads simple CVC words and phrases with comprehension"},
+        {w:"Week 5",c:"Identifies high-frequency sight words (the, is, a, and, I, we, you)"},
+        {w:"Week 6",c:"Reads aloud simple sentences with proper phrasing and expression"},
+        {w:"Week 7",c:"Demonstrates understanding of directionality in reading (left to right, top to bottom)"},
+        {w:"Week 8",c:"Predicts what a text is about using picture clues and title"},
+        {w:"Week 9",c:"Retells the beginning, middle, and end of a short story"},
+        {w:"Week 10",c:"End-of-Term Assessment: Reading and literacy skills consolidation"},
+      ],
+      "Mathematics":[
+        {w:"Week 1",c:"Counts and identifies numbers 1 to 20 using concrete objects"},
+        {w:"Week 2",c:"Reads and writes numbers 1 to 50 in symbols and words"},
+        {w:"Week 3",c:"Compares and orders numbers 1 to 50 (greater, less, equal)"},
+        {w:"Week 4",c:"Counts forward and backward by 1s and 2s from any given number"},
+        {w:"Week 5",c:"Identifies ordinal numbers (1st to 10th) in real-life contexts"},
+        {w:"Week 6",c:"Performs addition facts with sums up to 10 using models"},
+        {w:"Week 7",c:"Performs subtraction facts with differences within 10 using models"},
+        {w:"Week 8",c:"Solves simple word problems involving addition and subtraction within 10"},
+        {w:"Week 9",c:"Identifies and describes basic shapes (circle, square, triangle, rectangle)"},
+        {w:"Week 10",c:"End-of-Term Assessment: Number and operations consolidation"},
+      ],
+      "GMRC":[
+        {w:"Week 1",c:"Identifies own unique characteristics and expresses self-worth"},
+        {w:"Week 2",c:"Demonstrates proper greetings and polite expressions in school and home"},
+        {w:"Week 3",c:"Shows respect for authority figures (parents, teachers, elders)"},
+        {w:"Week 4",c:"Practices cleanliness and personal hygiene daily"},
+        {w:"Week 5",c:"Demonstrates sharing and cooperation in group activities"},
+        {w:"Week 6",c:"Identifies and follows classroom rules and school policies"},
+        {w:"Week 7",c:"Shows kindness and helpfulness to classmates and community members"},
+        {w:"Week 8",c:"Demonstrates responsible behavior in the use of school materials and property"},
+        {w:"Week 9",c:"Expresses gratitude for blessings received (family, nature, community)"},
+        {w:"Week 10",c:"End-of-Term Assessment: Values and character formation consolidation"},
+      ],
+      "Makabansa":[
+        {w:"Week 1",c:"Identifies personal information: name, age, home address, family members"},
+        {w:"Week 2",c:"Describes roles of family members and their contributions to the home"},
+        {w:"Week 3",c:"Identifies people in the community and their roles (teacher, doctor, farmer)"},
+        {w:"Week 4",c:"Recognizes national symbols (flag, national anthem, seal)"},
+        {w:"Week 5",c:"Demonstrates proper flag ceremony behavior and respect for national symbols"},
+        {w:"Week 6",c:"Identifies and practices simple health habits (eating right, washing hands)"},
+        {w:"Week 7",c:"Performs basic locomotor and non-locomotor movements in PE activities"},
+        {w:"Week 8",c:"Participates in simple creative arts activities (drawing, singing, dancing)"},
+        {w:"Week 9",c:"Identifies common plants and animals in the local environment"},
+        {w:"Week 10",c:"End-of-Term Assessment: Makabansa integrated skills consolidation"},
+      ],
+    },
+    2:{
+      "Language":[
+        {w:"Week 1",c:"Uses compound and complex sentence structures in oral communication"},
+        {w:"Week 2",c:"Identifies pronouns and uses them correctly in sentences"},
+        {w:"Week 3",c:"Distinguishes between statements, questions, and exclamations"},
+        {w:"Week 4",c:"Uses singular and plural forms of nouns correctly"},
+        {w:"Week 5",c:"Demonstrates understanding of synonyms and antonyms in context"},
+        {w:"Week 6",c:"Constructs sentences using connecting words (and, but, because, so)"},
+        {w:"Week 7",c:"Uses time expressions (yesterday, today, tomorrow) in sentences"},
+        {w:"Week 8",c:"Participates in role-plays using appropriate language for different situations"},
+        {w:"Week 9",c:"Writes a simple 3-sentence paragraph about a familiar topic"},
+        {w:"Week 10",c:"End-of-Term Assessment: Language and writing skills consolidation"},
+      ],
+      "Reading & Literacy":[
+        {w:"Week 1",c:"Reads and decodes consonant blends (bl, cl, st, tr, etc.)"},
+        {w:"Week 2",c:"Reads and understands simple texts with 2–3 paragraphs"},
+        {w:"Week 3",c:"Identifies the main idea and supporting details of a short passage"},
+        {w:"Week 4",c:"Answers comprehension questions: who, what, where, when, why"},
+        {w:"Week 5",c:"Reads informational text and distinguishes fact from opinion"},
+        {w:"Week 6",c:"Makes inferences about characters' feelings and actions"},
+        {w:"Week 7",c:"Uses context clues to determine meaning of unfamiliar words"},
+        {w:"Week 8",c:"Reads and interprets simple graphs, charts, and diagrams"},
+        {w:"Week 9",c:"Writes a short book report or story summary with key details"},
+        {w:"Week 10",c:"End-of-Term Assessment: Reading comprehension skills consolidation"},
+      ],
+      "Mathematics":[
+        {w:"Week 1",c:"Reads, writes, and compares numbers up to 1,000"},
+        {w:"Week 2",c:"Identifies place value of digits in 3-digit numbers (hundreds, tens, ones)"},
+        {w:"Week 3",c:"Performs addition of 2- and 3-digit numbers with regrouping"},
+        {w:"Week 4",c:"Performs subtraction of 2- and 3-digit numbers with regrouping"},
+        {w:"Week 5",c:"Solves 1-step word problems on addition and subtraction within 1,000"},
+        {w:"Week 6",c:"Identifies odd and even numbers within 100"},
+        {w:"Week 7",c:"Counts and uses money (Philippine coins and bills) in transactions"},
+        {w:"Week 8",c:"Tells time to the hour and half-hour using analog and digital clocks"},
+        {w:"Week 9",c:"Measures length using non-standard and standard units (cm, m)"},
+        {w:"Week 10",c:"End-of-Term Assessment: Numbers and measurement consolidation"},
+      ],
+      "GMRC":[
+        {w:"Week 1",c:"Recognizes emotions and expresses them appropriately"},
+        {w:"Week 2",c:"Demonstrates empathy by acknowledging the feelings of others"},
+        {w:"Week 3",c:"Practices honesty in words and actions at school and at home"},
+        {w:"Week 4",c:"Applies conflict resolution strategies (talking, compromising, seeking help)"},
+        {w:"Week 5",c:"Recognizes consequences of right and wrong choices"},
+        {w:"Week 6",c:"Demonstrates self-discipline and perseverance in tasks"},
+        {w:"Week 7",c:"Shows care for the environment through simple eco-friendly habits"},
+        {w:"Week 8",c:"Practices digital responsibility and safety awareness"},
+        {w:"Week 9",c:"Appreciates cultural diversity and traditions in the Philippines"},
+        {w:"Week 10",c:"End-of-Term Assessment: Values and social skills consolidation"},
+      ],
+      "Makabansa":[
+        {w:"Week 1",c:"Describes life in the community: needs, wants, goods, and services"},
+        {w:"Week 2",c:"Identifies community helpers and their importance to society"},
+        {w:"Week 3",c:"Explains the significance of Philippine national holidays and celebrations"},
+        {w:"Week 4",c:"Describes changes in environment (seasons, weather patterns)"},
+        {w:"Week 5",c:"Demonstrates health and fitness activities (exercises, proper diet)"},
+        {w:"Week 6",c:"Participates in cultural arts activities (folk dances, folk songs, crafts)"},
+        {w:"Week 7",c:"Discusses ways to care for natural resources in the community"},
+        {w:"Week 8",c:"Identifies the effects of pollution and simple ways to address them"},
+        {w:"Week 9",c:"Demonstrates cooperative learning and teamwork in group projects"},
+        {w:"Week 10",c:"End-of-Term Assessment: Makabansa integrated learning consolidation"},
+      ],
+    },
+    3:{
+      "Language":[
+        {w:"Week 1",c:"Writes a complete multi-sentence paragraph with topic and supporting sentences"},
+        {w:"Week 2",c:"Uses articles (a, an, the) and demonstrative pronouns correctly"},
+        {w:"Week 3",c:"Applies correct capitalization and end punctuation in writing"},
+        {w:"Week 4",c:"Composes simple persuasive and informative text"},
+        {w:"Week 5",c:"Identifies and uses comparative and superlative adjectives"},
+        {w:"Week 6",c:"Revises and edits own writing for clarity and correctness"},
+        {w:"Week 7",c:"Uses a variety of sentence types for different communicative purposes"},
+        {w:"Week 8",c:"Delivers a short oral report on a chosen topic"},
+        {w:"Week 9",c:"Engages in structured dialogue and debate activities"},
+        {w:"Week 10",c:"End-of-Term Assessment: Advanced language and writing consolidation"},
+      ],
+      "Reading & Literacy":[
+        {w:"Week 1",c:"Reads literary texts (poems, stories) and analyzes characters and setting"},
+        {w:"Week 2",c:"Identifies cause-and-effect relationships in texts"},
+        {w:"Week 3",c:"Compares and contrasts two stories or characters"},
+        {w:"Week 4",c:"Reads and interprets informational texts with graphic features"},
+        {w:"Week 5",c:"Identifies point of view (first person vs. third person)"},
+        {w:"Week 6",c:"Determines the theme or moral lesson of a story"},
+        {w:"Week 7",c:"Reads fluently with appropriate rate, accuracy, and expression"},
+        {w:"Week 8",c:"Summarizes key ideas from multiple sources"},
+        {w:"Week 9",c:"Applies critical reading strategies to evaluate information"},
+        {w:"Week 10",c:"End-of-Term Assessment: Reading fluency and comprehension consolidation"},
+      ],
+      "Mathematics":[
+        {w:"Week 1",c:"Reviews and reinforces addition and subtraction with regrouping"},
+        {w:"Week 2",c:"Applies multiplication and division concepts in problem solving"},
+        {w:"Week 3",c:"Identifies and applies properties of operations"},
+        {w:"Week 4",c:"Solves multi-step word problems involving the four operations"},
+        {w:"Week 5",c:"Identifies fractions as parts of a whole and a set"},
+        {w:"Week 6",c:"Compares and orders unit fractions on a number line"},
+        {w:"Week 7",c:"Measures area and perimeter of simple polygons"},
+        {w:"Week 8",c:"Reads and interprets bar graphs and pictographs"},
+        {w:"Week 9",c:"Solves problems involving measurement: time, mass, and capacity"},
+        {w:"Week 10",c:"End-of-Term Assessment: Advanced mathematics consolidation"},
+      ],
+      "GMRC":[
+        {w:"Week 1",c:"Reflects on personal growth and sets goals for continued improvement"},
+        {w:"Week 2",c:"Analyzes situations where moral values guide decision-making"},
+        {w:"Week 3",c:"Demonstrates integrity in academic and personal actions"},
+        {w:"Week 4",c:"Practices active citizenship and community involvement"},
+        {w:"Week 5",c:"Advocates for fairness, equality, and respect in school and community"},
+        {w:"Week 6",c:"Demonstrates resilience and positive attitude in challenging situations"},
+        {w:"Week 7",c:"Appreciates the contributions of historical figures and leaders"},
+        {w:"Week 8",c:"Practices stewardship and responsible use of natural resources"},
+        {w:"Week 9",c:"Demonstrates understanding of social responsibility and civic duty"},
+        {w:"Week 10",c:"End-of-Term Assessment: Values and citizenship consolidation"},
+      ],
+      "Makabansa":[
+        {w:"Week 1",c:"Discusses the historical development of the Philippines (pre-colonial to present)"},
+        {w:"Week 2",c:"Identifies significant events in Philippine history and their impact"},
+        {w:"Week 3",c:"Explains the role of government and its branches (legislative, executive, judicial)"},
+        {w:"Week 4",c:"Describes the geography of the Philippines: islands, bodies of water, landforms"},
+        {w:"Week 5",c:"Applies critical thinking in analyzing community and national issues"},
+        {w:"Week 6",c:"Participates in physical fitness assessments and health-promotion activities"},
+        {w:"Week 7",c:"Creates artistic outputs using traditional Philippine art forms"},
+        {w:"Week 8",c:"Discusses the importance of economic activities and livelihood in communities"},
+        {w:"Week 9",c:"Proposes simple solutions to local environmental and social problems"},
+        {w:"Week 10",c:"End-of-Term Assessment: Makabansa advanced integration consolidation"},
+      ],
+    },
+  },
+  2:{
+    subjects:["English","Filipino","Mathematics","GMRC","Makabansa"],
+    1:{
+      "English":[
+        {w:"Week 1",c:"Listens to and follows 2-3 step oral instructions"},
+        {w:"Week 2",c:"Identifies the topic and main idea of a listened text"},
+        {w:"Week 3",c:"Reads short passages with comprehension (literal level)"},
+        {w:"Week 4",c:"Identifies common nouns, proper nouns, and pronouns in sentences"},
+        {w:"Week 5",c:"Uses verbs in simple present and past tense correctly"},
+        {w:"Week 6",c:"Answers WH-questions based on a read passage"},
+        {w:"Week 7",c:"Writes simple sentences using correct grammar and punctuation"},
+        {w:"Week 8",c:"Reads and responds to simple poems (rhyme, rhythm, meaning)"},
+        {w:"Week 9",c:"Composes a short 3-sentence paragraph about familiar experiences"},
+        {w:"Week 10",c:"End-of-Term Assessment: English listening, reading, and writing consolidation"},
+      ],
+      "Filipino":[
+        {w:"Week 1",c:"Nakapagsasalita nang may tamang diin at wastong pagbigkas"},
+        {w:"Week 2",c:"Natutukoy ang pangunahing ideya ng isang binasang teksto"},
+        {w:"Week 3",c:"Gumagamit ng mga pangngalan at panghalip sa tamang paraan"},
+        {w:"Week 4",c:"Nakasusulat ng simpleng pangungusap na may tamang bantas"},
+        {w:"Week 5",c:"Nakapagsasalaysay ng mga pangyayari sa kwento (simula, gitna, wakas)"},
+        {w:"Week 6",c:"Gumagamit ng mga pang-uri upang ilarawan ang tao, lugar, at bagay"},
+        {w:"Week 7",c:"Nakababasa ng mga simpleng tulain at natutukoy ang tema"},
+        {w:"Week 8",c:"Nakapagsusulat ng maikling talata tungkol sa sariling karanasan"},
+        {w:"Week 9",c:"Gumagamit ng koordinating pangatnig sa pagsasama ng pangungusap"},
+        {w:"Week 10",c:"Katapusan ng Termyong Pagtatasa: Konsolidasyon ng kasanayang Filipino"},
+      ],
+      "Mathematics":[
+        {w:"Week 1",c:"Reads, writes, and identifies place value of numbers up to 1,000"},
+        {w:"Week 2",c:"Compares and orders numbers up to 1,000 using <, >, ="},
+        {w:"Week 3",c:"Adds 2- and 3-digit numbers with and without regrouping"},
+        {w:"Week 4",c:"Subtracts 2- and 3-digit numbers with and without regrouping"},
+        {w:"Week 5",c:"Solves 1-2 step word problems on addition and subtraction"},
+        {w:"Week 6",c:"Skip counts by 2s, 5s, and 10s to 1,000"},
+        {w:"Week 7",c:"Represents and interprets data using pictographs and bar graphs"},
+        {w:"Week 8",c:"Identifies and describes 2-D and 3-D shapes (sides, corners, faces)"},
+        {w:"Week 9",c:"Uses non-standard and standard units to measure length and mass"},
+        {w:"Week 10",c:"End-of-Term Assessment: Numeracy and geometry skills consolidation"},
+      ],
+      "GMRC":[
+        {w:"Week 1",c:"Recognizes and appreciates personal strengths and positive traits"},
+        {w:"Week 2",c:"Practices good manners in school, home, and community settings"},
+        {w:"Week 3",c:"Demonstrates respect for people of all backgrounds and abilities"},
+        {w:"Week 4",c:"Applies rules of fairness and taking turns in group activities"},
+        {w:"Week 5",c:"Identifies and practices actions of a responsible student"},
+        {w:"Week 6",c:"Shows gratitude and appreciation to family members and teachers"},
+        {w:"Week 7",c:"Practices honesty in all situations (tests, games, conversations)"},
+        {w:"Week 8",c:"Demonstrates care for community property and environment"},
+        {w:"Week 9",c:"Applies peace-making strategies in peer conflicts"},
+        {w:"Week 10",c:"End-of-Term Assessment: GMRC values formation consolidation"},
+      ],
+      "Makabansa":[
+        {w:"Week 1",c:"Describes the community: location, people, goods, and services"},
+        {w:"Week 2",c:"Identifies needs vs. wants and how they are addressed in the community"},
+        {w:"Week 3",c:"Distinguishes Philippine cultural practices (festivals, food, clothing)"},
+        {w:"Week 4",c:"Identifies the importance of national symbols and heritage sites"},
+        {w:"Week 5",c:"Demonstrates proper waste management and environmental care"},
+        {w:"Week 6",c:"Performs basic health and physical fitness activities"},
+        {w:"Week 7",c:"Participates in simple art activities (weaving, pottery, drawing)"},
+        {w:"Week 8",c:"Identifies community leaders and their responsibilities"},
+        {w:"Week 9",c:"Discusses simple economic concepts (buying, selling, trading)"},
+        {w:"Week 10",c:"End-of-Term Assessment: Makabansa community awareness consolidation"},
+      ],
+    },
+    2:{
+      "English":[
+        {w:"Week 1",c:"Reads and analyzes short stories using story elements (character, setting, plot)"},
+        {w:"Week 2",c:"Identifies cause and effect relationships in texts"},
+        {w:"Week 3",c:"Uses adjectives (comparative and superlative) in writing and speaking"},
+        {w:"Week 4",c:"Differentiates between fact and opinion in informational texts"},
+        {w:"Week 5",c:"Writes a complete paragraph with topic, body, and closing sentences"},
+        {w:"Week 6",c:"Uses connectives and transition words in writing"},
+        {w:"Week 7",c:"Reads and interprets simple diagrams, charts, and tables"},
+        {w:"Week 8",c:"Delivers a short oral presentation on a familiar topic"},
+        {w:"Week 9",c:"Proofreads and edits own writing for grammar and mechanics"},
+        {w:"Week 10",c:"End-of-Term Assessment: English reading and composition consolidation"},
+      ],
+      "Filipino":[
+        {w:"Week 1",c:"Natutukoy ang mga elemento ng maikling kwento (tauhan, tagpuan, banghay)"},
+        {w:"Week 2",c:"Ginagamit ang pang-abay ng panahon at lugar nang wasto"},
+        {w:"Week 3",c:"Nakabubuo ng mga tanong at sagot batay sa binasang teksto"},
+        {w:"Week 4",c:"Nakapagsusulat ng maikling sanaysay (3-5 pangungusap)"},
+        {w:"Week 5",c:"Natutukoy ang katangian ng mga tauhan sa isang binasang kwento"},
+        {w:"Week 6",c:"Gumagamit ng kaugnay at di-kaugnay na salita sa pagsulat"},
+        {w:"Week 7",c:"Nakikilahok sa talakayan at nagbibigay ng sariling opinyon"},
+        {w:"Week 8",c:"Nakapagsasalita nang may tamang layunin sa iba't ibang sitwasyon"},
+        {w:"Week 9",c:"Nakabubuo ng maikling talambuhay ng isang kilalang Pilipino"},
+        {w:"Week 10",c:"Katapusan ng Termyong Pagtatasa: Karagdagang kasanayang Filipino"},
+      ],
+      "Mathematics":[
+        {w:"Week 1",c:"Recalls and applies multiplication facts (1-5) fluently"},
+        {w:"Week 2",c:"Recalls and applies multiplication facts (6-10) fluently"},
+        {w:"Week 3",c:"Relates multiplication and division as inverse operations"},
+        {w:"Week 4",c:"Performs division of 2-digit dividends by 1-digit divisors"},
+        {w:"Week 5",c:"Solves 1-2 step word problems involving multiplication and division"},
+        {w:"Week 6",c:"Identifies and represents fractions (halves, thirds, fourths)"},
+        {w:"Week 7",c:"Compares fractions with the same denominator"},
+        {w:"Week 8",c:"Reads and records time (hours, minutes) on analog and digital clocks"},
+        {w:"Week 9",c:"Counts and makes change using Philippine coins and bills up to ₱100"},
+        {w:"Week 10",c:"End-of-Term Assessment: Multiplication, division, and fractions consolidation"},
+      ],
+      "GMRC":[
+        {w:"Week 1",c:"Explores the value of self-discipline and goal-setting"},
+        {w:"Week 2",c:"Demonstrates empathy through acts of service and kindness"},
+        {w:"Week 3",c:"Applies critical thinking in making moral decisions"},
+        {w:"Week 4",c:"Shows resilience in facing disappointments or failures"},
+        {w:"Week 5",c:"Practices teamwork and compromise in collaborative tasks"},
+        {w:"Week 6",c:"Demonstrates responsible use of technology and social media"},
+        {w:"Week 7",c:"Shows respect for people with different abilities and backgrounds"},
+        {w:"Week 8",c:"Applies civic virtues (patriotism, solidarity, social responsibility)"},
+        {w:"Week 9",c:"Discusses the importance of peace in the community and nation"},
+        {w:"Week 10",c:"End-of-Term Assessment: Character and civic values consolidation"},
+      ],
+      "Makabansa":[
+        {w:"Week 1",c:"Discusses Philippine geography: regions, provinces, and major cities"},
+        {w:"Week 2",c:"Identifies major Philippine industries (agriculture, fishing, tourism)"},
+        {w:"Week 3",c:"Explains the significance of Philippine national heroes and their contributions"},
+        {w:"Week 4",c:"Describes the rights and responsibilities of Filipino citizens"},
+        {w:"Week 5",c:"Demonstrates health promotion activities and disease prevention habits"},
+        {w:"Week 6",c:"Participates in rhythmic activities and folk dances of various regions"},
+        {w:"Week 7",c:"Creates visual art inspired by Philippine cultural heritage"},
+        {w:"Week 8",c:"Identifies and analyzes simple environmental problems and solutions"},
+        {w:"Week 9",c:"Demonstrates cooperative learning through community-based projects"},
+        {w:"Week 10",c:"End-of-Term Assessment: Makabansa regional and cultural consolidation"},
+      ],
+    },
+    3:{
+      "English":[
+        {w:"Week 1",c:"Analyzes literary texts for theme, symbolism, and author's purpose"},
+        {w:"Week 2",c:"Uses figurative language (simile, metaphor, personification) in writing"},
+        {w:"Week 3",c:"Writes different types of paragraphs (descriptive, narrative, expository)"},
+        {w:"Week 4",c:"Reads and summarizes key ideas from informational texts"},
+        {w:"Week 5",c:"Uses complex sentence structures (subordinating conjunctions)"},
+        {w:"Week 6",c:"Participates in reader's theater and dramatic reading"},
+        {w:"Week 7",c:"Writes a short report with introduction, body, and conclusion"},
+        {w:"Week 8",c:"Applies research skills: finds information from 2 or more sources"},
+        {w:"Week 9",c:"Presents findings using organized oral and written formats"},
+        {w:"Week 10",c:"End-of-Term Assessment: Advanced English literacy and composition"},
+      ],
+      "Filipino":[
+        {w:"Week 1",c:"Nasusuri ang mga uri ng teksto (deskriptibo, naratibo, ekspository)"},
+        {w:"Week 2",c:"Nakapagsusulat ng sanaysay na may malinaw na paksa at katibayan"},
+        {w:"Week 3",c:"Gumagamit ng mga tayutay sa pagsulat (simile, metapora, personipikasyon)"},
+        {w:"Week 4",c:"Nakapagsasagawa ng maikling pananaliksik at nakapagsulat ng ulat"},
+        {w:"Week 5",c:"Nakikilahok sa debate o talakayan na may sapat na katibayan"},
+        {w:"Week 6",c:"Nakapagsusulat ng malikhaing kwento na may epektibong simula at wakas"},
+        {w:"Week 7",c:"Nag-aanalisa ng mga sanhi at bunga sa isang akda o pangyayari"},
+        {w:"Week 8",c:"Gumagamit ng angkop na antas ng wika sa iba't ibang sitwasyon"},
+        {w:"Week 9",c:"Natutukoy ang katangian ng iba't ibang uri ng Filipino na panitikan"},
+        {w:"Week 10",c:"Katapusan ng Termyong Pagtatasa: Panghuling konsolidasyon ng Filipino"},
+      ],
+      "Mathematics":[
+        {w:"Week 1",c:"Performs multi-digit multiplication (2-digit × 2-digit)"},
+        {w:"Week 2",c:"Performs long division with 2-digit divisors"},
+        {w:"Week 3",c:"Solves multi-step word problems using all four operations"},
+        {w:"Week 4",c:"Adds and subtracts similar fractions (same denominator)"},
+        {w:"Week 5",c:"Multiplies fractions by whole numbers"},
+        {w:"Week 6",c:"Reads, writes, and converts simple decimals and fractions"},
+        {w:"Week 7",c:"Finds area and perimeter of rectangles and squares"},
+        {w:"Week 8",c:"Interprets and creates bar graphs and line graphs"},
+        {w:"Week 9",c:"Applies problem-solving strategies: draw a picture, make a table, guess and check"},
+        {w:"Week 10",c:"End-of-Term Assessment: Advanced number operations and data analysis"},
+      ],
+      "GMRC":[
+        {w:"Week 1",c:"Reflects on the year's growth in values and character"},
+        {w:"Week 2",c:"Plans personal actions for serving the community"},
+        {w:"Week 3",c:"Demonstrates leadership in group activities and projects"},
+        {w:"Week 4",c:"Applies peacebuilding and conflict-resolution in real situations"},
+        {w:"Week 5",c:"Advocates for truth and justice in school and community life"},
+        {w:"Week 6",c:"Demonstrates gratitude and appreciation for others' contributions"},
+        {w:"Week 7",c:"Practices responsible digital citizenship"},
+        {w:"Week 8",c:"Connects Filipino values to national identity and pride"},
+        {w:"Week 9",c:"Designs a simple community service project"},
+        {w:"Week 10",c:"End-of-Term Assessment: Culminating GMRC values integration"},
+      ],
+      "Makabansa":[
+        {w:"Week 1",c:"Reviews significant events in Philippine history from colonial period to present"},
+        {w:"Week 2",c:"Analyzes the impact of historical events on current Philippine society"},
+        {w:"Week 3",c:"Describes the functions of the Philippine government and its branches"},
+        {w:"Week 4",c:"Identifies environmental challenges facing the Philippines and proposed solutions"},
+        {w:"Week 5",c:"Performs culminating physical fitness activities and self-assessment"},
+        {w:"Week 6",c:"Creates a multi-media arts project inspired by Philippine culture"},
+        {w:"Week 7",c:"Analyzes economic issues (poverty, employment) in a child-appropriate way"},
+        {w:"Week 8",c:"Presents a community improvement proposal as a class project"},
+        {w:"Week 9",c:"Reflects on identity as Filipino citizens with rights and responsibilities"},
+        {w:"Week 10",c:"End-of-Term Assessment: Culminating Makabansa integration and application"},
+      ],
+    },
+  },
+  3:{
+    subjects:["English","Filipino","Mathematics","Science","GMRC","Makabansa"],
+    1:{
+      "English":[
+        {w:"Week 1",c:"Listens critically to spoken texts and identifies speaker's purpose"},
+        {w:"Week 2",c:"Reads aloud with proper stress, intonation, and phrasing"},
+        {w:"Week 3",c:"Identifies the main idea and three supporting details in a text"},
+        {w:"Week 4",c:"Defines words using context clues and dictionary skills"},
+        {w:"Week 5",c:"Identifies literary elements: character, plot, setting, and conflict"},
+        {w:"Week 6",c:"Uses nouns, verbs, adjectives, and adverbs in varied sentence patterns"},
+        {w:"Week 7",c:"Writes a coherent paragraph with topic sentence, body, and conclusion"},
+        {w:"Week 8",c:"Composes simple letters (friendly and formal) with correct format"},
+        {w:"Week 9",c:"Uses proper capitalization, punctuation, and spelling in writing"},
+        {w:"Week 10",c:"End-of-Term Assessment: English language arts consolidation"},
+      ],
+      "Filipino":[
+        {w:"Week 1",c:"Nababasa nang may wastong diin, tono, at bilis ang iba't ibang teksto"},
+        {w:"Week 2",c:"Natutukoy ang pangunahing ideya at detalye ng napakinggan o binasang teksto"},
+        {w:"Week 3",c:"Gumagamit ng mga salitang magkasingkahulugan at magkasalungat"},
+        {w:"Week 4",c:"Nakasusulat ng talata na may paksa, katawan, at pangwakas na pangungusap"},
+        {w:"Week 5",c:"Natutukoy ang mga uri ng pangungusap (payak, tambalan, hugnayang)"},
+        {w:"Week 6",c:"Gumagamit ng mga pang-ugnay at pangatnig sa pagsulat"},
+        {w:"Week 7",c:"Nakapagsasagawa ng talakayan at nagtatanggol ng sariling opinyon"},
+        {w:"Week 8",c:"Nakababasa at nakauunawa ng mga pabula, mitolohiya, at alamat"},
+        {w:"Week 9",c:"Nakasusulat ng maikling liham (pormal at di-pormal)"},
+        {w:"Week 10",c:"Katapusan ng Termyong Pagtatasa: Konsolidasyon ng Filipino"},
+      ],
+      "Mathematics":[
+        {w:"Week 1",c:"Reads, writes, and compares numbers up to 10,000"},
+        {w:"Week 2",c:"Performs addition and subtraction of numbers up to 10,000"},
+        {w:"Week 3",c:"Applies multiplication of 2- and 3-digit numbers by 1-digit numbers"},
+        {w:"Week 4",c:"Performs division with remainders (2-digit ÷ 1-digit)"},
+        {w:"Week 5",c:"Solves 2-step word problems using all four operations"},
+        {w:"Week 6",c:"Identifies proper fractions, improper fractions, and mixed numbers"},
+        {w:"Week 7",c:"Adds and subtracts fractions with the same denominator"},
+        {w:"Week 8",c:"Identifies and measures angles using a protractor"},
+        {w:"Week 9",c:"Identifies properties of quadrilaterals (square, rectangle, rhombus, trapezoid)"},
+        {w:"Week 10",c:"End-of-Term Assessment: Number operations and geometry consolidation"},
+      ],
+      "Science":[
+        {w:"Week 1",c:"Describes the structure and function of plants (roots, stems, leaves, flowers)"},
+        {w:"Week 2",c:"Compares how different animals obtain food, move, and protect themselves"},
+        {w:"Week 3",c:"Classifies living things (plants, animals, fungi, microorganisms)"},
+        {w:"Week 4",c:"Identifies habitats and the organisms that live in each (forest, ocean, grassland)"},
+        {w:"Week 5",c:"Explains food chains and food webs in an ecosystem"},
+        {w:"Week 6",c:"Distinguishes between properties of solids, liquids, and gases"},
+        {w:"Week 7",c:"Describes physical changes in matter (melting, freezing, evaporation, condensation)"},
+        {w:"Week 8",c:"Identifies simple machines and their uses in everyday life"},
+        {w:"Week 9",c:"Describes the components of the solar system and their characteristics"},
+        {w:"Week 10",c:"End-of-Term Assessment: Life and physical science consolidation"},
+      ],
+      "GMRC":[
+        {w:"Week 1",c:"Identifies personal values that guide daily behavior and decision-making"},
+        {w:"Week 2",c:"Demonstrates self-management skills (time, impulse, emotional regulation)"},
+        {w:"Week 3",c:"Practices respect for human rights and dignity in school and home"},
+        {w:"Week 4",c:"Shows initiative and proactiveness in helping others"},
+        {w:"Week 5",c:"Explains what it means to be a responsible Filipino citizen"},
+        {w:"Week 6",c:"Demonstrates positive peer relationships and avoids bullying"},
+        {w:"Week 7",c:"Practices environmental stewardship and sustainable habits"},
+        {w:"Week 8",c:"Applies the concept of bayanihan in cooperative school activities"},
+        {w:"Week 9",c:"Reflects on and journals about personal moral experiences"},
+        {w:"Week 10",c:"End-of-Term Assessment: GMRC values and character consolidation"},
+      ],
+      "Makabansa":[
+        {w:"Week 1",c:"Identifies regions of the Philippines and their unique characteristics"},
+        {w:"Week 2",c:"Describes the physical features of the Philippines (mountains, rivers, seas)"},
+        {w:"Week 3",c:"Explains the significance of key events in early Philippine history"},
+        {w:"Week 4",c:"Identifies the structure and functions of local government units (LGU)"},
+        {w:"Week 5",c:"Analyzes simple economic activities in the community (farming, fishing, trade)"},
+        {w:"Week 6",c:"Performs locomotor and non-locomotor movements with rhythm and coordination"},
+        {w:"Week 7",c:"Creates visual art using local Philippine materials and techniques"},
+        {w:"Week 8",c:"Discusses the importance of environmental laws in protecting resources"},
+        {w:"Week 9",c:"Identifies the roles of Filipinos in the ASEAN community"},
+        {w:"Week 10",c:"End-of-Term Assessment: Philippine geography and society consolidation"},
+      ],
+    },
+    2:{
+      "English":[
+        {w:"Week 1",c:"Analyzes informational and narrative texts for author's purpose and message"},
+        {w:"Week 2",c:"Identifies text structures (sequence, compare-contrast, problem-solution)"},
+        {w:"Week 3",c:"Writes a multi-paragraph essay with thesis statement"},
+        {w:"Week 4",c:"Uses varied sentence structures to improve writing style and clarity"},
+        {w:"Week 5",c:"Applies rules of subject-verb agreement in writing"},
+        {w:"Week 6",c:"Uses dialogue in creative writing with correct punctuation"},
+        {w:"Week 7",c:"Writes a book review or literary analysis of a short story"},
+        {w:"Week 8",c:"Delivers a prepared oral report with visual aids"},
+        {w:"Week 9",c:"Participates in debate and argumentation using evidence-based reasoning"},
+        {w:"Week 10",c:"End-of-Term Assessment: Advanced English composition and oral skills"},
+      ],
+      "Filipino":[
+        {w:"Week 1",c:"Nasusuri ang mga uri at katangian ng panitikang Filipino"},
+        {w:"Week 2",c:"Nakapagsusulat ng malikhaing sanaysay na may malinaw na tema"},
+        {w:"Week 3",c:"Gumagamit ng mga wastong panlapi, unlapi, gitlapi, at hulapi"},
+        {w:"Week 4",c:"Nakapagsasalaysay ng sariling karanasan gamit ang komplikadong pangungusap"},
+        {w:"Week 5",c:"Nakikilahok sa talakayan na may respeto at malalim na pagdadamit ng kaalaman"},
+        {w:"Week 6",c:"Nakasusulat ng orihinal na maiikling kwento na may kreatibong balangkas"},
+        {w:"Week 7",c:"Natutukoy ang pagkakaiba ng dayalekto, diyalektolohiya, at wikang pambansa"},
+        {w:"Week 8",c:"Nakapagsasalita nang may wastong prosodya sa iba't ibang sitwasyon"},
+        {w:"Week 9",c:"Nakapagsulat ng sariling tula na may sukat at tugma"},
+        {w:"Week 10",c:"Katapusan ng Termyong Pagtatasa: Karagdagang kasanayang Filipino"},
+      ],
+      "Mathematics":[
+        {w:"Week 1",c:"Performs operations on decimals (addition and subtraction)"},
+        {w:"Week 2",c:"Performs multiplication and division of decimals"},
+        {w:"Week 3",c:"Converts fractions to decimals and vice versa"},
+        {w:"Week 4",c:"Identifies and applies percent in real-life situations"},
+        {w:"Week 5",c:"Solves problems involving percentages (discounts, tax, simple interest)"},
+        {w:"Week 6",c:"Computes area and perimeter of triangles and circles"},
+        {w:"Week 7",c:"Identifies and plots points on a coordinate plane"},
+        {w:"Week 8",c:"Computes mean, median, and mode of a data set"},
+        {w:"Week 9",c:"Interprets data from line graphs and pie charts"},
+        {w:"Week 10",c:"End-of-Term Assessment: Decimals, percent, and data consolidation"},
+      ],
+      "Science":[
+        {w:"Week 1",c:"Investigates the effects of light, heat, and sound energy"},
+        {w:"Week 2",c:"Describes how electricity is produced and used safely at home"},
+        {w:"Week 3",c:"Explains magnetic force and its practical applications"},
+        {w:"Week 4",c:"Describes the water cycle and its effects on weather and climate"},
+        {w:"Week 5",c:"Identifies weather disturbances (typhoons, floods) and preparedness measures"},
+        {w:"Week 6",c:"Explains how rocks and soil form and their importance to life"},
+        {w:"Week 7",c:"Describes the layers of the Earth and effects of internal processes"},
+        {w:"Week 8",c:"Explains the causes and effects of natural disasters (earthquakes, volcanic eruptions)"},
+        {w:"Week 9",c:"Identifies ways to reduce, reuse, and recycle waste for environmental protection"},
+        {w:"Week 10",c:"End-of-Term Assessment: Earth and physical science consolidation"},
+      ],
+      "GMRC":[
+        {w:"Week 1",c:"Analyzes ethical dilemmas and applies moral reasoning frameworks"},
+        {w:"Week 2",c:"Demonstrates leadership qualities in class and school activities"},
+        {w:"Week 3",c:"Applies active listening and conflict mediation skills"},
+        {w:"Week 4",c:"Shows compassion and social awareness in the community"},
+        {w:"Week 5",c:"Discusses the ethics of digital use: privacy, cyberbullying, fake news"},
+        {w:"Week 6",c:"Demonstrates financial literacy: saving, budgeting, responsible spending"},
+        {w:"Week 7",c:"Practices cross-cultural respect and appreciation of diversity"},
+        {w:"Week 8",c:"Advocates for children's rights in school and community settings"},
+        {w:"Week 9",c:"Plans and executes a small-scale community service initiative"},
+        {w:"Week 10",c:"End-of-Term Assessment: Advanced GMRC leadership and ethics"},
+      ],
+      "Makabansa":[
+        {w:"Week 1",c:"Discusses the Philippine Revolution and the fight for independence"},
+        {w:"Week 2",c:"Analyzes the causes and effects of the Commonwealth Period and WWII"},
+        {w:"Week 3",c:"Explains the Philippine Constitution and citizens' rights and duties"},
+        {w:"Week 4",c:"Describes climate change and its effects on the Philippines"},
+        {w:"Week 5",c:"Applies sports and fitness skills in team games and individual activities"},
+        {w:"Week 6",c:"Creates a cultural showcase featuring Philippine dances and music"},
+        {w:"Week 7",c:"Analyzes the role of the Philippines in ASEAN and global affairs"},
+        {w:"Week 8",c:"Proposes solutions to environmental problems using scientific and civic lenses"},
+        {w:"Week 9",c:"Presents a capstone project integrating history, geography, and culture"},
+        {w:"Week 10",c:"End-of-Term Assessment: Culminating Makabansa integration"},
+      ],
+    },
+    3:{
+      "English":[
+        {w:"Week 1",c:"Synthesizes information from multiple sources for research tasks"},
+        {w:"Week 2",c:"Writes a well-structured argumentative or persuasive essay"},
+        {w:"Week 3",c:"Applies advanced grammar: active and passive voice, reported speech"},
+        {w:"Week 4",c:"Analyzes poetry: sound devices, imagery, and figurative language"},
+        {w:"Week 5",c:"Creates a narrative essay with complex plot structure"},
+        {w:"Week 6",c:"Conducts and presents findings from a simple interview or survey"},
+        {w:"Week 7",c:"Participates confidently in group discussions as speaker and listener"},
+        {w:"Week 8",c:"Evaluates media messages critically for bias and credibility"},
+        {w:"Week 9",c:"Compiles a personal writing portfolio showcasing varied text types"},
+        {w:"Week 10",c:"End-of-Term Assessment: Culminating English literacy and communication"},
+      ],
+      "Filipino":[
+        {w:"Week 1",c:"Nakapagsasagawa ng komprehensibong pagsusuri ng isang akdang pampanitikan"},
+        {w:"Week 2",c:"Nakapagsusulat ng malikhaing dula o maikling pelikula na may diyalogo"},
+        {w:"Week 3",c:"Gumagamit ng mga figuratibong wika nang may kaalaman sa konteksto"},
+        {w:"Week 4",c:"Nag-aaral ng kasaysayan ng wikang Filipino at ebolusyon nito"},
+        {w:"Week 5",c:"Nakapagsasalita nang mapanghikayat sa iba't ibang pagkakataon"},
+        {w:"Week 6",c:"Nakapagsusulat ng komplikadong argumentatibong sanaysay"},
+        {w:"Week 7",c:"Nakapagsasagawa ng isang maliit na proyektong pananaliksik sa Filipino"},
+        {w:"Week 8",c:"Nakikilahok sa cultural na aktibidad na nagtataguyod ng Filipino at kulturang Pilipino"},
+        {w:"Week 9",c:"Nag-iipon ng portfolio na nagpapakita ng lahat ng natutunan sa buong taon"},
+        {w:"Week 10",c:"Katapusan ng Termyong Pagtatasa: Panghuling pagsasama-sama ng Filipino"},
+      ],
+      "Mathematics":[
+        {w:"Week 1",c:"Reviews and integrates all four operations on whole numbers, fractions, and decimals"},
+        {w:"Week 2",c:"Solves complex multi-step word problems involving all number types"},
+        {w:"Week 3",c:"Identifies and applies properties of polygons and circles"},
+        {w:"Week 4",c:"Computes surface area and volume of rectangular prisms"},
+        {w:"Week 5",c:"Applies ratio and proportion in real-life problem solving"},
+        {w:"Week 6",c:"Introduces basic probability concepts (certain, likely, unlikely, impossible)"},
+        {w:"Week 7",c:"Designs and interprets a class-based survey with graphical representation"},
+        {w:"Week 8",c:"Uses algebraic thinking: patterns, number sentences, and variables"},
+        {w:"Week 9",c:"Performs financial literacy tasks: budgets, simple interest, and savings planning"},
+        {w:"Week 10",c:"End-of-Term Assessment: Culminating mathematics skills integration"},
+      ],
+      "Science":[
+        {w:"Week 1",c:"Designs and conducts a simple scientific investigation using the scientific method"},
+        {w:"Week 2",c:"Explains how the human body systems work together (digestive, respiratory, circulatory)"},
+        {w:"Week 3",c:"Describes reproduction in plants and animals"},
+        {w:"Week 4",c:"Analyzes relationships between organisms in an ecosystem (symbiosis, competition)"},
+        {w:"Week 5",c:"Investigates the properties of common materials and their uses"},
+        {w:"Week 6",c:"Explains chemical changes in matter (rusting, burning, fermentation)"},
+        {w:"Week 7",c:"Describes how machines make work easier (effort, load, fulcrum)"},
+        {w:"Week 8",c:"Explains the motion of Earth and Moon and their effects (day/night, tides, eclipses)"},
+        {w:"Week 9",c:"Proposes science-based solutions to environmental challenges"},
+        {w:"Week 10",c:"End-of-Term Assessment: Culminating science investigation and application"},
+      ],
+      "GMRC":[
+        {w:"Week 1",c:"Integrates learned values into a personal code of conduct"},
+        {w:"Week 2",c:"Designs a values-based personal improvement plan"},
+        {w:"Week 3",c:"Demonstrates servant leadership in a meaningful school project"},
+        {w:"Week 4",c:"Applies all conflict resolution skills in a culminating simulation"},
+        {w:"Week 5",c:"Celebrates diversity and promotes unity through cultural understanding"},
+        {w:"Week 6",c:"Evaluates personal progress in character formation throughout the year"},
+        {w:"Week 7",c:"Creates a values-based pledge for the school and community"},
+        {w:"Week 8",c:"Presents a community service project with documented impact"},
+        {w:"Week 9",c:"Reflects on the year: growth as a learner, citizen, and person of good character"},
+        {w:"Week 10",c:"End-of-Term Assessment: Culminating GMRC character integration"},
+      ],
+      "Makabansa":[
+        {w:"Week 1",c:"Analyzes the Philippines' role in the international community"},
+        {w:"Week 2",c:"Reviews key periods of Philippine history and their long-term effects"},
+        {w:"Week 3",c:"Evaluates the effectiveness of Philippine government in addressing national issues"},
+        {w:"Week 4",c:"Proposes community-based environmental action plans"},
+        {w:"Week 5",c:"Demonstrates mastery of physical education skills in culminating performance"},
+        {w:"Week 6",c:"Presents a culminating arts project integrating multiple disciplines"},
+        {w:"Week 7",c:"Discusses the future of the Philippines: challenges and opportunities"},
+        {w:"Week 8",c:"Completes a capstone project: 'My Philippines' (multimedia integration)"},
+        {w:"Week 9",c:"Reflects on identity as a young Filipino ambassador of change"},
+        {w:"Week 10",c:"End-of-Term Assessment: Culminating Makabansa integration"},
+      ],
+    },
+  },
+};
+
+let grade=1, term=1;
+const checked={};
+function key(g,t,subj,wi){return `g${g}t${t}${subj}${wi}`}
+
+function setGrade(g){
+  grade=g;
+  document.querySelectorAll('.tab-btn').forEach((b,i)=>{b.classList.toggle('active',i+1===g)});
+  render();
+}
+function setTerm(t){
+  term=t;
+  document.querySelectorAll('.term-btn').forEach((b,i)=>{b.classList.toggle('active',i+1===t)});
+  render();
+}
+
+function render(){
+  const area=document.getElementById('checklist-area');
+  const gd=DATA[grade];
+  const td=gd[term];
+  const subjects=gd.subjects;
+  let total=0,done=0;
+  let html='';
+  subjects.forEach(subj=>{
+    const rows=td[subj]||[];
+    html+=`<div class="subject-block"><div class="subject-label">${subj}</div><table>`;
+    html+=`<tr><th style="width:70px">Week</th><th>Competency</th><th style="width:40px;text-align:center">Done</th></tr>`;
+    rows.forEach((row,wi)=>{
+      const k=key(grade,term,subj,wi);
+      const chk=checked[k]?'checked':'';
+      total++;
+      if(checked[k])done++;
+      html+=`<tr><td class="week-cell">${row.w}</td><td>${row.c}</td><td class="check-cell"><input type="checkbox" ${chk} onchange="toggle('${k}',this)"/></td></tr>`;
+    });
+    html+=`</table></div>`;
+  });
+  area.innerHTML=html;
+  const pct=total?Math.round(done/total*100):0;
+  document.getElementById('bar').style.width=pct+'%';
+  document.getElementById('prog-pct').textContent=pct+'%';
+  document.getElementById('prog-label').textContent=`Progress (${done}/${total}):`;
+}
+
+function toggle(k,el){
+  checked[k]=el.checked;
+  const allKeys=Object.keys(checked).filter(x=>x.startsWith(`g${grade}t${term}`));
+  let done=0,total=0;
+  const gd=DATA[grade];
+  const td=gd[term];
+  gd.subjects.forEach(subj=>{
+    const rows=td[subj]||[];
+    rows.forEach((_,wi)=>{const kk=key(grade,term,subj,wi);total++;if(checked[kk])done++;});
+  });
+  const pct=total?Math.round(done/total*100):0;
+  document.getElementById('bar').style.width=pct+'%';
+  document.getElementById('prog-pct').textContent=pct+'%';
+  document.getElementById('prog-label').textContent=`Progress (${done}/${total}):`;
+}
+
+render();
+</script>

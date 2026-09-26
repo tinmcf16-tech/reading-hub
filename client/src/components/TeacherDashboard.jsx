@@ -3,23 +3,31 @@ import { api } from '../utils/api';
 import { sounds } from '../utils/audio';
 import { 
   Users, Lock, Unlock, BookOpen, AlertTriangle, FileSpreadsheet, 
-  BarChart3, Plus, Search, CheckCircle2, ChevronRight, Download, RefreshCw, Eye, KeyRound, Trash2
+  BarChart3, Plus, Search, CheckCircle2, ChevronRight, Download, RefreshCw, Eye, KeyRound, Trash2, Layers
 } from 'lucide-react';
+import ModulePlayer from './ModulePlayer';
 
 export default function TeacherDashboard({ user }) {
-  const [activeTab, setActiveTab] = useState('access'); // 'overview' | 'access' | 'students' | 'curriculum' | 'remediation' | 'reports'
-  const [selectedGrade, setSelectedGrade] = useState('Grade 3'); // 'Grade 1' | 'Grade 2' | 'Grade 3'
+  const [activeTab, setActiveTab] = useState('access'); // 'overview' | 'access' | 'curriculum' | 'students' | 'remediation' | 'reports'
+  const [selectedGrade, setSelectedGrade] = useState('Grade 1'); // 'Grade 1' | 'Grade 2' | 'Grade 3'
   const [loading, setLoading] = useState(true);
   const [overview, setOverview] = useState(null);
   const [terms, setTerms] = useState([]);
   const [weeksMap, setWeeksMap] = useState({}); // { [termId]: weeksList }
   const [students, setStudents] = useState([]);
   const [remediationData, setRemediationData] = useState(null);
+
+  // Curriculum browser state
+  const [curriculumTermId, setCurriculumTermId] = useState(11);
+  const [curriculumWeekNum, setCurriculumWeekNum] = useState(1);
+  const [curriculumWeekData, setCurriculumWeekData] = useState(null);
+  const [loadingCurriculum, setLoadingCurriculum] = useState(false);
+  const [previewSubjectId, setPreviewSubjectId] = useState(null);
   
   // Student modal & details
   const [selectedStudentDetails, setSelectedStudentDetails] = useState(null);
   const [showAddStudentModal, setShowAddStudentModal] = useState(false);
-  const [newStudentForm, setNewStudentForm] = useState({ username: '', password: '', full_name: '', avatar_id: 'avatar_boy1', grade_level: 'Grade 3' });
+  const [newStudentForm, setNewStudentForm] = useState({ username: '', password: '', full_name: '', avatar_id: 'avatar_boy1', grade_level: 'Grade 1' });
   const [passwordModal, setPasswordModal] = useState(null); // { studentId, studentName, newPassword: '' }
 
   // Remediation assign modal
@@ -27,7 +35,7 @@ export default function TeacherDashboard({ user }) {
   const [remediationNotes, setRemediationNotes] = useState('');
 
   // Reports state
-  const [selectedReportTerm, setSelectedReportTerm] = useState(1);
+  const [selectedReportTerm, setSelectedReportTerm] = useState(11);
   const [termReportData, setTermReportData] = useState(null);
   const [schoolYearReport, setSchoolYearReport] = useState(null);
 
@@ -35,14 +43,30 @@ export default function TeacherDashboard({ user }) {
     loadAllData(selectedGrade);
   }, []);
 
+  const loadCurriculumWeek = async (termId, weekNum) => {
+    setLoadingCurriculum(true);
+    try {
+      const res = await api.getWeekModules(termId, weekNum);
+      setCurriculumWeekData(res);
+    } catch (err) {
+      console.error(err);
+      setCurriculumWeekData(null);
+    } finally {
+      setLoadingCurriculum(false);
+    }
+  };
+
   const handleGradeChange = (grade) => {
     setSelectedGrade(grade);
-    let firstTermId = 1;
-    if (grade === 'Grade 1') firstTermId = 11;
-    else if (grade === 'Grade 2') firstTermId = 21;
+    let firstTermId = 11;
+    if (grade === 'Grade 2') firstTermId = 21;
+    else if (grade === 'Grade 3') firstTermId = 1;
     setSelectedReportTerm(firstTermId);
+    setCurriculumTermId(firstTermId);
+    setCurriculumWeekNum(1);
     setNewStudentForm(prev => ({ ...prev, grade_level: grade }));
     loadAllData(grade);
+    loadCurriculumWeek(firstTermId, 1);
   };
 
   const loadAllData = async (targetGrade) => {
@@ -68,6 +92,12 @@ export default function TeacherDashboard({ user }) {
         wMap[t.id] = wRes.weeks || [];
       }
       setWeeksMap(wMap);
+
+      if (termsRes.terms && termsRes.terms.length > 0) {
+        const firstTId = termsRes.terms[0].id;
+        setCurriculumTermId(firstTId);
+        loadCurriculumWeek(firstTId, 1);
+      }
 
     } catch (err) {
       console.error(err);
@@ -238,6 +268,17 @@ export default function TeacherDashboard({ user }) {
     }
   };
 
+  if (previewSubjectId && curriculumTermId) {
+    return (
+      <ModulePlayer
+        termId={curriculumTermId}
+        weekNum={curriculumWeekNum}
+        subjectId={previewSubjectId}
+        onBack={() => setPreviewSubjectId(null)}
+      />
+    );
+  }
+
   return (
     <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '24px 16px' }} id="teacher-command-center">
       
@@ -360,6 +401,7 @@ export default function TeacherDashboard({ user }) {
       <div className="teacher-tabs" id="teacher-tabs-nav">
         {[
           { id: 'access', label: '🔐 Week Access Control', icon: <Lock size={18} /> },
+          { id: 'curriculum', label: '📚 Official DepEd BOW', icon: <BookOpen size={18} /> },
           { id: 'students', label: '👩‍🎓 Student Management', icon: <Users size={18} /> },
           { id: 'overview', label: '📊 Class Performance', icon: <BarChart3 size={18} /> },
           { id: 'remediation', label: '🚨 Remediation Center', icon: <AlertTriangle size={18} /> },
@@ -460,9 +502,12 @@ export default function TeacherDashboard({ user }) {
                           <span style={{ fontSize: '0.95rem', fontWeight: '700', color: '#1E293B', display: 'block' }}>
                             {w.title}
                           </span>
+                          <span style={{ fontSize: '0.75rem', fontWeight: '700', color: '#64748B', display: 'block', marginTop: '4px' }}>
+                            {selectedGrade === 'Grade 3' ? '📚 6 Subjects (includes Science)' : '📚 5 Subjects (No Science)'}
+                          </span>
                         </div>
 
-                        <div style={{ marginTop: '14px' }}>
+                        <div style={{ marginTop: '14px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
                           <button
                             id={`btn-toggle-week-${w.id}`}
                             onClick={() => handleToggleWeek(w)}
@@ -478,6 +523,28 @@ export default function TeacherDashboard({ user }) {
                             {isUnlocked ? <Lock size={14} /> : <Unlock size={14} />}
                             <span>{isUnlocked ? 'Lock Week' : 'Unlock Week'}</span>
                           </button>
+
+                          <button
+                            type="button"
+                            onClick={() => {
+                              setCurriculumTermId(t.id);
+                              setCurriculumWeekNum(w.week_number);
+                              loadCurriculumWeek(t.id, w.week_number);
+                              setActiveTab('curriculum');
+                            }}
+                            className="btn-3d btn-outline"
+                            style={{
+                              width: '100%',
+                              padding: '6px 10px',
+                              fontSize: '0.78rem',
+                              background: '#FFFFFF',
+                              color: '#4F46E5',
+                              borderColor: '#C7D2FE'
+                            }}
+                          >
+                            <BookOpen size={13} />
+                            <span>View BOW Subjects</span>
+                          </button>
                         </div>
                       </div>
                     );
@@ -486,6 +553,208 @@ export default function TeacherDashboard({ user }) {
               </div>
             );
           })}
+        </div>
+      )}
+
+      {/* ===================================================================
+          TAB: 📚 OFFICIAL DEPED BOW CURRICULUM BROWSER
+          =================================================================== */}
+      {activeTab === 'curriculum' && (
+        <div className="card-3d" style={{ padding: '32px' }} id="view-teacher-curriculum-bow">
+          <div style={{ marginBottom: '24px' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
+              <div>
+                <span style={{ fontSize: '0.85rem', fontWeight: '800', color: '#4F46E5', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                  DepEd Budget of Work (BOW) Inspection
+                </span>
+                <h2 style={{ fontSize: '1.6rem', color: '#0F172A', marginTop: '4px' }}>
+                  {selectedGrade} Curriculum & Competencies
+                </h2>
+              </div>
+
+              <div style={{
+                background: selectedGrade === 'Grade 3' ? '#EEF2FF' : '#FEF3C7',
+                border: `1.5px solid ${selectedGrade === 'Grade 3' ? '#C7D2FE' : '#FDE68A'}`,
+                padding: '8px 16px',
+                borderRadius: '16px',
+                color: selectedGrade === 'Grade 3' ? '#3730A3' : '#92400E',
+                fontSize: '0.88rem',
+                fontWeight: '700'
+              }}>
+                {selectedGrade === 'Grade 1' && "📌 Grade 1: 5 Subjects (Reading & Literacy, Language, Math, Makabansa, GMRC - No Science)"}
+                {selectedGrade === 'Grade 2' && "📌 Grade 2: 5 Subjects (English, Filipino, Math, Makabansa, GMRC - No Science)"}
+                {selectedGrade === 'Grade 3' && "📌 Grade 3: 6 Subjects (English, Filipino, Math, Science, Makabansa, GMRC)"}
+              </div>
+            </div>
+            <p style={{ color: '#64748B', fontSize: '0.95rem', marginTop: '8px' }}>
+              Inspect weekly competencies exactly aligned to the DepEd Budget of Work (BOW) uploaded for {selectedGrade}. You can preview the full interactive lesson, activities, and quiz modules as seen by learners.
+            </p>
+          </div>
+
+          {/* Term Selector */}
+          <div style={{ display: 'flex', gap: '12px', marginBottom: '20px', flexWrap: 'wrap' }}>
+            {terms.map(t => (
+              <button
+                key={t.id}
+                id={`btn-curriculum-term-${t.id}`}
+                onClick={() => {
+                  setCurriculumTermId(t.id);
+                  loadCurriculumWeek(t.id, curriculumWeekNum);
+                }}
+                style={{
+                  padding: '10px 20px',
+                  borderRadius: '14px',
+                  border: '2px solid',
+                  borderColor: curriculumTermId === t.id ? '#4F46E5' : '#E2E8F0',
+                  background: curriculumTermId === t.id ? '#4F46E5' : '#FFFFFF',
+                  color: curriculumTermId === t.id ? '#FFFFFF' : '#334155',
+                  fontWeight: '700',
+                  fontSize: '0.92rem',
+                  cursor: 'pointer',
+                  boxShadow: curriculumTermId === t.id ? '0 4px 12px rgba(79, 70, 229, 0.2)' : 'none'
+                }}
+              >
+                <span>{t.title}</span>
+              </button>
+            ))}
+          </div>
+
+          {/* Week Selector Chips */}
+          <div style={{
+            display: 'flex',
+            gap: '8px',
+            overflowX: 'auto',
+            paddingBottom: '8px',
+            marginBottom: '24px'
+          }}>
+            {Array.from({ length: 11 }, (_, i) => i + 1).map(wNum => (
+              <button
+                key={wNum}
+                id={`btn-curriculum-week-${wNum}`}
+                onClick={() => {
+                  setCurriculumWeekNum(wNum);
+                  loadCurriculumWeek(curriculumTermId, wNum);
+                }}
+                style={{
+                  padding: '8px 16px',
+                  borderRadius: '12px',
+                  border: '1.5px solid',
+                  borderColor: curriculumWeekNum === wNum ? '#10B981' : '#CBD5E1',
+                  background: curriculumWeekNum === wNum ? '#10B981' : '#F8FAFC',
+                  color: curriculumWeekNum === wNum ? '#FFFFFF' : '#475569',
+                  fontWeight: '700',
+                  fontSize: '0.85rem',
+                  cursor: 'pointer',
+                  whiteSpace: 'nowrap'
+                }}
+              >
+                Week {wNum}
+              </button>
+            ))}
+          </div>
+
+          {/* Week Modules / Competencies List */}
+          {loadingCurriculum ? (
+            <div style={{ textAlign: 'center', padding: '40px', color: '#64748B' }}>
+              <RefreshCw size={24} className="spin" style={{ marginBottom: '8px' }} />
+              <p>Loading {selectedGrade} official competencies...</p>
+            </div>
+          ) : curriculumWeekData && curriculumWeekData.competencies ? (
+            <div>
+              <div style={{
+                background: '#F8FAFC',
+                borderRadius: '16px',
+                padding: '16px 20px',
+                marginBottom: '20px',
+                border: '1px solid #E2E8F0',
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                flexWrap: 'wrap',
+                gap: '12px'
+              }}>
+                <div>
+                  <h3 style={{ fontSize: '1.2rem', color: '#1E293B', margin: 0 }}>
+                    {curriculumWeekData.week?.title || `Week ${curriculumWeekNum}`}
+                  </h3>
+                  <span style={{ fontSize: '0.85rem', color: '#64748B' }}>
+                    Access Status: <strong>{curriculumWeekData.week?.is_unlocked ? '🔓 Unlocked for Students' : '🔒 Locked'}</strong> • {curriculumWeekData.competencies.length} Subjects in this Week
+                  </span>
+                </div>
+              </div>
+
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '16px' }}>
+                {curriculumWeekData.competencies.map(comp => (
+                  <div
+                    key={comp.subject_id}
+                    id={`curriculum-card-${comp.subject_id}`}
+                    style={{
+                      background: '#FFFFFF',
+                      border: '2px solid #E2E8F0',
+                      borderTop: `5px solid ${comp.subject_color || '#4F46E5'}`,
+                      borderRadius: '18px',
+                      padding: '20px',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      justifyContent: 'space-between',
+                      boxShadow: '0 4px 12px rgba(0,0,0,0.04)'
+                    }}
+                  >
+                    <div>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px' }}>
+                        <span style={{ fontSize: '26px' }}>{comp.subject_icon}</span>
+                        <div>
+                          <h4 style={{ fontSize: '1.1rem', color: '#0F172A', margin: 0 }}>
+                            {comp.subject_name}
+                          </h4>
+                          <span style={{ fontSize: '0.75rem', fontWeight: '700', color: comp.subject_color || '#64748B' }}>
+                            {comp.strand_domain || `${selectedGrade} Learning Area`}
+                          </span>
+                        </div>
+                      </div>
+
+                      <div style={{
+                        background: '#F8FAFC',
+                        borderRadius: '12px',
+                        padding: '12px',
+                        borderLeft: `4px solid ${comp.subject_color || '#4F46E5'}`,
+                        marginBottom: '16px'
+                      }}>
+                        <span style={{ fontSize: '0.7rem', fontWeight: '800', color: comp.subject_color || '#4F46E5', textTransform: 'uppercase', display: 'block', marginBottom: '4px' }}>
+                          Official DepEd BOW Competency:
+                        </span>
+                        <p style={{ fontSize: '0.85rem', color: '#334155', margin: 0, lineHeight: 1.5, fontWeight: '500' }}>
+                          {comp.competency_text}
+                        </p>
+                      </div>
+                    </div>
+
+                    <button
+                      id={`btn-preview-${comp.subject_id}`}
+                      onClick={() => setPreviewSubjectId(comp.subject_id)}
+                      className="btn-3d btn-primary"
+                      style={{
+                        width: '100%',
+                        padding: '10px 14px',
+                        fontSize: '0.88rem',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        gap: '6px'
+                      }}
+                    >
+                      <Eye size={16} />
+                      <span>Preview Interactive Module</span>
+                    </button>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ) : (
+            <div style={{ textAlign: 'center', padding: '32px', color: '#64748B' }}>
+              <p>No competency data found for this week.</p>
+            </div>
+          )}
         </div>
       )}
 
