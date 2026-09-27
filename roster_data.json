@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "last_synced": "2026-09-27T03:47:14.780Z",
+  "last_synced": "2026-09-27T03:47:31.270Z",
   "total_learners": 4,
   "total_submissions": 0,
   "students": [
@@ -311,10 +311,6 @@
     }
   ],
   "terms_locked": [
-    {
-      "id": 2,
-      "is_locked": 1
-    },
     {
       "id": 3,
       "is_locked": 1
