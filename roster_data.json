@@ -1,18 +1,9 @@
 {
   "version": 2,
-  "last_synced": "2026-09-27T05:09:03.593Z",
-  "total_learners": 5,
-  "total_submissions": 5,
+  "last_synced": "2026-09-27T07:12:37.100Z",
+  "total_learners": 6,
+  "total_submissions": 0,
   "students": [
-    {
-      "id": 38,
-      "username": "zydnie",
-      "password_hash": "$2b$10$LFtoCG5PWo75B/adr9uPH.dzvYNjIQmh/zSqqigqzgyBVf0lSL5T.",
-      "full_name": "Zydnie F. Guimera",
-      "role": "student",
-      "grade_level": "Grade 3",
-      "avatar_id": "avatar_boy1"
-    },
     {
       "id": 39,
       "username": "aishleen",
@@ -20,6 +11,24 @@
       "full_name": "Aishleen Kaye F. Sola",
       "role": "student",
       "grade_level": "Grade 3",
+      "avatar_id": "avatar_girl1"
+    },
+    {
+      "id": 46,
+      "username": "juan.g1",
+      "password_hash": "$2b$10$VSV0adGIzy7fckEEbsNORO2PIAfNBh5IW9CnIS4a/3ArtJppnWP76",
+      "full_name": "Juan Dela Cruz",
+      "role": "student",
+      "grade_level": "Grade 1",
+      "avatar_id": "avatar_boy1"
+    },
+    {
+      "id": 47,
+      "username": "maria.g2",
+      "password_hash": "$2b$10$VSV0adGIzy7fckEEbsNORO2PIAfNBh5IW9CnIS4a/3ArtJppnWP76",
+      "full_name": "Maria Santos",
+      "role": "student",
+      "grade_level": "Grade 2",
       "avatar_id": "avatar_girl1"
     },
     {
@@ -52,17 +61,24 @@
   ],
   "user_stats": [
     {
-      "username": "zydnie",
-      "total_stars": 12,
-      "current_streak": 1,
-      "best_streak": 1,
-      "last_active_date": "2026-09-27"
-    },
-    {
       "username": "aishleen",
       "total_stars": 0,
       "current_streak": 1,
       "best_streak": 1,
+      "last_active_date": null
+    },
+    {
+      "username": "juan.g1",
+      "total_stars": 15,
+      "current_streak": 2,
+      "best_streak": 2,
+      "last_active_date": null
+    },
+    {
+      "username": "maria.g2",
+      "total_stars": 20,
+      "current_streak": 3,
+      "best_streak": 3,
       "last_active_date": null
     },
     {
@@ -87,88 +103,9 @@
       "last_active_date": null
     }
   ],
-  "student_submissions": [
-    {
-      "username": "zydnie",
-      "activity_id": 4983,
-      "answer_data": "\"A\"",
-      "score": 10,
-      "max_score": 10,
-      "percentage": 100,
-      "attempts": 1,
-      "teacher_feedback": "ðŸŒŸ Napakahusay! Perfect score! Nakuha mo ang lahat ng tamang sagot!",
-      "completed_at": "2026-09-27 04:00:31"
-    },
-    {
-      "username": "zydnie",
-      "activity_id": 4984,
-      "answer_data": "\"true\"",
-      "score": 10,
-      "max_score": 10,
-      "percentage": 100,
-      "attempts": 2,
-      "teacher_feedback": "ðŸŒŸ Napakahusay! Perfect score! Nakuha mo ang lahat ng tamang sagot!",
-      "completed_at": "2026-09-27 04:00:49"
-    },
-    {
-      "username": "zydnie",
-      "activity_id": 4985,
-      "answer_data": "\"A\"",
-      "score": 10,
-      "max_score": 10,
-      "percentage": 100,
-      "attempts": 1,
-      "teacher_feedback": "ðŸŒŸ Napakahusay! Perfect score! Nakuha mo ang lahat ng tamang sagot!",
-      "completed_at": "2026-09-27 04:00:58"
-    },
-    {
-      "username": "zydnie",
-      "activity_id": 4986,
-      "answer_data": "\"A\"",
-      "score": 10,
-      "max_score": 10,
-      "percentage": 100,
-      "attempts": 1,
-      "teacher_feedback": "ðŸŒŸ Napakahusay! Perfect score! Nakuha mo ang lahat ng tamang sagot!",
-      "completed_at": "2026-09-27 04:01:09"
-    },
-    {
-      "username": "zydnie",
-      "activity_id": 4987,
-      "answer_data": "\"true\"",
-      "score": 10,
-      "max_score": 10,
-      "percentage": 100,
-      "attempts": 1,
-      "teacher_feedback": "ðŸŒŸ Napakahusay! Perfect score! Nakuha mo ang lahat ng tamang sagot!",
-      "completed_at": "2026-09-27 04:01:15"
-    }
-  ],
-  "student_progress": [
-    {
-      "username": "zydnie",
-      "term_id": 1,
-      "week_id": 166,
-      "subject_id": "math",
-      "completed_activities": 5,
-      "total_activities": 8,
-      "score_sum": 50,
-      "max_score_sum": 50,
-      "percentage": 100,
-      "status": "in_progress",
-      "updated_at": "2026-09-27 04:01:15"
-    }
-  ],
-  "user_badges": [
-    {
-      "username": "zydnie",
-      "badge_id": "streak_5",
-      "title": "High Five Scholar",
-      "description": "Completed 5 learning activities!",
-      "icon": "✋",
-      "earned_at": "2026-09-27 04:01:16"
-    }
-  ],
+  "student_submissions": [],
+  "student_progress": [],
+  "user_badges": [],
   "weeks_unlocked": [
     {
       "id": 166,
