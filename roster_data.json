@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "last_synced": "2026-09-27T04:01:11.585Z",
+  "last_synced": "2026-09-27T04:01:18.510Z",
   "total_learners": 5,
-  "total_submissions": 4,
+  "total_submissions": 5,
   "students": [
     {
       "id": 38,
@@ -53,7 +53,7 @@
   "user_stats": [
     {
       "username": "zydnie",
-      "total_stars": 10,
+      "total_stars": 12,
       "current_streak": 1,
       "best_streak": 1,
       "last_active_date": "2026-09-27"
@@ -131,6 +131,17 @@
       "attempts": 1,
       "teacher_feedback": "ðŸŒŸ Napakahusay! Perfect score! Nakuha mo ang lahat ng tamang sagot!",
       "completed_at": "2026-09-27 04:01:09"
+    },
+    {
+      "username": "zydnie",
+      "activity_id": 4987,
+      "answer_data": "\"true\"",
+      "score": 10,
+      "max_score": 10,
+      "percentage": 100,
+      "attempts": 1,
+      "teacher_feedback": "ðŸŒŸ Napakahusay! Perfect score! Nakuha mo ang lahat ng tamang sagot!",
+      "completed_at": "2026-09-27 04:01:15"
     }
   ],
   "student_progress": [
@@ -139,16 +150,25 @@
       "term_id": 1,
       "week_id": 166,
       "subject_id": "math",
-      "completed_activities": 4,
+      "completed_activities": 5,
       "total_activities": 8,
-      "score_sum": 40,
-      "max_score_sum": 40,
+      "score_sum": 50,
+      "max_score_sum": 50,
       "percentage": 100,
       "status": "in_progress",
-      "updated_at": "2026-09-27 04:01:09"
+      "updated_at": "2026-09-27 04:01:15"
     }
   ],
-  "user_badges": [],
+  "user_badges": [
+    {
+      "username": "zydnie",
+      "badge_id": "streak_5",
+      "title": "High Five Scholar",
+      "description": "Completed 5 learning activities!",
+      "icon": "✋",
+      "earned_at": "2026-09-27 04:01:16"
+    }
+  ],
   "weeks_unlocked": [
     {
       "id": 166,
