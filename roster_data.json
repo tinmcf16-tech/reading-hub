@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "last_synced": "2026-09-27T03:25:22.035Z",
+  "last_synced": "2026-09-27T03:46:46.039Z",
   "total_learners": 4,
   "total_submissions": 0,
   "students": [
@@ -157,6 +157,78 @@
       "id": 199,
       "term_id": 11,
       "week_number": 1,
+      "is_unlocked": 1
+    },
+    {
+      "id": 200,
+      "term_id": 11,
+      "week_number": 2,
+      "is_unlocked": 1
+    },
+    {
+      "id": 201,
+      "term_id": 11,
+      "week_number": 3,
+      "is_unlocked": 1
+    },
+    {
+      "id": 202,
+      "term_id": 11,
+      "week_number": 4,
+      "is_unlocked": 1
+    },
+    {
+      "id": 203,
+      "term_id": 11,
+      "week_number": 5,
+      "is_unlocked": 1
+    },
+    {
+      "id": 204,
+      "term_id": 11,
+      "week_number": 6,
+      "is_unlocked": 1
+    },
+    {
+      "id": 205,
+      "term_id": 11,
+      "week_number": 7,
+      "is_unlocked": 1
+    },
+    {
+      "id": 206,
+      "term_id": 11,
+      "week_number": 8,
+      "is_unlocked": 1
+    },
+    {
+      "id": 207,
+      "term_id": 11,
+      "week_number": 9,
+      "is_unlocked": 1
+    },
+    {
+      "id": 208,
+      "term_id": 11,
+      "week_number": 10,
+      "is_unlocked": 1
+    },
+    {
+      "id": 209,
+      "term_id": 11,
+      "week_number": 11,
+      "is_unlocked": 1
+    },
+    {
+      "id": 210,
+      "term_id": 12,
+      "week_number": 1,
+      "is_unlocked": 1
+    },
+    {
+      "id": 211,
+      "term_id": 12,
+      "week_number": 2,
       "is_unlocked": 1
     },
     {
