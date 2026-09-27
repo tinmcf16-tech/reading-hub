@@ -5,6 +5,7 @@
 
 const path = require('path');
 const fs = require('fs');
+const { db: defaultDb } = require('./db');
 
 function resolveGithubToken() {
     if (process.env.GITHUB_TOKEN && process.env.GITHUB_TOKEN.trim()) {
@@ -118,7 +119,8 @@ async function putCloudData(payload, sha = null) {
 }
 
 // Restore saved learners, progress, scores, and settings from cloud into SQLite
-async function restoreFromCloud(db) {
+async function restoreFromCloud(dbInstance) {
+    const db = (dbInstance && typeof dbInstance.prepare === 'function') ? dbInstance : defaultDb;
     console.log('[CloudSync] Checking cloud for persistent student records and activity submissions...');
     const cloud = await getCloudData();
     if (!cloud || !cloud.data || !Array.isArray(cloud.data.students)) {
@@ -262,7 +264,8 @@ async function restoreFromCloud(db) {
 }
 
 // Save complete dynamic state (students, submissions, progress, stars, unlocks) to cloud
-async function saveToCloud(db) {
+async function saveToCloud(dbInstance) {
+    const db = (dbInstance && typeof dbInstance.prepare === 'function') ? dbInstance : defaultDb;
     try {
         const students = db.prepare(`
             SELECT id, username, password_hash, full_name, role, grade_level, avatar_id

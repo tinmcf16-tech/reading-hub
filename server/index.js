@@ -269,8 +269,8 @@ app.get('/api/curriculum/term/:termId/week/:weekNum/subject/:subjectId', authent
             lesson.illustrations = JSON.parse(lesson.illustrations || '[]');
         } catch (e) {}
 
-        // Attach official Knowledge Channel TV educational video for this topic
-        lesson.video = getVideoForLesson(subjectId, week.week_number);
+        // Attach official Knowledge Channel TV / DepEd TV educational video strictly aligned to this topic
+        lesson.video = getVideoForLesson(subjectId, week.week_number, termId, competency.competency_text, lesson.title, competency.strand_domain);
     }
 
     const activitiesParsed = activities.map(act => {

@@ -4,7 +4,7 @@ import { sounds } from '../utils/audio';
 import confetti from 'canvas-confetti';
 import { 
   ArrowLeft, Volume2, Sparkles, CheckCircle2, XCircle, 
-  Trophy, Star, HelpCircle, Play, ChevronRight, Award, Flame
+  Trophy, Star, HelpCircle, Play, ChevronRight, Award, Flame, RotateCcw
 } from 'lucide-react';
 
 const TABS = [
@@ -17,6 +17,386 @@ const TABS = [
   { id: 'show_know', label: '📝 Show What You Know', day: 'Day 5' },
   { id: 'result', label: '🏆 My Result', day: 'Summary' }
 ];
+
+function InteractiveMatchingGame({ act, result, isSubmitting, onAnswerSubmit }) {
+  const rawPairs = act.question_data?.pairs || [];
+  
+  const [shuffledRight, setShuffledRight] = useState([]);
+  const [selectedLeft, setSelectedLeft] = useState(null); // index of left item
+  const [selectedRight, setSelectedRight] = useState(null); // origIndex of right item
+  const [matchedPairs, setMatchedPairs] = useState({}); // { [origIndex]: true }
+  const [wrongFlash, setWrongFlash] = useState(null); // { left: index, right: origIndex }
+  const [isCompleted, setIsCompleted] = useState(false);
+
+  useEffect(() => {
+    initGame();
+  }, [act.id]);
+
+  const initGame = () => {
+    if (!rawPairs || rawPairs.length === 0) return;
+    const rightCards = rawPairs.map((p, idx) => ({ origIndex: idx, text: p.right }));
+    // Fisher-Yates shuffle
+    for (let i = rightCards.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [rightCards[i], rightCards[j]] = [rightCards[j], rightCards[i]];
+    }
+    // Avoid identical straight-across match order if > 1 item
+    if (rightCards.every((item, i) => item.origIndex === i) && rightCards.length > 1) {
+      [rightCards[0], rightCards[rightCards.length - 1]] = [rightCards[rightCards.length - 1], rightCards[0]];
+    }
+    setShuffledRight(rightCards);
+    setSelectedLeft(null);
+    setSelectedRight(null);
+    setWrongFlash(null);
+
+    if (result && result.percentage >= 75) {
+      const allDone = {};
+      rawPairs.forEach((_, idx) => { allDone[idx] = true; });
+      setMatchedPairs(allDone);
+      setIsCompleted(true);
+    } else {
+      setMatchedPairs({});
+      setIsCompleted(false);
+    }
+  };
+
+  const verifyMatch = (leftIdx, rightOrigIdx) => {
+    if (leftIdx === rightOrigIdx) {
+      // Match found!
+      sounds.playCorrect();
+      const updated = { ...matchedPairs, [leftIdx]: true };
+      setMatchedPairs(updated);
+      setSelectedLeft(null);
+      setSelectedRight(null);
+      setWrongFlash(null);
+
+      if (Object.keys(updated).length === rawPairs.length) {
+        setIsCompleted(true);
+        sounds.playVictory();
+        confetti({
+          particleCount: 80,
+          spread: 80,
+          origin: { y: 0.6 }
+        });
+        onAnswerSubmit({ played: true, matchedCount: rawPairs.length, completed: true });
+      }
+    } else {
+      // Mismatch
+      sounds.playTryAgain();
+      setWrongFlash({ left: leftIdx, right: rightOrigIdx });
+      setTimeout(() => {
+        setWrongFlash(null);
+        setSelectedLeft(null);
+        setSelectedRight(null);
+      }, 700);
+    }
+  };
+
+  const handleLeftClick = (idx) => {
+    if (matchedPairs[idx] || wrongFlash) return;
+    if (selectedRight !== null) {
+      verifyMatch(idx, selectedRight);
+    } else {
+      setSelectedLeft(selectedLeft === idx ? null : idx);
+    }
+  };
+
+  const handleRightClick = (origIdx) => {
+    if (matchedPairs[origIdx] || wrongFlash) return;
+    if (selectedLeft !== null) {
+      verifyMatch(selectedLeft, origIdx);
+    } else {
+      setSelectedRight(selectedRight === origIdx ? null : origIdx);
+    }
+  };
+
+  const matchedCount = Object.keys(matchedPairs).length;
+  const totalCount = rawPairs.length;
+
+  return (
+    <div className="card-3d" style={{
+      padding: '32px',
+      background: 'linear-gradient(135deg, #FAF5FF 0%, #EFF6FF 100%)',
+      borderColor: '#DDD6FE',
+      borderRadius: '24px',
+      marginBottom: '24px'
+    }}>
+      {/* Game Header */}
+      <div style={{ textAlign: 'center', marginBottom: '24px' }}>
+        <div style={{ fontSize: '48px', marginBottom: '6px' }}>🚀</div>
+        <h3 style={{ fontSize: '1.6rem', color: '#581C87', marginBottom: '6px' }}>{act.title}</h3>
+        <p style={{ color: '#6B21A8', fontSize: '1.05rem', maxWidth: '650px', margin: '0 auto' }}>
+          {act.instructions || 'Pindutin ang isang konsepto sa Hanay A at piliin ang tamang katapat nito sa Hanay B!'}
+        </p>
+      </div>
+
+      {/* Progress & Star Bar */}
+      <div style={{
+        background: '#FFFFFF',
+        borderRadius: '16px',
+        padding: '12px 20px',
+        marginBottom: '24px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        flexWrap: 'wrap',
+        gap: '12px',
+        boxShadow: '0 2px 6px rgba(0,0,0,0.04)',
+        border: '1px solid #E2E8F0'
+      }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <span style={{ fontSize: '20px' }}>⭐</span>
+          <span style={{ fontWeight: '800', color: '#6B21A8' }}>
+            Naitugmang Pares: {matchedCount} / {totalCount}
+          </span>
+        </div>
+        <div style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
+          {rawPairs.map((_, pIdx) => (
+            <span key={pIdx} style={{
+              fontSize: '18px',
+              opacity: matchedPairs[pIdx] ? 1 : 0.25,
+              transform: matchedPairs[pIdx] ? 'scale(1.2)' : 'scale(1)',
+              transition: 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)'
+            }}>
+              ⭐
+            </span>
+          ))}
+        </div>
+        <button
+          onClick={initGame}
+          className="btn-3d btn-outline"
+          style={{ padding: '6px 14px', fontSize: '0.85rem' }}
+          title="Ulitin ang laro"
+        >
+          <RotateCcw size={14} />
+          <span>I-reset</span>
+        </button>
+      </div>
+
+      {/* Two Matching Columns */}
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+        gap: '20px',
+        marginBottom: '28px'
+      }}>
+        {/* Left Column */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+          <div style={{
+            fontSize: '0.85rem',
+            fontWeight: '800',
+            color: '#7C3AED',
+            textTransform: 'uppercase',
+            letterSpacing: '0.05em',
+            paddingBottom: '4px',
+            borderBottom: '2px solid #DDD6FE'
+          }}>
+            📍 Hanay A: Konsepto / Tanong
+          </div>
+          {rawPairs.map((pair, idx) => {
+            const isMatched = !!matchedPairs[idx];
+            const isSelected = selectedLeft === idx;
+            const isWrong = wrongFlash && wrongFlash.left === idx;
+
+            let cardBg = '#FFFFFF';
+            let cardBorder = '#E2E8F0';
+            let textColor = '#1E293B';
+            let badgeBg = '#F1F5F9';
+            let badgeColor = '#475569';
+
+            if (isMatched) {
+              cardBg = '#ECFDF5';
+              cardBorder = '#10B981';
+              textColor = '#065F46';
+              badgeBg = '#D1FAE5';
+              badgeColor = '#047857';
+            } else if (isWrong) {
+              cardBg = '#FEF2F2';
+              cardBorder = '#EF4444';
+              textColor = '#991B1B';
+              badgeBg = '#FEE2E2';
+              badgeColor = '#B91C1C';
+            } else if (isSelected) {
+              cardBg = '#F5F3FF';
+              cardBorder = '#7C3AED';
+              textColor = '#581C87';
+              badgeBg = '#EDE9FE';
+              badgeColor = '#6D28D9';
+            }
+
+            return (
+              <button
+                key={idx}
+                id={`match-left-${act.id}-${idx}`}
+                onClick={() => handleLeftClick(idx)}
+                disabled={isMatched}
+                style={{
+                  background: cardBg,
+                  border: `2px solid ${cardBorder}`,
+                  borderRadius: '16px',
+                  padding: '16px 18px',
+                  textAlign: 'left',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  gap: '12px',
+                  cursor: isMatched ? 'default' : 'pointer',
+                  transform: isSelected ? 'scale(1.02)' : 'none',
+                  boxShadow: isSelected ? '0 8px 16px rgba(124, 58, 237, 0.15)' : '0 2px 4px rgba(0,0,0,0.03)',
+                  transition: 'all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1)',
+                  width: '100%'
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                  <span style={{
+                    width: '28px',
+                    height: '28px',
+                    borderRadius: '8px',
+                    background: badgeBg,
+                    color: badgeColor,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontWeight: '800',
+                    fontSize: '0.85rem'
+                  }}>
+                    {String.fromCharCode(65 + idx)}
+                  </span>
+                  <span style={{ fontWeight: '700', fontSize: '1.05rem', color: textColor }}>
+                    {pair.left}
+                  </span>
+                </div>
+                {isMatched && <CheckCircle2 size={20} color="#10B981" />}
+                {isSelected && !isMatched && <span style={{ fontSize: '18px' }}>👉</span>}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Right Column */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+          <div style={{
+            fontSize: '0.85rem',
+            fontWeight: '800',
+            color: '#2563EB',
+            textTransform: 'uppercase',
+            letterSpacing: '0.05em',
+            paddingBottom: '4px',
+            borderBottom: '2px solid #BFDBFE'
+          }}>
+            🎯 Hanay B: Katapat / Sagot
+          </div>
+          {shuffledRight.map((item, sIdx) => {
+            const origIdx = item.origIndex;
+            const isMatched = !!matchedPairs[origIdx];
+            const isSelected = selectedRight === origIdx;
+            const isWrong = wrongFlash && wrongFlash.right === origIdx;
+
+            let cardBg = '#FFFFFF';
+            let cardBorder = '#E2E8F0';
+            let textColor = '#1E293B';
+            let badgeBg = '#F1F5F9';
+            let badgeColor = '#475569';
+
+            if (isMatched) {
+              cardBg = '#ECFDF5';
+              cardBorder = '#10B981';
+              textColor = '#065F46';
+              badgeBg = '#D1FAE5';
+              badgeColor = '#047857';
+            } else if (isWrong) {
+              cardBg = '#FEF2F2';
+              cardBorder = '#EF4444';
+              textColor = '#991B1B';
+              badgeBg = '#FEE2E2';
+              badgeColor = '#B91C1C';
+            } else if (isSelected) {
+              cardBg = '#EFF6FF';
+              cardBorder = '#2563EB';
+              textColor = '#1E40AF';
+              badgeBg = '#DBEAFE';
+              badgeColor = '#1D4ED8';
+            }
+
+            return (
+              <button
+                key={sIdx}
+                id={`match-right-${act.id}-${sIdx}`}
+                onClick={() => handleRightClick(origIdx)}
+                disabled={isMatched}
+                style={{
+                  background: cardBg,
+                  border: `2px solid ${cardBorder}`,
+                  borderRadius: '16px',
+                  padding: '16px 18px',
+                  textAlign: 'left',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  gap: '12px',
+                  cursor: isMatched ? 'default' : 'pointer',
+                  transform: isSelected ? 'scale(1.02)' : 'none',
+                  boxShadow: isSelected ? '0 8px 16px rgba(37, 99, 235, 0.15)' : '0 2px 4px rgba(0,0,0,0.03)',
+                  transition: 'all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1)',
+                  width: '100%'
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                  <span style={{
+                    width: '28px',
+                    height: '28px',
+                    borderRadius: '8px',
+                    background: badgeBg,
+                    color: badgeColor,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontWeight: '800',
+                    fontSize: '0.85rem'
+                  }}>
+                    {sIdx + 1}
+                  </span>
+                  <span style={{ fontWeight: '700', fontSize: '1.05rem', color: textColor }}>
+                    {item.text}
+                  </span>
+                </div>
+                {isMatched && <CheckCircle2 size={20} color="#10B981" />}
+                {isSelected && !isMatched && <span style={{ fontSize: '18px' }}>👈</span>}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Completion Banner */}
+      {isCompleted && (
+        <div style={{
+          background: 'linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 100%)',
+          border: '2px solid #10B981',
+          borderRadius: '18px',
+          padding: '20px',
+          textAlign: 'center'
+        }}>
+          <div style={{ fontSize: '36px', marginBottom: '6px' }}>🏆</div>
+          <h4 style={{ fontSize: '1.35rem', color: '#065F46', marginBottom: '4px' }}>
+            Napakahusay! Naitugma mo ang lahat ng 5 pares!
+          </h4>
+          <p style={{ color: '#047857', fontWeight: '700', marginBottom: '14px' }}>
+            Nakamit mo ang +15 Stars para sa Day 4 Star Match Quest!
+          </p>
+          <button
+            onClick={initGame}
+            className="btn-3d btn-outline"
+            style={{ padding: '8px 18px', background: '#FFFFFF', borderColor: '#10B981', color: '#065F46' }}
+          >
+            <RotateCcw size={16} />
+            <span>Laruin Muli ang Star Quest</span>
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default function ModulePlayer({ termId, weekNum, subjectId, onBack }) {
   const [loading, setLoading] = useState(true);
@@ -704,67 +1084,18 @@ export default function ModulePlayer({ termId, weekNum, subjectId, onBack }) {
             </div>
           </div>
 
-          {playActivities.map(act => {
-            const result = submissionResults[act.id];
-            return (
-              <div key={act.id} className="card-3d" style={{ padding: '36px', background: 'linear-gradient(135deg, #FAF5FF 0%, #EFF6FF 100%)', borderColor: '#DDD6FE' }}>
-                <div style={{ textAlign: 'center', marginBottom: '24px' }}>
-                  <div style={{ fontSize: '54px', marginBottom: '8px' }}>🚀</div>
-                  <h3 style={{ fontSize: '1.5rem', color: '#581C87', marginBottom: '6px' }}>{act.title}</h3>
-                  <p style={{ color: '#6B21A8', fontSize: '1.05rem' }}>{act.instructions}</p>
-                </div>
-
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginBottom: '28px' }}>
-                  {act.question_data?.pairs?.map((pair, pIdx) => (
-                    <div key={pIdx} style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'space-between',
-                      background: '#FFFFFF',
-                      borderRadius: '16px',
-                      padding: '16px 20px',
-                      boxShadow: '0 4px 6px rgba(0,0,0,0.04)',
-                      border: '2px solid #E2E8F0'
-                    }}>
-                      <span style={{ fontWeight: '700', color: '#1E293B', fontSize: '1.05rem' }}>{pair.left}</span>
-                      <span style={{ color: '#4F46E5', fontWeight: '800' }}>➔</span>
-                      <span style={{ background: '#EEF2FF', padding: '6px 14px', borderRadius: '12px', color: '#3730A3', fontWeight: '700' }}>
-                        {pair.right}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-
-                <div style={{ textAlign: 'center' }}>
-                  <button
-                    id={`btn-play-game-${act.id}`}
-                    onClick={() => {
-                      handleSelectOption(act.id, { played: true });
-                      handleSubmitAnswer({ ...act, points: 15 });
-                    }}
-                    className="btn-3d btn-primary"
-                    style={{ padding: '14px 36px', fontSize: '1.15rem' }}
-                  >
-                    <span>⭐ Launch Star Match Quest (+15 Stars)</span>
-                  </button>
-                </div>
-
-                {result && (
-                  <div style={{
-                    marginTop: '20px',
-                    textAlign: 'center',
-                    background: '#ECFDF5',
-                    color: '#065F46',
-                    padding: '14px',
-                    borderRadius: '14px',
-                    fontWeight: '700'
-                  }}>
-                    {result.feedback}
-                  </div>
-                )}
-              </div>
-            );
-          })}
+          {playActivities.map(act => (
+            <InteractiveMatchingGame
+              key={act.id}
+              act={act}
+              result={submissionResults[act.id]}
+              isSubmitting={submitting[act.id]}
+              onAnswerSubmit={(answerData) => {
+                handleSelectOption(act.id, answerData);
+                handleSubmitAnswer({ ...act, points: 15 });
+              }}
+            />
+          ))}
 
           <div style={{ textAlign: 'right', marginTop: '24px' }}>
             <button
