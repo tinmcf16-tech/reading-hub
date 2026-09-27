@@ -28,8 +28,10 @@ export default function ModulePlayer({ termId, weekNum, subjectId, onBack }) {
   const [userAnswers, setUserAnswers] = useState({});
   const [submissionResults, setSubmissionResults] = useState({});
   const [submitting, setSubmitting] = useState({});
+  const [videoStarted, setVideoStarted] = useState(false);
 
   useEffect(() => {
+    setVideoStarted(false);
     loadModuleData();
   }, [termId, weekNum, subjectId]);
 
@@ -300,9 +302,194 @@ export default function ModulePlayer({ termId, weekNum, subjectId, onBack }) {
             <span style={{ fontSize: '32px' }}>🔎</span>
             <div>
               <span style={{ fontSize: '0.8rem', fontWeight: '800', color: '#059669', textTransform: 'uppercase' }}>Day 2 • Deep Dive</span>
-              <h2 style={{ fontSize: '1.6rem', color: '#0F172A' }}>Let's Explore: Stories & Real-Life Examples</h2>
+              <h2 style={{ fontSize: '1.6rem', color: '#0F172A' }}>Let's Explore: Video Lessons, Stories & Real-Life Examples</h2>
             </div>
           </div>
+
+          {/* 📺 Official Knowledge Channel Educational Video Lesson */}
+          {lesson?.video && (
+            <div className="card-3d" style={{
+              background: 'linear-gradient(135deg, #F0FDF4 0%, #ECFDF5 50%, #EFF6FF 100%)',
+              border: '2px solid #86EFAC',
+              borderRadius: '24px',
+              padding: '24px',
+              marginBottom: '28px',
+              boxShadow: '0 8px 24px rgba(16, 185, 129, 0.08)'
+            }} id="kch-video-player-container">
+              {/* Video Header & Tags */}
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px', marginBottom: '16px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                  <div style={{
+                    width: '46px',
+                    height: '46px',
+                    borderRadius: '14px',
+                    background: '#059669',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontSize: '24px',
+                    color: '#FFFFFF',
+                    boxShadow: '0 4px 12px rgba(5, 150, 105, 0.3)'
+                  }}>
+                    📺
+                  </div>
+                  <div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+                      <span style={{
+                        fontSize: '0.75rem',
+                        fontWeight: '800',
+                        color: '#047857',
+                        textTransform: 'uppercase',
+                        letterSpacing: '0.06em'
+                      }}>
+                        Knowledge Channel TV Official Educational Video
+                      </span>
+                      <span style={{
+                        background: '#DCFCE7',
+                        color: '#166534',
+                        padding: '2px 8px',
+                        borderRadius: '8px',
+                        fontSize: '0.7rem',
+                        fontWeight: '700'
+                      }}>
+                        {lesson.video.program || 'Wikaharian / MathDali'}
+                      </span>
+                    </div>
+                    <h3 style={{ margin: '2px 0 0 0', fontSize: '1.25rem', color: '#0F172A', fontWeight: '800' }}>
+                      {lesson.video.title}
+                    </h3>
+                  </div>
+                </div>
+
+                <div style={{ display: 'flex', gap: '8px' }}>
+                  <span style={{
+                    background: '#FEF3C7',
+                    color: '#92400E',
+                    padding: '4px 10px',
+                    borderRadius: '10px',
+                    fontSize: '0.75rem',
+                    fontWeight: '700',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '4px'
+                  }}>
+                    🇵🇭 Tagalog Audio
+                  </span>
+                  <span style={{
+                    background: '#E0E7FF',
+                    color: '#3730A3',
+                    padding: '4px 10px',
+                    borderRadius: '10px',
+                    fontSize: '0.75rem',
+                    fontWeight: '700'
+                  }}>
+                    Panoorin Dito sa Site
+                  </span>
+                </div>
+              </div>
+
+              {lesson.video.description && (
+                <p style={{ color: '#475569', fontSize: '0.93rem', marginBottom: '16px', lineHeight: '1.5' }}>
+                  {lesson.video.description}
+                </p>
+              )}
+
+              {/* In-Site Video Embed Player (No external redirect) */}
+              {videoStarted ? (
+                <div style={{
+                  position: 'relative',
+                  paddingBottom: '56.25%',
+                  height: 0,
+                  overflow: 'hidden',
+                  borderRadius: '18px',
+                  boxShadow: '0 10px 30px rgba(0,0,0,0.15)',
+                  background: '#000000'
+                }}>
+                  <iframe
+                    src={`https://www.youtube-nocookie.com/embed/${lesson.video.video_id}?autoplay=1&rel=0&modestbranding=1&enablejsapi=1`}
+                    title={lesson.video.title}
+                    style={{
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      width: '100%',
+                      height: '100%',
+                      border: 'none',
+                      borderRadius: '18px'
+                    }}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              ) : (
+                <div
+                  id="btn-start-video"
+                  onClick={() => setVideoStarted(true)}
+                  style={{
+                    position: 'relative',
+                    borderRadius: '18px',
+                    overflow: 'hidden',
+                    cursor: 'pointer',
+                    background: '#0F172A',
+                    minHeight: '260px',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    padding: '30px 20px',
+                    boxShadow: '0 10px 25px rgba(0,0,0,0.12)',
+                    transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+                    backgroundImage: lesson.video.thumbnail ? `linear-gradient(rgba(15, 23, 42, 0.72), rgba(15, 23, 42, 0.85)), url(${lesson.video.thumbnail})` : 'none',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center'
+                  }}
+                  onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.01)'}
+                  onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+                >
+                  <button
+                    type="button"
+                    style={{
+                      width: '76px',
+                      height: '76px',
+                      borderRadius: '50%',
+                      background: 'linear-gradient(135deg, #10B981 0%, #059669 100%)',
+                      border: '4px solid #FFFFFF',
+                      color: '#FFFFFF',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      boxShadow: '0 8px 24px rgba(16, 185, 129, 0.5)',
+                      cursor: 'pointer',
+                      marginBottom: '14px'
+                    }}
+                  >
+                    <Play size={34} fill="#FFFFFF" style={{ marginLeft: '4px' }} />
+                  </button>
+                  <h4 style={{ color: '#FFFFFF', fontSize: '1.25rem', margin: '0 0 6px 0', textShadow: '0 2px 8px rgba(0,0,0,0.5)', fontWeight: '800' }}>
+                    ▶ Simulan ang Video Lesson (Click to Start)
+                  </h4>
+                  <p style={{ color: '#E2E8F0', fontSize: '0.88rem', margin: 0, textShadow: '0 1px 4px rgba(0,0,0,0.5)' }}>
+                    Panoorin nang direkta sa loob ng site nang hindi kailangang umalis sa Reading HUB!
+                  </p>
+                </div>
+              )}
+
+              {videoStarted && (
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '12px' }}>
+                  <span style={{ fontSize: '0.8rem', color: '#059669', fontWeight: '700' }}>
+                    🟢 Kasalukuyang pinapanood sa loob ng Reading HUB
+                  </span>
+                  <button
+                    onClick={() => setVideoStarted(false)}
+                    className="btn-3d btn-outline"
+                    style={{ fontSize: '0.75rem', padding: '4px 10px', color: '#64748B' }}
+                  >
+                    🔄 I-close ang Video
+                  </button>
+                </div>
+              )}
+            </div>
+          )}
 
           {/* Illustrated Short Story */}
           <div className="story-box">

@@ -6,6 +6,7 @@ const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const { db } = require('./db');
 const { restoreFromCloud, triggerCloudSave, saveToCloud } = require('./cloudSync');
+const { getVideoForLesson } = require('./videoCatalog');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -267,6 +268,9 @@ app.get('/api/curriculum/term/:termId/week/:weekNum/subject/:subjectId', authent
             lesson.explore_examples = JSON.parse(lesson.explore_examples || '[]');
             lesson.illustrations = JSON.parse(lesson.illustrations || '[]');
         } catch (e) {}
+
+        // Attach official Knowledge Channel TV educational video for this topic
+        lesson.video = getVideoForLesson(subjectId, week.week_number);
     }
 
     const activitiesParsed = activities.map(act => {
