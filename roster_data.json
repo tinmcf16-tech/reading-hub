@@ -1,7 +1,8 @@
 {
-  "version": 1,
-  "last_synced": "2026-09-26T15:54:23.494Z",
+  "version": 2,
+  "last_synced": "2026-09-27T02:49:15.218Z",
   "total_learners": 4,
+  "total_submissions": 0,
   "students": [
     {
       "id": 38,
@@ -38,6 +39,141 @@
       "role": "student",
       "grade_level": "Grade 2",
       "avatar_id": "avatar_girl1"
+    }
+  ],
+  "user_stats": [
+    {
+      "username": "zydnie",
+      "total_stars": 0,
+      "current_streak": 1,
+      "best_streak": 1,
+      "last_active_date": null
+    },
+    {
+      "username": "aishleen",
+      "total_stars": 0,
+      "current_streak": 1,
+      "best_streak": 1,
+      "last_active_date": null
+    },
+    {
+      "username": "juan.g1",
+      "total_stars": 15,
+      "current_streak": 2,
+      "best_streak": 2,
+      "last_active_date": null
+    },
+    {
+      "username": "maria.g2",
+      "total_stars": 20,
+      "current_streak": 3,
+      "best_streak": 3,
+      "last_active_date": null
+    }
+  ],
+  "student_submissions": [],
+  "student_progress": [],
+  "user_badges": [],
+  "weeks_unlocked": [
+    {
+      "id": 166,
+      "term_id": 1,
+      "week_number": 1,
+      "is_unlocked": 1
+    },
+    {
+      "id": 167,
+      "term_id": 1,
+      "week_number": 2,
+      "is_unlocked": 1
+    },
+    {
+      "id": 168,
+      "term_id": 1,
+      "week_number": 3,
+      "is_unlocked": 1
+    },
+    {
+      "id": 169,
+      "term_id": 1,
+      "week_number": 4,
+      "is_unlocked": 1
+    },
+    {
+      "id": 170,
+      "term_id": 1,
+      "week_number": 5,
+      "is_unlocked": 1
+    },
+    {
+      "id": 171,
+      "term_id": 1,
+      "week_number": 6,
+      "is_unlocked": 1
+    },
+    {
+      "id": 172,
+      "term_id": 1,
+      "week_number": 7,
+      "is_unlocked": 1
+    },
+    {
+      "id": 173,
+      "term_id": 1,
+      "week_number": 8,
+      "is_unlocked": 1
+    },
+    {
+      "id": 174,
+      "term_id": 1,
+      "week_number": 9,
+      "is_unlocked": 1
+    },
+    {
+      "id": 175,
+      "term_id": 1,
+      "week_number": 10,
+      "is_unlocked": 1
+    },
+    {
+      "id": 176,
+      "term_id": 1,
+      "week_number": 11,
+      "is_unlocked": 1
+    },
+    {
+      "id": 177,
+      "term_id": 2,
+      "week_number": 1,
+      "is_unlocked": 1
+    },
+    {
+      "id": 178,
+      "term_id": 2,
+      "week_number": 2,
+      "is_unlocked": 1
+    },
+    {
+      "id": 199,
+      "term_id": 11,
+      "week_number": 1,
+      "is_unlocked": 1
+    },
+    {
+      "id": 232,
+      "term_id": 21,
+      "week_number": 1,
+      "is_unlocked": 1
+    }
+  ],
+  "terms_locked": [
+    {
+      "id": 2,
+      "is_locked": 1
+    },
+    {
+      "id": 3,
+      "is_locked": 1
     }
   ]
 }
