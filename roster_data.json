@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "last_synced": "2026-09-27T03:59:07.143Z",
+  "last_synced": "2026-09-27T04:00:33.790Z",
   "total_learners": 5,
-  "total_submissions": 0,
+  "total_submissions": 1,
   "students": [
     {
       "id": 38,
@@ -53,10 +53,10 @@
   "user_stats": [
     {
       "username": "zydnie",
-      "total_stars": 0,
+      "total_stars": 2,
       "current_streak": 1,
       "best_streak": 1,
-      "last_active_date": null
+      "last_active_date": "2026-09-27"
     },
     {
       "username": "aishleen",
@@ -87,8 +87,34 @@
       "last_active_date": null
     }
   ],
-  "student_submissions": [],
-  "student_progress": [],
+  "student_submissions": [
+    {
+      "username": "zydnie",
+      "activity_id": 4983,
+      "answer_data": "\"A\"",
+      "score": 10,
+      "max_score": 10,
+      "percentage": 100,
+      "attempts": 1,
+      "teacher_feedback": "ðŸŒŸ Napakahusay! Perfect score! Nakuha mo ang lahat ng tamang sagot!",
+      "completed_at": "2026-09-27 04:00:31"
+    }
+  ],
+  "student_progress": [
+    {
+      "username": "zydnie",
+      "term_id": 1,
+      "week_id": 166,
+      "subject_id": "math",
+      "completed_activities": 1,
+      "total_activities": 8,
+      "score_sum": 10,
+      "max_score_sum": 10,
+      "percentage": 100,
+      "status": "in_progress",
+      "updated_at": "2026-09-27 04:00:31"
+    }
+  ],
   "user_badges": [],
   "weeks_unlocked": [
     {
