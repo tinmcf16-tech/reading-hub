@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "last_synced": "2026-09-27T03:57:52.971Z",
+  "last_synced": "2026-09-27T03:58:50.301Z",
   "total_learners": 5,
   "total_submissions": 0,
   "students": [
@@ -16,7 +16,7 @@
     {
       "id": 39,
       "username": "aishleen",
-      "password_hash": "$2b$10$VSV0adGIzy7fckEEbsNORO2PIAfNBh5IW9CnIS4a/3ArtJppnWP76",
+      "password_hash": "$2b$10$HBnXwxSLmgV4DDvhdQfZr./3IRIRemu917ikRQHOrc8WaVBbWrZyK",
       "full_name": "Aishleen Kaye F. Sola",
       "role": "student",
       "grade_level": "Grade 3",
