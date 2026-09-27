@@ -473,6 +473,8 @@ app.post('/api/activities/:activityId/submit', authenticateToken, (req, res) => 
         }
     }
 
+    triggerCloudSave(db);
+
     res.json({
         isCorrect,
         score,
@@ -538,6 +540,8 @@ app.post('/api/teacher/weeks/:weekId/toggle', authenticateToken, requireTeacher,
     const newStatus = week.is_unlocked ? 0 : 1;
     db.prepare('UPDATE weeks SET is_unlocked = ? WHERE id = ?').run(newStatus, weekId);
 
+    triggerCloudSave(db);
+
     res.json({
         success: true,
         weekId,
@@ -554,6 +558,8 @@ app.post('/api/teacher/terms/:termId/toggle', authenticateToken, requireTeacher,
 
     const newLock = term.is_locked ? 0 : 1;
     db.prepare('UPDATE terms SET is_locked = ? WHERE id = ?').run(newLock, termId);
+
+    triggerCloudSave(db);
 
     res.json({ success: true, termId, is_locked: newLock });
 });
@@ -722,7 +728,7 @@ app.post('/api/teacher/cloud-sync', authenticateToken, requireTeacher, async (re
     try {
         const ok = await saveToCloud(db);
         if (ok) {
-            res.json({ success: true, message: 'All student rosters and passwords are permanently backed up to GitHub Cloud Storage!' });
+            res.json({ success: true, message: 'All student rosters, passwords, activity submissions, stars, and week locks are permanently backed up to Cloud Storage!' });
         } else {
             res.status(500).json({ error: 'Failed to write to cloud storage. Local database remains safe.' });
         }
@@ -815,12 +821,15 @@ app.post('/api/teacher/remediation/assign', authenticateToken, requireTeacher, (
         VALUES (?, ?, ?, 'assigned', ?)
     `).run(user_id, competency_id, req.user.id, notes || 'Assigned tailored practice exercises.');
 
+    triggerCloudSave(db);
+
     res.json({ success: true, message: 'Remediation assigned successfully' });
 });
 
 app.post('/api/teacher/remediation/:id/resolve', authenticateToken, requireTeacher, (req, res) => {
     const remId = parseInt(req.params.id);
     db.prepare('UPDATE remediation_assignments SET status = "completed" WHERE id = ?').run(remId);
+    triggerCloudSave(db);
     res.json({ success: true, message: 'Remediation marked as completed' });
 });
 

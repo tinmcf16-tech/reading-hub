@@ -170,12 +170,14 @@ export default function TeacherDashboard({ user }) {
     }
 
     try {
-      await api.addStudent(newStudentForm);
+      await api.addStudent({ ...newStudentForm, grade_level: newStudentForm.grade_level || selectedGrade });
       sounds.playCorrect();
       setShowAddStudentModal(false);
-      setNewStudentForm({ username: '', password: '', full_name: '', avatar_id: 'avatar_boy1' });
-      const stRes = await api.getStudents();
+      setNewStudentForm({ username: '', password: '', full_name: '', avatar_id: 'avatar_boy1', grade_level: selectedGrade });
+      const stRes = await api.getStudents(selectedGrade);
       setStudents(stRes.students || []);
+      const updatedOverview = await api.getTeacherOverview(selectedGrade);
+      setOverview(updatedOverview);
     } catch (err) {
       alert(err.message || 'Failed to add student');
     }
