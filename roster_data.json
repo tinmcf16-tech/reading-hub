@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "last_synced": "2026-09-27T10:01:22.063Z",
+  "last_synced": "2026-10-01T01:34:08.577Z",
   "total_learners": 7,
   "total_submissions": 0,
   "students": [
@@ -277,6 +277,12 @@
       "id": 211,
       "term_id": 12,
       "week_number": 2,
+      "is_unlocked": 1
+    },
+    {
+      "id": 212,
+      "term_id": 12,
+      "week_number": 3,
       "is_unlocked": 1
     },
     {
